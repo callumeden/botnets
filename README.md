@@ -1,4 +1,4 @@
-# Analysing Botnet and C & C
+# Analysing Botnet (<i>what</i>net?) and C & C
 
 ## Research: 
 
