@@ -2,5 +2,8 @@ var App = require('./app');
 require('jquery');
 require('./vendor/config');
 
+//Sub applications
+require('./apps/header/headerApp');
+
 
 App.start();
