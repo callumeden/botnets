@@ -11,4 +11,9 @@
 ## Website:
 
 #### Getting Started:
-<b> Coming soon </b>
+
+1. Clone the project: `git clone https://gitlab.doc.ic.ac.uk/g1516304/topics.git`
+2. Enter project direction `cd topics`
+3. Install dependencies `npm install`
+4. Build! `grunt dev` 
+5. Your browser should now open your local instance of the project (at <b> localhost:8080 </b>)
