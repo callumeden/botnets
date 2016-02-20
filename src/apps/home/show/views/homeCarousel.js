@@ -9,6 +9,14 @@ var Slide = Marionette.ItemView.extend({
 
     className: 'item',
 
+    ui : {
+        cta: '[data-role="cta"]'
+    },
+
+    triggers: {
+        'click @ui.cta': 'click:cta'
+    },
+
     onRender: function () {
         this.activateFirst();
     },
@@ -24,10 +32,16 @@ var Slide = Marionette.ItemView.extend({
 });
 
 var Carousel = Marionette.CompositeView.extend({
+
     template: carouselTemplate,
 
     childView: Slide,
-    childViewContainer: '[data-role="slide-container"]'
+    childViewContainer: '[data-role="slide-container"]',
+
+    templateHelpers: function () {
+        return this.collection;
+    }
+
 });
 
 

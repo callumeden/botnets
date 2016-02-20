@@ -1,11 +1,13 @@
 var Marionette = require('backbone.marionette');
-var Backbone = require('backbone');
 var App = require('../../../app');
 
 require('./layout/layout');
 require('./views/homeCarousel');
 
-var HomeShowController = Marionette.Object.extend( {
+require('../../../entities/home/carousel');
+var CarouselData = require('../../../data/home/carousel');
+
+var HomeShowController = Marionette.Object.extend({
 
     initialize: function () {
         this.showLayout();
@@ -26,17 +28,33 @@ var HomeShowController = Marionette.Object.extend( {
 
     },
 
-showCarousel: function (options) {
-        var Model = Backbone.Model;
-
-        var Collection = Backbone.Collection.extend({
-            model: Model
-        });
-
-        var collection = new Collection([{}, {}, {}]);
-
+    showCarousel: function (options) {
+        var collection = App.request('new:homeCarousel:collection', CarouselData);
         var view = App.request('new:carousel:view', collection);
         options.region.show(view);
+
+        view.on('childview:click:cta', this.handleNavigation);
+    },
+
+    handleNavigation: function (view) {
+        var ctaType = view.ui.cta.data('info');
+
+        switch (ctaType) {
+            case "navigate-establishingBotnets":
+                App.execute("show:establishingBotnets");
+                break;
+            case "navigate-architectureCommunication":
+                App.execute('show:architectureCommunication');
+                break;
+            case "navigate-detection":
+                App.execute('show:detection');
+                break;
+            case "navigate-ccStructure":
+                App.execute('show:ccStructure');
+                break;
+            default:
+                console.info("Oops... Something went wrong");
+        }
     }
 
 });
