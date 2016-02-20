@@ -1,31 +1,42 @@
 var Marionette = require('backbone.marionette');
 var App = require('../../../../app.js');
 var template = require('../templates/header.hbs');
+var linkTemplate = require('../templates/link.hbs');
 
-var HeaderView = Marionette.ItemView.extend({
+var Link = Marionette.ItemView.extend({
+
+    template: linkTemplate,
+
+    ui: {
+        navigateLink: '[data-role="navigate-link"]'
+    },
+
+    triggers: {
+        'click @ui.navigateLink': 'click:link'
+    },
+
+    tagName: 'li'
+});
+
+var HeaderView = Marionette.CompositeView.extend({
     template: template,
     tagName: 'header',
 
     ui: {
-        home: '[data-role = "navigate-home"]',
-        establishingBotnets: '[data-role="navigate-establishingBotnets"]',
-        architectureCommunication: '[data-role="navigate-architectureCommunication"]',
-        detection: '[data-role="navigate-detection"]',
-        ccStructure: '[data-role="navigate=ccStructure"]'
+        title: '[data-role = "navigate-home"]'
     },
 
     triggers: {
-        'click @ui.home' : 'navigate:home',
-        'click @ui.establishingBotnets' : 'navigate:establishingBotnets',
-        'click @ui.architectureCommunication' : 'navigate:architectureCommunication',
-        'click @ui.detection' : 'navigate:detection',
-        'click @ui.ccStructure' : 'navigate:ccStructure'
-    }
+        'click @ui.title': 'navigate:home'
+    },
+
+    childView: Link,
+    childViewContainer: '[data-role="links-container"]'
 
 });
 
-App.reqres.setHandler('new:header:view', function () {
-    return new HeaderView();
+App.reqres.setHandler('new:header:view', function (collection) {
+    return new HeaderView({collection: collection});
 });
 
 module.exports = HeaderView;

@@ -1,17 +1,17 @@
 var Backbone = require('backbone');
 var App = require('../../app');
 
-var Model = Backbone.Model;
+var Slide = Backbone.Model;
 
-var Collection = Backbone.Collection.extend({
-    model: Model
+var Slides = Backbone.Collection.extend({
+    model: Slide
 });
 
 App.reqres.setHandler('new:homeCarousel:collection', function (data) {
-    return new Collection(data);
+    return new Slides(data);
 });
 
 module.exports = {
-    Collection: Collection,
-    Model: Model
+    Slides: Slides,
+    Slide: Slide
 };
