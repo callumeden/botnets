@@ -1,20 +1,36 @@
 var App = require('../../app.js');
-var Marionette = require('backbone.marionette');
 var HomeController = require('./show/homeShowController.js');
+var AppRouter = require('../../config/appRouter.js');
+var Backbone = require('backbone');
 
-var HomeApp = Marionette.Object.extend({
-
-    initialize: function () {
-        this.showHome();
-    },
+var API = {
 
     showHome : function () {
         return new HomeController();
     }
+};
+
+var HomeAppRouter = AppRouter.extend({
+
+    controller: API,
+
+    appRoutes: {
+        'home' : 'showHome'
+    }
+
+});
+
+App.on('before:start', function () {
+    console.info('Home application is initializing...');
+    return new HomeAppRouter();
 });
 
 App.commands.setHandler('show:home', function () {
-    return new HomeApp();
+    API.showHome();
+    Backbone.history.navigate('home');
 });
 
-module.exports = HomeApp;
+module.exports = {
+    API : API,
+    HomeAppRouter : HomeAppRouter
+};
