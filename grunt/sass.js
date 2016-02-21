@@ -3,7 +3,7 @@ module.exports = function () {
         expand: true,
         cwd: './src/styles/',
         src: ['**/*.scss', '**/*.css'],
-        dest: './dist/css',
+        dest: './dist',
         ext: '.css'
     }];
 

@@ -1,11 +1,12 @@
-var App = require('../../app.js');
-var HomeController = require('./show/homeShowController.js');
-var AppRouter = require('../../config/appRouter.js');
+var App = require('../../app');
+var HomeController = require('./show/homeShowController');
+var AppRouter = require('../../config/appRouter');
 var Backbone = require('backbone');
 
 var API = {
 
     showHome : function () {
+        Backbone.history.navigate('home');
         return new HomeController();
     }
 };
@@ -15,6 +16,7 @@ var HomeAppRouter = AppRouter.extend({
     controller: API,
 
     appRoutes: {
+        '' : 'showHome',
         'home' : 'showHome'
     }
 
@@ -27,7 +29,6 @@ App.on('before:start', function () {
 
 App.commands.setHandler('show:home', function () {
     API.showHome();
-    Backbone.history.navigate('home');
 });
 
 module.exports = {

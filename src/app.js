@@ -17,7 +17,6 @@ App.on('start', function () {
     }
 
     App.execute('show:header');
-    App.execute('show:home');
 });
 
 module.exports = App;

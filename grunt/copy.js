@@ -13,6 +13,16 @@ module.exports = function () {
                     dest: './dist/img'
                 }
             ]
+        },
+        fonts : {
+            files: [
+                {
+                    expand: true,
+                    cwd: './src/styles/fonts',
+                    src: ['**'],
+                    dest: './dist/fonts'
+                }
+            ]
         }
     };
 };
