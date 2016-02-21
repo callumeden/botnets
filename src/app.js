@@ -4,8 +4,8 @@ var Marionette = require('backbone.marionette');
 var App = new Marionette.Application();
 
 App.addRegions({
-    header: 'header',
-    container: '[data-role="app-container"]'
+    header: '[data-region="header"]',
+    container: '[data-region="app-container"]'
 });
 
 App.on('start', function () {

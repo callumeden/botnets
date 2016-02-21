@@ -20,7 +20,6 @@ var Link = Marionette.ItemView.extend({
 
 var HeaderView = Marionette.CompositeView.extend({
     template: template,
-    tagName: 'header',
 
     ui: {
         title: '[data-role = "navigate-home"]'

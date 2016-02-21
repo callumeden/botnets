@@ -4,7 +4,7 @@ var JSON = [
         subTitle: "They just are",
         ctaText: "Read more",
         ctaInfo: "navigate-establishingBotnets",
-        imgSrc: "./img/hack01.jpg"
+        imgSrc: ""
     },
     {
         title: "What architecture and communication protocols do they use?",

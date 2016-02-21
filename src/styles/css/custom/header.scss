@@ -1,0 +1,22 @@
+@import "variables";
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+
+  .container.outer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $screen-sm) {
+    margin-top: 20px;
+
+    .navbar {
+      border-radius: 4px;
+    }
+  }
+}
