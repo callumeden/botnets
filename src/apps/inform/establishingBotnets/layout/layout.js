@@ -4,7 +4,13 @@ var App = require('../../../../app');
 
 var Layout = Marionette.LayoutView.extend({
 
-    template: template
+    template: template,
+
+    regions: {
+        subjectPointers: '[data-region="subject-pointers"]',
+        jumbotron: '[data-region="jumbotron"]',
+        featurette : '[data-region="featurette"]'
+    }
 
 });
 

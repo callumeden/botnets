@@ -1,0 +1,26 @@
+.subject-pointers {
+  .col-lg-4 {
+    text-align: center;
+    margin-bottom: 20px;
+
+    p {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.top-cmp {
+  margin-top : 90px;
+}
+
+hr {
+
+  &.featurette-divisor {
+    margin: 80px 0;
+  }
+
+  &.footer-divisor {
+    margin: 80px 0;
+  }
+}

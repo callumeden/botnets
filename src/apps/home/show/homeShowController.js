@@ -24,7 +24,7 @@ var HomeShowController = Marionette.Object.extend({
 
         this.showCarousel({
             region: this.layout.getRegion('carousel')
-        })
+        });
 
     },
 

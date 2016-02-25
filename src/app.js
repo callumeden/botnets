@@ -5,7 +5,8 @@ var App = new Marionette.Application();
 
 App.addRegions({
     header: '[data-region="header"]',
-    container: '[data-region="app-container"]'
+    container: '[data-region="app-container"]',
+    footer: 'footer'
 });
 
 App.on('start', function () {
@@ -17,6 +18,7 @@ App.on('start', function () {
     }
 
     App.execute('show:header');
+    App.execute('show:footer');
 });
 
 module.exports = App;
