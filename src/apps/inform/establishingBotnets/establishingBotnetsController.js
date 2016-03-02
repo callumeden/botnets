@@ -30,7 +30,8 @@ var Controller = Marionette.Object.extend({
         });
 
         this.showJumbotron({
-            region: this.layout.getRegion('jumbotron')
+            region: this.layout.getRegion('jumbotron'),
+            data: appData.jumbotron
         });
 
         this.showFeaturette({
@@ -49,7 +50,7 @@ var Controller = Marionette.Object.extend({
     },
 
     showJumbotron: function (options) {
-        var model = new Backbone.Model();
+        var model = new Backbone.Model(options.data);
         var view = App.request('new:jumbotron:view', model);
         options.region.show(view);
     },

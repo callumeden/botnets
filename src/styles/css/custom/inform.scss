@@ -24,3 +24,25 @@ hr {
     margin: 80px 0;
   }
 }
+
+
+
+.scrollspy-container {
+
+  .scrollspy-main {
+    position: relative;
+    height: 312px;
+    margin-top: 10px;
+    overflow: auto;
+  }
+
+  nav {
+    margin-bottom: 0;
+  }
+
+}
+
+img.rounded-corners{
+  border-radius: 20px;
+}
+

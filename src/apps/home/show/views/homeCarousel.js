@@ -38,8 +38,16 @@ var Carousel = Marionette.CompositeView.extend({
     childView: Slide,
     childViewContainer: '[data-role="slide-container"]',
 
+    ui : {
+        carousel : '[data-role="carousel"]'
+    },
+
     templateHelpers: function () {
         return this.collection;
+    },
+
+    onRender: function () {
+        this.ui.carousel.carousel();
     }
 
 });
