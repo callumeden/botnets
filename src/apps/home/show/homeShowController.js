@@ -65,7 +65,7 @@ var HomeShowController = Marionette.Object.extend({
                 App.execute('show:detection');
                 break;
             case "navigate-ccStructure":
-                App.execute('show:ccStructure');
+                App.execute('show:commandControl');
                 break;
             default:
                 console.info("Oops... Something went wrong");

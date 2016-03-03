@@ -1,7 +1,7 @@
 var Marionette = require('backbone.marionette');
 var Backbone = require('backbone');
 var App = require('../../../app');
-var appData = require('../../../data/inform/architectureCommunication');
+var appData = require('../../../data/inform/commandControl');
 
 require('../../../lib/components/featurette/views/subjectPointers');
 require('../../../lib/components/featurette/views/jumbotron');
@@ -13,16 +13,16 @@ var Controller = Marionette.Object.extend({
 
     initialize: function () {
         this.showLayout();
-        this.showArchitectureCommunication();
+        this.showDetection();
     },
 
     showLayout: function () {
-        this.layout = App.request('new:architectureCommunication:layout');
+        this.layout = App.request('new:commandControl:layout');
         this.region = App.getRegion('container');
         this.region.show(this.layout);
     },
 
-    showArchitectureCommunication: function () {
+    showDetection: function () {
 
         this.showSubjectPointers({
             region: this.layout.getRegion('subjectPointers'),
