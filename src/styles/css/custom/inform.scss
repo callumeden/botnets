@@ -1,3 +1,5 @@
+@import "variables";
+
 .subject-pointers {
   .col-lg-4 {
     text-align: center;
@@ -11,7 +13,7 @@
 }
 
 .top-cmp {
-  margin-top : 90px;
+  margin-top: 90px;
 }
 
 hr {
@@ -24,8 +26,6 @@ hr {
     margin: 80px 0;
   }
 }
-
-
 
 .scrollspy-container {
 
@@ -42,7 +42,24 @@ hr {
 
 }
 
-img.rounded-corners{
+img.rounded-corners {
   border-radius: 20px;
 }
 
+button.reference {
+  background: transparent;
+  padding: 0;
+}
+
+.featurette-image {
+
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 500px;
+
+  @media(min-width: 0) and (max-width: $screen-md) {
+    background-size: 100% 100%;
+  }
+}

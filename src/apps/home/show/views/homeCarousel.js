@@ -47,7 +47,7 @@ var Carousel = Marionette.CompositeView.extend({
     },
 
     onRender: function () {
-        this.ui.carousel.carousel();
+        this.ui.carousel.carousel();//Bootstrap JS method to activate carousel
     }
 
 });

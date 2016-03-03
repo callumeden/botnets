@@ -5,7 +5,7 @@ var appData = require('../../../data/inform/establishingBotnets');
 
 require('./views/subjectPointers');
 require('./views/jumbotron');
-require('./views/featurette');
+require('../../../lib/components/featurette/views/featurette');
 
 require('./layout/layout');
 

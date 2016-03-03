@@ -9,6 +9,7 @@ var Controller = Marionette.Object.extend({
         this.showFooter({
             region: App.getRegion('footer')
         });
+
     },
 
     showFooter: function (options) {

@@ -11,7 +11,7 @@ var JSON = [
         subTitle: "Bare info from J fox",
         ctaText: "Read more",
         ctaInfo: "navigate-architectureCommunication",
-        imgSrc: ""
+        imgSrc: "img/jb01.jpg"
     },
     {
         title: "How to detect them?",

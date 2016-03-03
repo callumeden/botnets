@@ -1,0 +1,25 @@
+<hr class="featurette-divisor">
+
+<div class="row featurette">
+    <div class="col-md-7 {{#isPushed}} col-md-push-5 {{/isPushed}}">
+        <h2 class="featurette-heading">{{heading}}
+            <span class="text-muted">{{subHeading}}</span>
+        </h2>
+        <p class="lead">
+            {{#botnetUses}}
+                {{> botnetUses}}
+            {{/botnetUses}}
+
+            {{#botnetDescription}}
+                {{> botnetDescription}}
+            {{/botnetDescription}}
+        </p>
+    </div>
+    <div class="col-md-5 {{#isPushed}} col-md-pull-7 {{/isPushed}}">
+        <div class="featurette-image img-responsive center-block background-image"
+            {{#if image}}
+             style="background-image: url({{image}})"
+            {{/if}}>
+        </div>
+    </div>
+</div>

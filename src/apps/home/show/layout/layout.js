@@ -7,7 +7,8 @@ var Layout = Marionette.LayoutView.extend({
     template: template,
 
     regions: {
-        carousel: '[data-region="home-carousel"]'
+        carousel: '[data-region="home-carousel"]',
+        featurette: '[data-region="featurette"]'
     }
 
 });

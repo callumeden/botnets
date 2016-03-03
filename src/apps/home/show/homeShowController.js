@@ -1,11 +1,14 @@
 var Marionette = require('backbone.marionette');
+var Backbone = require('backbone');
 var App = require('../../../app');
 
 require('./layout/layout');
 require('./views/homeCarousel');
 
 require('../../../entities/home/carousel');
-var CarouselData = require('../../../data/home/carousel');
+require('../../../lib/components/featurette/views/featurette');
+
+var HomeData = require('../../../data/home/home');
 
 var HomeShowController = Marionette.Object.extend({
 
@@ -23,17 +26,29 @@ var HomeShowController = Marionette.Object.extend({
     showHome: function () {
 
         this.showCarousel({
-            region: this.layout.getRegion('carousel')
+            region: this.layout.getRegion('carousel'),
+            data : HomeData.carousel
+        });
+
+        this.showFeaturette({
+            region:  this.layout.getRegion('featurette'),
+            data: HomeData.featurette
         });
 
     },
 
     showCarousel: function (options) {
-        var collection = App.request('new:homeCarousel:collection', CarouselData);
+        var collection = App.request('new:homeCarousel:collection', options.data);
         var view = App.request('new:carousel:view', collection);
         options.region.show(view);
 
         view.on('childview:click:cta', this.handleNavigation);
+    },
+
+    showFeaturette: function (options) {
+        var collection = new Backbone.Collection(options.data);
+        var view = App.request('new:featurette:view', collection);
+        options.region.show(view);
     },
 
     handleNavigation: function (view) {
