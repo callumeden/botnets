@@ -1,6 +1,6 @@
 var JSON = [
     {
-        title: "How are botnets established",
+        title: "How are botnets established?",
         subTitle: "They just are",
         ctaText: "Read more",
         ctaInfo: "navigate-establishingBotnets",
@@ -11,7 +11,7 @@ var JSON = [
         subTitle: "Bare info from J fox",
         ctaText: "Read more",
         ctaInfo: "navigate-architectureCommunication",
-        imgSrc: "img/jb01.jpg"
+        imgSrc: ""
     },
     {
         title: "How to detect them?",

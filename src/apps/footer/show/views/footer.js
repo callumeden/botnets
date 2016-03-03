@@ -4,7 +4,19 @@ var template = require('../templates/footer.hbs');
 
 var Footer = Marionette.ItemView.extend({
 
-    template: template
+    ui : {
+        toTop: '[data-role="to-top"]'
+    },
+
+    template: template,
+
+    events: {
+        'click @ui.toTop' : 'scrollToTop'
+    },
+
+    scrollToTop: function () {
+        $("html, body").animate({scrollTop : 0}, "slow");
+    }
 
 });
 

@@ -31,7 +31,7 @@ var InformAppRouter = AppRouter.extend({
 
     appRoutes: {
         'establishing-botnets': 'showEstablishingBotnets',
-        'architecture-and-communication': 'showEstablishingBotnets',
+        'architecture-and-communication': 'showArchitectureCommunication',
         'detecting-botnets': 'showDetection',
         'command-and-control-structure': 'showCommandControl'
     }

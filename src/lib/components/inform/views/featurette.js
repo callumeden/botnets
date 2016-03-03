@@ -12,16 +12,12 @@ var Feature = Marionette.ItemView.extend({
     },
 
     templateHelpers: function () {
-        var isPushed = this.isAlternateFormat();
+        var modelIndex = _.indexOf(this.model.collection.models, this.model);
 
         return {
-            isPushed : isPushed
+            isFirst : modelIndex == 0,
+            isPushed : !(modelIndex % 2 == 0)
         }
-    },
-
-    isAlternateFormat: function () {
-        var currentIndex = _.indexOf(this.model.collection.models, this.model);
-        return !(currentIndex % 2 == 0);
     },
 
     onRender: function () {
@@ -42,7 +38,5 @@ var Featurette = Marionette.CollectionView.extend({
 });
 
 App.reqres.setHandler('new:featurette:view', function (collection) {
-    //Handlebars.registerPartial('infection', infectionPartial);
-
     return new Featurette({collection : collection})
 });

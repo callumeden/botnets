@@ -3,9 +3,9 @@ var Backbone = require('backbone');
 var App = require('../../../app');
 var appData = require('../../../data/inform/architectureCommunication');
 
-require('../../../lib/components/featurette/views/subjectPointers');
-require('../../../lib/components/featurette/views/jumbotron');
-require('../../../lib/components/featurette/views/featurette');
+require('../../../lib/components/inform/views/subjectPointers');
+require('../../../lib/components/inform/views/jumbotron');
+require('../../../lib/components/inform/views/featurette');
 
 require('./layout/layout');
 

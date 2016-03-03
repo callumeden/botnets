@@ -1,6 +1,8 @@
-<hr class="featurette-divisor">
+{{^isFirst}}
+    <hr class="featurette-divisor">
+{{/isFirst}}
 
-<div class="row featurette">
+<div class="row featurette {{#isFirst}}first{{/isFirst}}">
     <div class="col-md-7 {{#isPushed}} col-md-push-5 {{/isPushed}}">
         <h2 class="featurette-heading">{{heading}}
             <span class="text-muted">{{subHeading}}</span>
