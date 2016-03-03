@@ -9,10 +9,10 @@ var JSON = [
         heading: "What are botnets used for?",
         subHeading: "",
         botnetUses: true,
-        image: ""
+        image: "img/DDosAttack.jpg"
     },
     {
-        heading: "Botnets of the past",
+        heading: "Cases of virulent botnets",
         subHeading: "",
         image: ""
     }
