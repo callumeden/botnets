@@ -1,10 +1,10 @@
 var Marionette = require('backbone.marionette');
 var Backbone = require('backbone');
 var App = require('../../../app');
-var appData = require('../../../data/inform/establishingBotnets');
+var appData = require('../../../data/inform/architectureCommunication');
 
-require('./views/subjectPointers');
-require('./views/jumbotron');
+require('../../../lib/components/featurette/views/subjectPointers');
+require('../../../lib/components/featurette/views/jumbotron');
 require('../../../lib/components/featurette/views/featurette');
 
 require('./layout/layout');
