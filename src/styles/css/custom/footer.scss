@@ -4,4 +4,12 @@ footer {
   padding: 60px 0;
   margin-bottom: 0;
 
+  a {
+    color: #2d9968;
+
+    &:hover {
+      color: #faa41c;
+      text-decoration: none;
+    }
+  }
 }

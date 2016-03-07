@@ -3,23 +3,26 @@ var JSON = [
         heading: "Infecting a computer",
         subHeading: "",
         infectionPartial: true,
-        image: "img/global01.jpg"
+        image: "img/global01.jpg",
+        id: "infection"
     },
     {
 
-        heading: "Motivation behind botnets",
+        heading: "Technicalities stuff",
         subHeading: "...",
         motivationPartial: true,
         content : "Some content 2",
-        image: ""
+        image: "",
+        id: "technicalities"
     },
     {
 
-        heading: "Botnet stuff",
+        heading: "Botnet motivation",
         subHeading: "...",
         otherPartial: true,
         content : "Some content 3",
-        image: ""
+        image: "",
+        id: "motivation"
     }
 ];
 

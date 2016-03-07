@@ -1,4 +1,4 @@
-var App = require('../../../../app');
+var App = require('../../../app');
 var Marionette = require('backbone.marionette');
 var template = require('../templates/pointer.hbs');
 
@@ -10,10 +10,14 @@ var Pointer = Marionette.ItemView.extend({
         details : '[data-role="details"]'
     },
 
-    triggers: {
-        'click @ui.details' : 'details:clicked'
-    }
+    events: {
+        'click @ui.details' : 'scrollTo'
+    },
 
+    scrollTo: function (ev) {
+        var destination = ev.target.getAttribute('data-destination');
+        $("html, body").animate({ scrollTop: $(destination).offset().top - 100}, "slow");
+    }
 });
 
 var Pointers = Marionette.CollectionView.extend({

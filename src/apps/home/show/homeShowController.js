@@ -6,7 +6,7 @@ require('./layout/layout');
 require('./views/homeCarousel');
 
 require('../../../entities/home/carousel');
-require('../../../lib/components/featurette/views/featurette');
+require('../../../lib/components/views/featurette');
 
 var HomeData = require('../../../data/home/home');
 

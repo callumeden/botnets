@@ -12,27 +12,44 @@
     padding-right: 0;
   }
 
-  .navbar {
-    border-radius : 0; // OVERRIDING BOOTSTRAP
+  .navbar-inverse {
+    background: $gradient-blue-background;
+
+    border-radius: 0; // OVERRIDING BOOTSTRAP
     padding: 20px;
 
+    .navbar-brand {
+      a {
+        font-size: 20px;
+      }
+    }
+
+    li a {
+      font-size: 16px;
+    }
+
   }
+
   @media (min-width: $screen-sm) {
 
     .navbar.affix {
-      background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
+      background: $gradient-blue-background;
       width: 100%;
       box-shadow: 1px 1px 1px 1px white;
 
-      li a {
-        color:white;
+      a {
+        color: white;
+
+        &:hover {
+          color: #faa41c;
+        }
       }
 
     }
 
-    .navbar.affix-top {
+    .navbar-inverse.affix-top {
       margin-top: 20px;
-      background-color: transparent;
+      background: transparent;
       border-color: transparent;
 
       a:hover, a:focus {
@@ -42,4 +59,8 @@
     }
 
   }
+}
+
+.navbar-inverse {
+  background: $gradient-blue-background;
 }

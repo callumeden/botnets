@@ -11,12 +11,6 @@ module.exports = function () {
             'sass:dev',
             'copy',
             'parallel:dev'
-        ],
-        precommit: [
-            'jshint',
-            'jscs',
-            'clean',
-            'prod'
         ]
     };
 };

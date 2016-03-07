@@ -1,5 +1,5 @@
 var Marionette = require('backbone.marionette');
-var App = require('../../../../app');
+var App = require('../../../app');
 var template = require('../templates/jumbotron.hbs');
 
 var Jumbotron = Marionette.ItemView.extend({
