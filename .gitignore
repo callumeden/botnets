@@ -48,4 +48,3 @@ $RECYCLE.BIN/
 .idea
 node_modules
 *.iml
-dist
