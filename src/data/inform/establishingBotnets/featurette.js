@@ -11,7 +11,6 @@ var JSON = [
         heading: "Technicalities stuff",
         subHeading: "...",
         motivationPartial: true,
-        content : "Some content 2",
         image: "",
         id: "technicalities"
     },
@@ -20,7 +19,6 @@ var JSON = [
         heading: "Botnet motivation",
         subHeading: "...",
         otherPartial: true,
-        content : "Some content 3",
         image: "",
         id: "motivation"
     }
