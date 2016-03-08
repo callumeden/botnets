@@ -6,7 +6,7 @@ var Backbone = require('backbone');
 var API = {
 
     showHome : function () {
-        Backbone.history.navigate('home');
+        Backbone.history.navigate('project/2015/163/g1516304/topics/dist/home');
         return new HomeController();
     }
 };
@@ -16,8 +16,8 @@ var HomeAppRouter = AppRouter.extend({
     controller: API,
 
     appRoutes: {
-        '' : 'showHome',
-        'home' : 'showHome'
+        'project/2015/163/g1516304/topics/dist/' : 'showHome',
+        'project/2015/163/g1516304/topics/dist/home' : 'showHome'
     }
 
 });

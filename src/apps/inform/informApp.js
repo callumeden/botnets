@@ -30,10 +30,10 @@ var InformAppRouter = AppRouter.extend({
     controller: API,
 
     appRoutes: {
-        'establishing-botnets': 'showEstablishingBotnets',
-        'architecture-and-communication': 'showArchitectureCommunication',
-        'detecting-botnets': 'showDetection',
-        'command-and-control-structure': 'showCommandControl'
+        'project/2015/163/g1516304/topics/dist/establishing-botnets': 'showEstablishingBotnets',
+        'project/2015/163/g1516304/topics/dist/architecture-and-communication': 'showArchitectureCommunication',
+        'project/2015/163/g1516304/topics/dist/detecting-botnets': 'showDetection',
+        'project/2015/163/g1516304/topics/dist/command-and-control-structure': 'showCommandControl'
     }
 
 });
@@ -45,23 +45,23 @@ App.on('before:start', function () {
 
 App.commands.setHandler('show:establishingBotnets', function () {
     API.showEstablishingBotnets();
-    Backbone.history.navigate('establishing-botnets');
+    Backbone.history.navigate('project/2015/163/g1516304/topics/dist/establishing-botnets');
 });
 
 App.commands.setHandler('show:architectureCommunication', function () {
     API.showArchitectureCommunication();
-    Backbone.history.navigate('architecture-and-communication');
+    Backbone.history.navigate('project/2015/163/g1516304/topics/dist/architecture-and-communication');
 });
 
 App.commands.setHandler('show:detection', function () {
     API.showDetection();
-    Backbone.history.navigate('detecting-botnets');
+    Backbone.history.navigate('project/2015/163/g1516304/topics/dist/detecting-botnets');
 });
 
 
 App.commands.setHandler('show:commandControl', function () {
     API.showCommandControl();
-    Backbone.history.navigate('command-and-control-structure');
+    Backbone.history.navigate('project/2015/163/g1516304/topics/dist/command-and-control-structure');
 });
 
 module.exports = {
