@@ -3,7 +3,7 @@ var JSON = [
         heading: "Infecting a computer",
         subHeading: "",
         infectionPartial: true,
-        image: "/img/global01.jpg",
+        image: "img/global01.jpg",
         id: "infection"
     },
     {
