@@ -13,7 +13,7 @@ App.on('start', function () {
     if (Backbone.history) {
         Backbone.history.start({
             pushState: true,
-            root: '/project/2015/163/g1516304/topics/'
+            root: '/project/2015/163/g1516304/topics/dist/'
         });
     }
 

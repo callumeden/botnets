@@ -1,10 +1,1 @@
-footer {
-  background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
-  color: #fff;
-  padding: 60px 0;
-  margin-bottom: 0; }
-  footer a {
-    color: #2d9968; }
-    footer a:hover {
-      color: #faa41c;
-      text-decoration: none; }
+footer{background:linear-gradient(160deg, #181c1d 0%, #475254 100%);color:#fff;padding:60px 0;margin-bottom:0}footer a{color:#2d9968}footer a:hover{color:#faa41c;text-decoration:none}
