@@ -10,15 +10,24 @@ App.addRegions({
 });
 
 App.on('start', function () {
-
     if (Backbone.history) {
         Backbone.history.start({
-            pushState: true
+            pushState: true,
+            root: '/project/2015/163/g1516304/topics/'
         });
     }
 
-    App.execute('show:header');
-    App.execute('show:footer');
+    this.execute('show:header');
+    this.execute('show:footer');
 });
+
+App.getCurrentRoute = function () {
+    return Backbone.history.fragment;
+};
+
+App.navigate = function (route, options) {
+    options || (options = {});
+    Backbone.history.navigate(route, options);
+};
 
 module.exports = App;

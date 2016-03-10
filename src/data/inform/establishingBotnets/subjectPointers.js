@@ -3,7 +3,7 @@ var JSON = [
         subjectTitle: "Infecting a computer",
         subjectContent: "How does a botmaster manage to gain control thousands of computers?",
         buttonText : "Read how »",
-        image: "img/computer-infection.jpg",
+        image: "/img/computer-infection.jpg",
         destination: "#infection"
     },
     {

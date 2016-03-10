@@ -1,3 +1,4 @@
+var Backbone = require('backbone');
 var Marionette = require('backbone.marionette');
 
 var AppRouter = Marionette.AppRouter.extend({
@@ -7,6 +8,10 @@ var AppRouter = Marionette.AppRouter.extend({
         }
 
         callback.apply(this, args);
+    },
+
+    getCurrentRoute: function () {
+        return Backbone.history.fragment;
     }
 });
 
