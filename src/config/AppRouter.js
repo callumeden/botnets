@@ -1,6 +1,7 @@
 var Backbone = require('backbone');
 
 var AppRouter = Backbone.Router.extend({
+
     execute: function (callback, args) {
         if (!callback) {
             return;
@@ -13,5 +14,6 @@ var AppRouter = Backbone.Router.extend({
         return Backbone.history.fragment;
     }
 });
+
 
 module.exports = AppRouter;

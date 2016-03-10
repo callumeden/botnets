@@ -10,15 +10,17 @@ App.addRegions({
 });
 
 App.on('start', function () {
+
+    this.execute('show:header');
+    this.execute('show:footer');
+
     if (Backbone.history) {
         Backbone.history.start({
             pushState: true,
             root: '/project/2015/163/g1516304/topics/dist/'
         });
-    }
 
-    this.execute('show:header');
-    this.execute('show:footer');
+    }
 });
 
 App.getCurrentRoute = function () {
