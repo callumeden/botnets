@@ -1,7 +1,6 @@
 var Backbone = require('backbone');
-var Marionette = require('backbone.marionette');
 
-var AppRouter = Marionette.AppRouter.extend({
+var AppRouter = Backbone.Router.extend({
     execute: function (callback, args) {
         if (!callback) {
             return;

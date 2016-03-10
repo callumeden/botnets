@@ -1,5 +1,4 @@
 var App = require('../../app');
-var Backbone = require('backbone');
 var AppRouter = require('../../config/appRouter');
 var EstablishingBotnetsController = require('./establishingBotnets/controller');
 var ArchitectureCommunicationController = require('./architectureCommunication/controller');
@@ -27,13 +26,27 @@ var API = {
 
 var InformAppRouter = AppRouter.extend({
 
-    controller: API,
-
-    appRoutes: {
+    routes: {
         'establishing-botnets': 'showEstablishingBotnets',
         'architecture-and-communication': 'showArchitectureCommunication',
         'detecting-botnets': 'showDetection',
         'command-and-control-structure': 'showCommandControl'
+    },
+
+    showEstablishingBotnets: function () {
+        API.showEstablishingBotnets();
+    },
+
+    showArchitectureCommunication: function () {
+        API.showArchitectureCommunication();
+    },
+
+    showDetection : function () {
+        API.showDetection();
+    },
+
+    showCommandControl: function () {
+        API.showCommandControl();
     }
 
 });

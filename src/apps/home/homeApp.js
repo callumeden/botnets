@@ -12,11 +12,13 @@ var API = {
 
 var HomeAppRouter = AppRouter.extend({
 
-    controller: API,
-
-    appRoutes: {
+    routes: {
         '' : 'showHome',
         'home' : 'showHome'
+    },
+
+    showHome: function () {
+        API.showHome();
     }
 
 });
