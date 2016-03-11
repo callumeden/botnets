@@ -53,6 +53,15 @@ var Controller = Marionette.Object.extend({
             default:
                 console.info('Oops.. Something went wrong');
         }
+
+        this.scrollToTop();
+    },
+
+    scrollToTop: function () {
+
+        if ($(window).scrollTop() > 250) {
+            $("html, body").animate({scrollTop : 0}, "slow");
+        }
     }
 
 });
