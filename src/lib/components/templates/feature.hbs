@@ -3,28 +3,48 @@
 {{/isFirst}}
 
 <div id="{{id}}" class="row featurette {{#isFirst}}first{{/isFirst}}">
-    <div class="col-md-7 {{#isPushed}} col-md-push-5 {{/isPushed}}">
-        <h2 class="featurette-heading">{{heading}}
-            <small class="text-muted">{{subHeading}}</small>
-        </h2>
-        <p class="lead">
-            {{>contentSelection}}
-        </p>
-    </div>
-    <div class="col-md-5 {{#isPushed}} col-md-pull-7 {{/isPushed}}">
-        <div class="featurette-image img-responsive center-block background-image hidden-xs"
-            {{#if image}}
-             style="background-image: url({{image}})"
-            {{/if}}>
+
+    {{^noImage}}
+        <div class="col-md-7 {{#isPushed}} col-md-push-5 {{/isPushed}}">
+            <h2 class="featurette-heading">{{heading}}
+                <small class="text-muted">{{subHeading}}</small>
+            </h2>
+            <p class="lead">
+                {{>contentSelection}}
+            </p>
         </div>
+    {{/noImage}}
 
-        {{#if imageCaption}}
-            <div class="figure-caption hidden-xs">
-                {{imageCaption}}
+    {{#noImage}}
+        <div class="col-md-12">
+            <h2 class="featurette-heading">{{heading}}
+                <small class="text-muted">{{subHeading}}</small>
+            </h2>
+            <p class="lead">
+                {{>contentSelection}}
+            </p>
+        </div>
+    {{/noImage}}
 
+
+    {{^noImage}}
+        <div class="col-md-5 {{#isPushed}} col-md-pull-7 {{/isPushed}}">
+            <div class="featurette-image img-responsive center-block background-image hidden-xs"
+                {{#if image}}
+                 style="background-image: url({{image}})"
+                {{/if}}>
             </div>
-        {{/if}}
-    </div>
+
+            {{#if imageCaption}}
+                <div class="figure-caption hidden-xs">
+                    {{imageCaption}}
+
+                </div>
+            {{/if}}
+        </div>
+    {{/noImage}}
+
 
     <div class="col-md-12" data-role="illegal-activities-container"></div>
+    
 </div>

@@ -63,3 +63,6 @@ pre {
     text-align: center;
     margin: 0;
     word-spacing: 4px; }
+
+dl {
+  font-size: 16px; }

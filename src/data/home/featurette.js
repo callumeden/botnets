@@ -15,7 +15,9 @@ var JSON = [
     {
         heading: "Cases of virulent botnets",
         subHeading: "",
-        image: ""
+        botnetExamples: true,
+        image: "",
+        noImage: true
     }
 ];
 

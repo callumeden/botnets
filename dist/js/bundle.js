@@ -52,7 +52,7 @@
 	__webpack_require__(10);
 	__webpack_require__(25);
 	__webpack_require__(30);
-	__webpack_require__(54);
+	__webpack_require__(55);
 	
 	App.start();
 
@@ -18404,7 +18404,7 @@
 
 	var App = __webpack_require__(1);
 	var HomeController = __webpack_require__(31);
-	var AppRouter = __webpack_require__(53);
+	var AppRouter = __webpack_require__(54);
 	
 	var API = {
 	
@@ -18457,7 +18457,7 @@
 	__webpack_require__(38);
 	__webpack_require__(39);
 	
-	var HomeData = __webpack_require__(50);
+	var HomeData = __webpack_require__(51);
 	
 	var HomeShowController = Marionette.Object.extend({
 	
@@ -18720,7 +18720,7 @@
 	var App = __webpack_require__(1);
 	var template = __webpack_require__(40);
 	var _ = __webpack_require__(3);
-	__webpack_require__(47);
+	__webpack_require__(48);
 	
 	var Feature = Marionette.ItemView.extend({
 	
@@ -18796,40 +18796,64 @@
 	},"3":function(depth0,helpers,partials,data) {
 	    return "first";
 	},"5":function(depth0,helpers,partials,data) {
+	    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+	
+	  return "        <div class=\"col-md-7 "
+	    + ((stack1 = helpers.blockHelperMissing.call(depth0,alias1((depth0 != null ? depth0.isPushed : depth0), depth0),{"name":"isPushed","hash":{},"fn":this.program(6, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\">\n            <h2 class=\"featurette-heading\">"
+	    + alias2(alias1((depth0 != null ? depth0.heading : depth0), depth0))
+	    + "\n                <small class=\"text-muted\">"
+	    + alias2(alias1((depth0 != null ? depth0.subHeading : depth0), depth0))
+	    + "</small>\n            </h2>\n            <p class=\"lead\">\n"
+	    + ((stack1 = this.invokePartial(__webpack_require__(41),depth0,{"name":"contentSelection","data":data,"indent":"                ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + "            </p>\n        </div>\n";
+	},"6":function(depth0,helpers,partials,data) {
 	    return " col-md-push-5 ";
-	},"7":function(depth0,helpers,partials,data) {
-	    return " col-md-pull-7 ";
-	},"9":function(depth0,helpers,partials,data) {
-	    return "             style=\"background-image: url("
-	    + this.escapeExpression(this.lambda((depth0 != null ? depth0.image : depth0), depth0))
-	    + ")\"\n            ";
+	},"8":function(depth0,helpers,partials,data) {
+	    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+	
+	  return "        <div class=\"col-md-12\">\n            <h2 class=\"featurette-heading\">"
+	    + alias2(alias1((depth0 != null ? depth0.heading : depth0), depth0))
+	    + "\n                <small class=\"text-muted\">"
+	    + alias2(alias1((depth0 != null ? depth0.subHeading : depth0), depth0))
+	    + "</small>\n            </h2>\n            <p class=\"lead\">\n"
+	    + ((stack1 = this.invokePartial(__webpack_require__(41),depth0,{"name":"contentSelection","data":data,"indent":"                ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + "            </p>\n        </div>\n";
+	},"10":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return "        <div class=\"col-md-5 "
+	    + ((stack1 = helpers.blockHelperMissing.call(depth0,this.lambda((depth0 != null ? depth0.isPushed : depth0), depth0),{"name":"isPushed","hash":{},"fn":this.program(11, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\">\n            <div class=\"featurette-image img-responsive center-block background-image hidden-xs\"\n"
+	    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.image : depth0),{"name":"if","hash":{},"fn":this.program(13, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ">\n            </div>\n\n"
+	    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.imageCaption : depth0),{"name":"if","hash":{},"fn":this.program(15, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "        </div>\n";
 	},"11":function(depth0,helpers,partials,data) {
-	    return "            <div class=\"figure-caption hidden-xs\">\n                "
+	    return " col-md-pull-7 ";
+	},"13":function(depth0,helpers,partials,data) {
+	    return "                 style=\"background-image: url("
+	    + this.escapeExpression(this.lambda((depth0 != null ? depth0.image : depth0), depth0))
+	    + ")\"\n                ";
+	},"15":function(depth0,helpers,partials,data) {
+	    return "                <div class=\"figure-caption hidden-xs\">\n                    "
 	    + this.escapeExpression(this.lambda((depth0 != null ? depth0.imageCaption : depth0), depth0))
-	    + "\n\n            </div>\n";
+	    + "\n\n                </div>\n";
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing, alias3=this.escapeExpression;
+	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
 	  return ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.isFirst : depth0), depth0),{"name":"isFirst","hash":{},"fn":this.noop,"inverse":this.program(1, data, 0),"data":data})) != null ? stack1 : "")
 	    + "\n<div id=\""
-	    + alias3(alias1((depth0 != null ? depth0.id : depth0), depth0))
+	    + this.escapeExpression(alias1((depth0 != null ? depth0.id : depth0), depth0))
 	    + "\" class=\"row featurette "
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.isFirst : depth0), depth0),{"name":"isFirst","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-	    + "\">\n    <div class=\"col-md-7 "
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.isPushed : depth0), depth0),{"name":"isPushed","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-	    + "\">\n        <h2 class=\"featurette-heading\">"
-	    + alias3(alias1((depth0 != null ? depth0.heading : depth0), depth0))
-	    + "\n            <small class=\"text-muted\">"
-	    + alias3(alias1((depth0 != null ? depth0.subHeading : depth0), depth0))
-	    + "</small>\n        </h2>\n        <p class=\"lead\">\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(41),depth0,{"name":"contentSelection","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
-	    + "        </p>\n    </div>\n    <div class=\"col-md-5 "
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.isPushed : depth0), depth0),{"name":"isPushed","hash":{},"fn":this.program(7, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-	    + "\">\n        <div class=\"featurette-image img-responsive center-block background-image hidden-xs\"\n"
-	    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.image : depth0),{"name":"if","hash":{},"fn":this.program(9, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-	    + ">\n        </div>\n\n"
-	    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.imageCaption : depth0),{"name":"if","hash":{},"fn":this.program(11, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-	    + "    </div>\n\n    <div class=\"col-md-12\" data-role=\"illegal-activities-container\"></div>\n</div>";
+	    + "\">\n\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.noImage : depth0), depth0),{"name":"noImage","hash":{},"fn":this.noop,"inverse":this.program(5, data, 0),"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.noImage : depth0), depth0),{"name":"noImage","hash":{},"fn":this.program(8, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.noImage : depth0), depth0),{"name":"noImage","hash":{},"fn":this.noop,"inverse":this.program(10, data, 0),"data":data})) != null ? stack1 : "")
+	    + "\n\n    <div class=\"col-md-12\" data-role=\"illegal-activities-container\"></div>\n    \n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -18848,15 +18872,19 @@
 	},"5":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(44),depth0,{"name":"honeypot","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(44),depth0,{"name":"botnetExamples","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"7":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(45),depth0,{"name":"anomalyDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(45),depth0,{"name":"honeypot","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"9":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(46),depth0,{"name":"dnsTraffic","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(46),depth0,{"name":"anomalyDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"11":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(47),depth0,{"name":"dnsTraffic","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
@@ -18864,11 +18892,13 @@
 	    + "\n"
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.botnetDescription : depth0), depth0),{"name":"botnetDescription","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.honeypot : depth0), depth0),{"name":"honeypot","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.botnetExamples : depth0), depth0),{"name":"botnetExamples","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.anomalyDetection : depth0), depth0),{"name":"anomalyDetection","hash":{},"fn":this.program(7, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.honeypot : depth0), depth0),{"name":"honeypot","hash":{},"fn":this.program(7, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic : depth0), depth0),{"name":"dnsTraffic","hash":{},"fn":this.program(9, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.anomalyDetection : depth0), depth0),{"name":"anomalyDetection","hash":{},"fn":this.program(9, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic : depth0), depth0),{"name":"dnsTraffic","hash":{},"fn":this.program(11, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -18895,7 +18925,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    The honeypot method allows a given control\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”,\n             International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.\">[1]\n    </button>\n\n    pc to be infected with malware and become part of the botnet which is to be monitored.\n    This pc will appear to be a regular member of the botnet, so will be have as such.\n    As a prerequisite one must know:\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paul Bächer, Thorsten Holz, Markus Kötter, Georg Wicherski, “Know your Enemy: Tracking\n            Botnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.\">[2]\n    </button>\n</p>\n\n<ul>\n    <li>DNS/IP-address of the IRC server and it's port number.</li>\n    <li>Password of the IRC server (optional)</li>\n    <li>Nickname of bot and ident structure</li>\n    <li>Channel to join and it's password (optional)</li>\n</ul>\n\n<p>\n    With the dummy PC enrolled in the Botnet it's behaviour can now be monitored, taking note of which DNS/IP-adderss the bot connects to along with other information vital to the operation of the botnet.\n</p>";
+	    return "<dl class=\"dl-horizontal\">\n    <dt class=\"col-sm-3\">2007 Zeus</dt>\n    <dd class=\"col-sm-9\">First discovered in 2007, it was designed to secretly monitor a victim’s PC and steal banking information.</dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">The FBI estimates the botnet may have stolen hundreds of millions of dollars.</dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">A leak in the Zeus source code lead to an explosion of Zeus variants</dd>\n\n    <dt class=\"col-sm-3\">2008 Lethic</dt>\n    <dd class=\"col-sm-9\">At its peak, the botnet had 300, 000 computers under its control and was respoinsbile for sending tens of billions of messages per day which accounted for 8 - 10% of global spam.</dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">It was partially dismantled in 2010 by Neustar, Inc but the owners were able to regain full control two months later</dd>\n\n    <dt class=\"col-sm-3\">2010 Waldac</dt>\n    <dd class=\"col-sm-9\">The botnet is best known by its spam generation capabilities.</dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">At its peak this botnet had almost 100,000 infected computers at its disposal that were capable of sending out 1.5 billion messages per day.</dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">In early 2010, Microsoft seized control of Waledac’s C&C servers and crippled the botnet.</dd>\n\n\n    <dt class=\"col-sm-3\">2011 ZeroAccess</dt>\n    <dd class=\"col-sm-9\">Known to have infected between one and two million computers, and it is estimated that the zombie network is still generating millions of dollars per year in bitcoin mining and click fraud.</dd>\n</dl>";
 	},"useData":true});
 
 /***/ },
@@ -18904,7 +18934,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    There are many exisitng algorithms for anomaly detection\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3].\n    </button>\n\n    These techniques exist to establish a sound process to find anomalous data in a data set. These methods usually involve a comparison between data points against the underlying distribution of typical behaviours and hence determining if they are indeed anomalous. Examples of these techniques include:\n    <b>Chebyshev’s Inequality</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4],\n    </button>\n\n    <b>Mahalanobis Distance</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5],\n    </button>\n\n    and a simplified equivalent\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n</p>\n\n<p>\n    Chebyshev’s Inequality, where\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.\">\n        [7]\n    </button>\n\n    X is a random variable k > 0 is a parameter:\n</p>\n\n<pre>\n    <p>P(|X - E(X)| &ge; K&sigma;) &le; 1&frasl;K^2</p>\n</pre>\n\n<p>\n    This formula sets an upper bound of points of bvalue more than k standard deviations away from the population mean\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    Thus Chebyshev’s Inequality states that not more than 1/k^2 of the distribution's values are further than k standard deviations away from the mean\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"https://en.wikipedia.org/wiki/Chebyshev%27s_inequality, accessed at 16:23 - 06/03/2016\">\n        [8].\n    </button>\n\n    We are taking data points that are more than k standard deviations from the mean to be anomalous\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    We are using the object’s distance away from the centre of the distribution as this measure\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5].\n    </button>\n\n    This is calculated using Mahalanobis distance.\n</p>\n\n<p>\n\n    <i>\n        Simplified Mahalanobis Distance, where\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n            [3].\n        </button>\n        n is no. of attributes, is the vector of standard deviations for each attribute of an object, ɑ is a smoothing constant:\n    </i>\n</p>\n\n<pre>\n    <p>mahalanobis'(x,y) = &sum; i=1 ^n (|xi-yi|&frasl;&sigma;yi + &alpha;)</p>\n</pre>\n\n\n<p>\n    An issue may arise where the computation of the inverse of the covariance matrix is expensive, in this case a simplification has been formulated\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n    The simplified mahalanobis distance equivalent relies on the assumption\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n\n    that the elements of σ are independent.\n    The smoothing constant exists to account for when attributes happen to be constant across recorded data points\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n</p>\n";
+	    return "<p>\n    The honeypot method allows a given control\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”,\n             International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.\">[1]\n    </button>\n\n    pc to be infected with malware and become part of the botnet which is to be monitored.\n    This pc will appear to be a regular member of the botnet, so will be have as such.\n    As a prerequisite one must know:\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paul Bächer, Thorsten Holz, Markus Kötter, Georg Wicherski, “Know your Enemy: Tracking\n            Botnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.\">[2]\n    </button>\n</p>\n\n<ul>\n    <li>DNS/IP-address of the IRC server and it's port number.</li>\n    <li>Password of the IRC server (optional)</li>\n    <li>Nickname of bot and ident structure</li>\n    <li>Channel to join and it's password (optional)</li>\n</ul>\n\n<p>\n    With the dummy PC enrolled in the Botnet it's behaviour can now be monitored, taking note of which DNS/IP-adderss the bot connects to along with other information vital to the operation of the botnet.\n</p>";
 	},"useData":true});
 
 /***/ },
@@ -18913,16 +18943,25 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    The problem with monitoring DNS traffic for Botnet detection is that DNS addresses used by botnets are also used for legitimate purposes\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Wills, C. E., Mikhailov, M. & Shang, H. (2003) Inferring Relative Popularity of Internet Applications by Actively Querying DNS Caches. Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement. PP . 78-90.\">\n        [9].\n    </button>\n\n    It is important to understand how Botnets behave before drawing any conclusions on observations\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ahmed M. Manasrah, Awsan Hasan, “Detecting Botnet Activities Based on Abnormal DNS traffic”, International Journal of Computer Science and Information Security, Vol. 6, No.1, 2009\">\n        [10].\n    </button>\n\n</p>";
+	    return "<p>\n    There are many exisitng algorithms for anomaly detection\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3].\n    </button>\n\n    These techniques exist to establish a sound process to find anomalous data in a data set. These methods usually involve a comparison between data points against the underlying distribution of typical behaviours and hence determining if they are indeed anomalous. Examples of these techniques include:\n    <b>Chebyshev’s Inequality</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4],\n    </button>\n\n    <b>Mahalanobis Distance</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5],\n    </button>\n\n    and a simplified equivalent\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n</p>\n\n<p>\n    Chebyshev’s Inequality, where\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.\">\n        [7]\n    </button>\n\n    X is a random variable k > 0 is a parameter:\n</p>\n\n<pre>\n    <p>P(|X - E(X)| &ge; K&sigma;) &le; 1&frasl;K^2</p>\n</pre>\n\n<p>\n    This formula sets an upper bound of points of bvalue more than k standard deviations away from the population mean\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    Thus Chebyshev’s Inequality states that not more than 1/k^2 of the distribution's values are further than k standard deviations away from the mean\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"https://en.wikipedia.org/wiki/Chebyshev%27s_inequality, accessed at 16:23 - 06/03/2016\">\n        [8].\n    </button>\n\n    We are taking data points that are more than k standard deviations from the mean to be anomalous\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    We are using the object’s distance away from the centre of the distribution as this measure\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5].\n    </button>\n\n    This is calculated using Mahalanobis distance.\n</p>\n\n<p>\n\n    <i>\n        Simplified Mahalanobis Distance, where\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n            [3].\n        </button>\n        n is no. of attributes, is the vector of standard deviations for each attribute of an object, ɑ is a smoothing constant:\n    </i>\n</p>\n\n<pre>\n    <p>mahalanobis'(x,y) = &sum; i=1 ^n (|xi-yi|&frasl;&sigma;yi + &alpha;)</p>\n</pre>\n\n\n<p>\n    An issue may arise where the computation of the inverse of the covariance matrix is expensive, in this case a simplification has been formulated\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n    The simplified mahalanobis distance equivalent relies on the assumption\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n\n    that the elements of σ are independent.\n    The smoothing constant exists to account for when attributes happen to be constant across recorded data points\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n</p>\n";
 	},"useData":true});
 
 /***/ },
 /* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    The problem with monitoring DNS traffic for Botnet detection is that DNS addresses used by botnets are also used for legitimate purposes\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Wills, C. E., Mikhailov, M. & Shang, H. (2003) Inferring Relative Popularity of Internet Applications by Actively Querying DNS Caches. Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement. PP . 78-90.\">\n        [9].\n    </button>\n\n    It is important to understand how Botnets behave before drawing any conclusions on observations\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ahmed M. Manasrah, Awsan Hasan, “Detecting Botnet Activities Based on Abnormal DNS traffic”, International Journal of Computer Science and Information Security, Vol. 6, No.1, 2009\">\n        [10].\n    </button>\n\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(48);
+	var template = __webpack_require__(49);
 	
 	var ScrollSpy = Marionette.ItemView.extend({
 	
@@ -18957,7 +18996,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -18965,12 +19004,12 @@
 	    var stack1;
 	
 	  return "<h3>Performing illegal activities</h3>\n\n<div class=\"scrollspy-container\">\n    <nav id=\"scrollspy-infection\" class=\"navbar navbar-inverse navbar-static\">\n        <div class=\"container-fluid\">\n            <div class=\"navbar-header\">\n\n                <button class=\"navbar-toggle collapsed\" type=\"button\" data-toggle=\"collapse\"\n                        data-target=\".scrollspy-navbar\"><span\n                        class=\"sr-only\">Toggle navigation</span> <span\n                        class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n\n                <div class=\"collapse navbar-collapse scrollspy-navbar\">\n                    <ul data-role=\"content-links\" class=\"nav navbar-nav\">\n                        <li data-role=\"content-link\" class=\"active\"><a href=\"#DDos\">DDos</a></li>\n                        <li class=\"\"><a href=\"#ppcFraud\">PPC fraud</a></li>\n                        <li class=\"\"><a href=\"#seoPoisoning\">SEO Poisoning</a></li>\n                        <li class=\"\"><a href=\"#bitcoinMining\">Bitcoin Mining</a></li>\n                        <li class=\"\"><a href=\"#victim\">Are you a victim?</a></li>\n                    </ul>\n                </div>\n\n            </div>\n        </div>\n    </nav>\n\n    <div data-spy=\"scroll\" data-offset=\"0\" data-target=\"#scrollspy-infection\" class=\"scrollspy-main\">\n\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(49),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(50),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "\n    </div>\n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -18979,11 +19018,11 @@
 	},"useData":true});
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var carousel = __webpack_require__(51);
-	var featurette = __webpack_require__(52);
+	var carousel = __webpack_require__(52);
+	var featurette = __webpack_require__(53);
 	
 	var JSON = {
 	    carousel: carousel,
@@ -18993,34 +19032,34 @@
 	module.exports = JSON;
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports) {
 
 	var JSON = [
 	    {
 	        title: "How are botnets established?",
-	        subTitle: "They just are",
+	        subTitle: "How does a computer become a bot?",
 	        ctaText: "Read more",
 	        ctaInfo: "navigate-establishingBotnets",
 	        imgSrc: ""
 	    },
 	    {
 	        title: "What architecture and communication protocols do they use?",
-	        subTitle: "Bare info from J fox",
+	        subTitle: "How do infected computers communicate and execute tasks?",
 	        ctaText: "Read more",
 	        ctaInfo: "navigate-architectureCommunication",
 	        imgSrc: ""
 	    },
 	    {
 	        title: "How to detect them?",
-	        subTitle: "JJ's got this fam",
+	        subTitle: "Honeypot, Anomaly Detection and DNS Traffic techniques are used to detect botnets",
 	        ctaText: "Read more",
 	        ctaInfo: "navigate-detection",
 	        imgSrc: ""
 	    },
 	    {
 	        title: "How to uncover their C & C structure and behavior? ",
-	        subTitle: "what an unreal fro",
+	        subTitle: "",
 	        ctaText: "Read more",
 	        ctaInfo: "navigate-ccStructure",
 	        imgSrc: ""
@@ -19030,7 +19069,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19050,14 +19089,16 @@
 	    {
 	        heading: "Cases of virulent botnets",
 	        subHeading: "",
-	        image: ""
+	        botnetExamples: true,
+	        image: "",
+	        noImage: true
 	    }
 	];
 	
 	module.exports = JSON;
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Backbone = __webpack_require__(2);
@@ -19082,15 +19123,15 @@
 
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var App = __webpack_require__(1);
-	var AppRouter = __webpack_require__(53);
-	var EstablishingBotnetsController = __webpack_require__(55);
-	var ArchitectureCommunicationController = __webpack_require__(66);
-	var DetectionController = __webpack_require__(71);
-	var CommandController = __webpack_require__(78);
+	var AppRouter = __webpack_require__(54);
+	var EstablishingBotnetsController = __webpack_require__(56);
+	var ArchitectureCommunicationController = __webpack_require__(67);
+	var DetectionController = __webpack_require__(72);
+	var CommandController = __webpack_require__(79);
 	
 	var API = {
 	
@@ -19172,19 +19213,19 @@
 
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(56);
+	var appData = __webpack_require__(57);
 	
-	__webpack_require__(60);
-	__webpack_require__(62);
+	__webpack_require__(61);
+	__webpack_require__(63);
 	__webpack_require__(39);
 	
-	__webpack_require__(64);
+	__webpack_require__(65);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19246,12 +19287,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var subjectPointers = __webpack_require__(57);
-	var featurette = __webpack_require__(58);
-	var jumbotron = __webpack_require__(59);
+	var subjectPointers = __webpack_require__(58);
+	var featurette = __webpack_require__(59);
+	var jumbotron = __webpack_require__(60);
 	
 	var JSON = {
 	    subjectPointers: subjectPointers,
@@ -19262,7 +19303,7 @@
 	module.exports= JSON;
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19292,7 +19333,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19324,7 +19365,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19335,12 +19376,12 @@
 	module.exports = JSON;
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var App = __webpack_require__(1);
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(61);
+	var template = __webpack_require__(62);
 	
 	var Pointer = Marionette.ItemView.extend({
 	
@@ -19372,7 +19413,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19403,12 +19444,12 @@
 	},"useData":true});
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(63);
+	var template = __webpack_require__(64);
 	
 	var Jumbotron = Marionette.ItemView.extend({
 	
@@ -19422,7 +19463,7 @@
 
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19437,11 +19478,11 @@
 	},"useData":true});
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(65);
+	var template = __webpack_require__(66);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19464,7 +19505,7 @@
 
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19473,19 +19514,19 @@
 	},"useData":true});
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(67);
+	var appData = __webpack_require__(68);
 	
-	__webpack_require__(60);
-	__webpack_require__(62);
+	__webpack_require__(61);
+	__webpack_require__(63);
 	__webpack_require__(39);
 	
-	__webpack_require__(69);
+	__webpack_require__(70);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19547,10 +19588,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(68);
+	var jumbotron = __webpack_require__(69);
 	var JSON = {
 	    jumbotron : jumbotron
 	};
@@ -19558,7 +19599,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19569,11 +19610,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(70);
+	var template = __webpack_require__(71);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19596,7 +19637,7 @@
 
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19605,19 +19646,19 @@
 	},"useData":true});
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(72);
+	var appData = __webpack_require__(73);
 	
-	__webpack_require__(60);
-	__webpack_require__(62);
+	__webpack_require__(61);
+	__webpack_require__(63);
 	__webpack_require__(39);
 	
-	__webpack_require__(76);
+	__webpack_require__(77);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19679,12 +19720,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(73);
-	var featurette = __webpack_require__(74);
-	var subjectPointers = __webpack_require__(75);
+	var jumbotron = __webpack_require__(74);
+	var featurette = __webpack_require__(75);
+	var subjectPointers = __webpack_require__(76);
 	
 	var JSON = {
 	    jumbotron: jumbotron,
@@ -19695,7 +19736,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19706,7 +19747,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19738,7 +19779,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19768,11 +19809,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(77);
+	var template = __webpack_require__(78);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19795,7 +19836,7 @@
 
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19804,19 +19845,19 @@
 	},"useData":true});
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(79);
+	var appData = __webpack_require__(80);
 	
-	__webpack_require__(60);
-	__webpack_require__(62);
+	__webpack_require__(61);
+	__webpack_require__(63);
 	__webpack_require__(39);
 	
-	__webpack_require__(81);
+	__webpack_require__(82);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19878,10 +19919,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(80);
+	var jumbotron = __webpack_require__(81);
 	
 	var JSON = {
 	    jumbotron: jumbotron
@@ -19890,7 +19931,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19901,11 +19942,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(82);
+	var template = __webpack_require__(83);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19928,7 +19969,7 @@
 
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
