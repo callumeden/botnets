@@ -2,17 +2,35 @@ var Marionette = require('backbone.marionette');
 var App = require('../../../app');
 var template = require('../templates/feature.hbs');
 var _ = require('underscore');
+require('./scrollspy');
 
 var Feature = Marionette.ItemView.extend({
 
     template: template,
 
     ui: {
-        tooltips: '[data-toggle="tooltip"]'
+        tooltips: '[data-toggle="tooltip"]',
+        illegalActivitiesContainer : '[data-role="illegal-activities-container"]'
     },
 
     events : {
         'click @ui.tooltips' : 'scrollToBottom'
+    },
+
+    onShow: function () {
+        if (this.model.get('botnetThreats') == true) {
+            this.showIllegalActivities();
+        }
+    },
+
+    showIllegalActivities: function () {
+        var view = App.request('new:scrollspy:view');
+
+        var region = new Marionette.Region({
+            el: this.ui.illegalActivitiesContainer
+        });
+
+        region.show(view);
     },
 
     templateHelpers: function () {

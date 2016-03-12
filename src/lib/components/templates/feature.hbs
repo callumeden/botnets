@@ -19,16 +19,12 @@
         </div>
 
         {{#if imageCaption}}
-        <div class="figure-caption hidden-xs">
-            {{imageCaption}}
+            <div class="figure-caption hidden-xs">
+                {{imageCaption}}
 
-        </div>
+            </div>
         {{/if}}
     </div>
 
-    {{#botnetThreats}}
-        <div class="col-md-12">
-            {{> illegalActivities}}
-        </div>
-    {{/botnetThreats}}
+    <div class="col-md-12" data-role="illegal-activities-container"></div>
 </div>
