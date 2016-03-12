@@ -5,6 +5,6 @@ footer {
   margin-bottom: 0; }
   footer a {
     color: #2d9968; }
-    footer a:hover {
+    footer a:hover, footer a:focus {
       color: #faa41c;
       text-decoration: none; }

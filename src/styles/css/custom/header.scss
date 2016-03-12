@@ -30,35 +30,38 @@
 
   }
 
-  @media (min-width: $screen-sm) {
+  .navbar.affix {
+    background: $gradient-blue-background;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px white;
 
-    .navbar.affix {
-      background: $gradient-blue-background;
-      width: 100%;
-      box-shadow: 1px 1px 1px 1px white;
+    a {
+      color: white;
 
-      a {
-        color: white;
-
-        &:hover {
-          color: #faa41c;
-        }
+      &:hover {
+        color: #faa41c;
       }
-
-    }
-
-    .navbar-inverse.affix-top {
-      margin-top: 20px;
-      background: transparent;
-      border-color: transparent;
-
-      a:hover, a:focus {
-        color: black;
-      }
-
     }
 
   }
+
+  .navbar-inverse.affix-top {
+
+    @media (max-width : $screen-sm) {
+      background: $gradient-blue-background;
+      margin-top: 0;
+    }
+
+    margin-top: 20px;
+    background: transparent;
+    border-color: transparent;
+
+    a:hover, a:focus {
+      color: black;
+    }
+
+  }
+
 }
 
 .navbar-inverse {

@@ -23,12 +23,13 @@ var Controller = Marionette.Object.extend({
     },
 
     setNavigationHandlers: function (view) {
-        view.on('navigate:home', this.navigateHome);
+        view.on('navigate:home', _.bind(this.navigateHome, this));
         view.on('childview:click:link', _.bind(this.handleNavigation, this));
     },
 
     navigateHome: function () {
         App.execute('show:home');
+        this.scrollToTop();
     },
 
     handleNavigation: function (view) {

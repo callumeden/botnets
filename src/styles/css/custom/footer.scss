@@ -7,7 +7,7 @@ footer {
   a {
     color: #2d9968;
 
-    &:hover {
+    &:hover, &:focus {
       color: #faa41c;
       text-decoration: none;
     }

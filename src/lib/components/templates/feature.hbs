@@ -12,10 +12,23 @@
         </p>
     </div>
     <div class="col-md-5 {{#isPushed}} col-md-pull-7 {{/isPushed}}">
-        <div class="featurette-image img-responsive center-block background-image"
+        <div class="featurette-image img-responsive center-block background-image hidden-xs"
             {{#if image}}
              style="background-image: url({{image}})"
             {{/if}}>
         </div>
+
+        {{#if imageCaption}}
+        <div class="figure-caption hidden-xs">
+            {{imageCaption}}
+
+        </div>
+        {{/if}}
     </div>
+
+    {{#botnetThreats}}
+        <div class="col-md-12">
+            {{> illegalActivities}}
+        </div>
+    {{/botnetThreats}}
 </div>

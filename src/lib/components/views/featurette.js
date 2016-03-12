@@ -11,6 +11,10 @@ var Feature = Marionette.ItemView.extend({
         tooltips: '[data-toggle="tooltip"]'
     },
 
+    events : {
+        'click @ui.tooltips' : 'scrollToBottom'
+    },
+
     templateHelpers: function () {
         var modelIndex = _.indexOf(this.model.collection.models, this.model);
 
@@ -27,6 +31,10 @@ var Feature = Marionette.ItemView.extend({
     activateTooltips: function () {
         this.bindUIElements();
         this.ui.tooltips.tooltip();//Bootstrap JS method to activate tooltips
+    },
+
+    scrollToBottom: function () {
+        $("html, body").animate({ scrollTop: $('footer').offset().top - 100 }, "slow");
     }
 
 });

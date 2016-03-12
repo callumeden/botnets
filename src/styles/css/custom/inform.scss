@@ -84,5 +84,21 @@ button.reference {
 .jumbotron {
   color: white;
   margin-top: 16px;
-  background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
+  background: $gradient-blue-background;
+}
+
+pre {
+
+  padding-bottom: 0;
+  background: $gradient-blue-background;
+  color: #fff;
+  border-radius: 10px;
+
+  p {
+    text-align: center;
+    margin: 0;
+    word-spacing: 4px;
+  }
+
+
 }

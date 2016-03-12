@@ -53,3 +53,13 @@ button.reference {
   color: white;
   margin-top: 16px;
   background: linear-gradient(160deg, #181c1d 0%, #475254 100%); }
+
+pre {
+  padding-bottom: 0;
+  background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
+  color: #fff;
+  border-radius: 10px; }
+  pre p {
+    text-align: center;
+    margin: 0;
+    word-spacing: 4px; }

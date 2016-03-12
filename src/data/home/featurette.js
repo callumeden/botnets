@@ -6,10 +6,11 @@ var JSON = [
         image: "img/scroll-crossbones.jpg"
     },
     {
-        heading: "What are botnets used for?",
+        heading: "Botnet Threats",
         subHeading: "",
-        botnetUses: true,
-        image: "img/DDosAttack.jpg"
+        botnetThreats: true,
+        image: "img/DDosAttack.jpg",
+        imageCaption: "An image showing a DDoS attack on a location in America. The attacks originate from thousands of different geographical locations, which is often symbolic of a botnet based attack."
     },
     {
         heading: "Cases of virulent botnets",
