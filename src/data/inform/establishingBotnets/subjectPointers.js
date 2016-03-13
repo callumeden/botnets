@@ -7,11 +7,11 @@ var JSON = [
         destination: "#infection"
     },
     {
-        subjectTitle: "Technicalities...",
-        subjectContent: "............................",
+        subjectTitle: "Avoiding Detection",
+        subjectContent: "How bots perform tasks without being detected by the users",
         buttonText: "View details »",
         image: "",
-        destination : "#technicalities"
+        destination : "#avoidingDetection"
     },
     {
         subjectTitle: "Botnet Motivation",

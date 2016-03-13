@@ -15,7 +15,7 @@ var JSON = [
     },
     {
         title: "How to detect them?",
-        subTitle: "Honeypot, Anomaly Detection and DNS Traffic techniques are used to detect botnets",
+        subTitle: "Honeypot, Anomaly Detection and DNS Traffic detection techniques and examples",
         ctaText: "Read more",
         ctaInfo: "navigate-detection",
         imgSrc: ""

@@ -6,13 +6,16 @@ var JSON = [
         image: "img/global01.jpg",
         id: "infection"
     },
+
+    {
+        heading: "After an infection",
+        postInfection : true
+    },
     {
 
-        heading: "Technicalities stuff",
-        subHeading: "...",
-        motivationPartial: true,
-        image: "",
-        id: "technicalities"
+        heading: "Avoiding detection",
+        avoidingDetection: true,
+        id: "avoidingDetection"
     },
     {
 
