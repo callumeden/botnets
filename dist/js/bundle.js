@@ -52,7 +52,7 @@
 	__webpack_require__(10);
 	__webpack_require__(25);
 	__webpack_require__(30);
-	__webpack_require__(56);
+	__webpack_require__(58);
 	
 	App.start();
 
@@ -18404,7 +18404,7 @@
 
 	var App = __webpack_require__(1);
 	var HomeController = __webpack_require__(31);
-	var AppRouter = __webpack_require__(55);
+	var AppRouter = __webpack_require__(57);
 	
 	var API = {
 	
@@ -18457,7 +18457,7 @@
 	__webpack_require__(38);
 	__webpack_require__(39);
 	
-	var HomeData = __webpack_require__(52);
+	var HomeData = __webpack_require__(54);
 	
 	var HomeShowController = Marionette.Object.extend({
 	
@@ -18720,7 +18720,7 @@
 	var App = __webpack_require__(1);
 	var template = __webpack_require__(40);
 	var _ = __webpack_require__(3);
-	__webpack_require__(49);
+	__webpack_require__(51);
 	
 	var Feature = Marionette.ItemView.extend({
 	
@@ -18876,19 +18876,27 @@
 	},"7":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(45),depth0,{"name":"honeypot","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(45),depth0,{"name":"ircSummary","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"9":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(46),depth0,{"name":"anomalyDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(46),depth0,{"name":"dnsSummary","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"11":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(47),depth0,{"name":"dnsTraffic","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(47),depth0,{"name":"honeypot","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"13":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(48),depth0,{"name":"infection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(48),depth0,{"name":"anomalyDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"15":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(49),depth0,{"name":"dnsTraffic","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"17":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(50),depth0,{"name":"infection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
@@ -18898,13 +18906,17 @@
 	    + "\n"
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.botnetExamples : depth0), depth0),{"name":"botnetExamples","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.honeypot : depth0), depth0),{"name":"honeypot","hash":{},"fn":this.program(7, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.ircSummary : depth0), depth0),{"name":"ircSummary","hash":{},"fn":this.program(7, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.anomalyDetection : depth0), depth0),{"name":"anomalyDetection","hash":{},"fn":this.program(9, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsSummary : depth0), depth0),{"name":"dnsSummary","hash":{},"fn":this.program(9, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic : depth0), depth0),{"name":"dnsTraffic","hash":{},"fn":this.program(11, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.honeypot : depth0), depth0),{"name":"honeypot","hash":{},"fn":this.program(11, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.infection : depth0), depth0),{"name":"infection","hash":{},"fn":this.program(13, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.anomalyDetection : depth0), depth0),{"name":"anomalyDetection","hash":{},"fn":this.program(13, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic : depth0), depth0),{"name":"dnsTraffic","hash":{},"fn":this.program(15, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.infection : depth0), depth0),{"name":"infection","hash":{},"fn":this.program(17, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -18940,7 +18952,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    The honeypot method allows a given control\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”,\n             International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.\">[1]\n    </button>\n\n    pc to be infected with malware and become part of the botnet which is to be monitored.\n    This pc will appear to be a regular member of the botnet, so will be have as such.\n    As a prerequisite one must know:\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paul Bächer, Thorsten Holz, Markus Kötter, Georg Wicherski, “Know your Enemy: Tracking\n            Botnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.\">[2]\n    </button>\n</p>\n\n<ul>\n    <li>DNS/IP-address of the IRC server and it's port number.</li>\n    <li>Password of the IRC server (optional)</li>\n    <li>Nickname of bot and ident structure</li>\n    <li>Channel to join and it's password (optional)</li>\n</ul>\n\n<p>\n    With the dummy PC enrolled in the Botnet it's behaviour can now be monitored, taking note of which DNS/IP-adderss the bot connects to along with other information vital to the operation of the botnet.\n</p>";
+	    return "<p>\n    Internet relay chat is a way to transmit messages within a client/server network scheme\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO: REFERENCE\">\n        [25].\n    </button>\n\n    This is a perfect match for a Botnet under a Command and Control structure; examples of legitimate uses for IRC are\n    video games and private messaging services\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO: REFERENCE\">\n        [25].\n    </button>\n\n    However in recent times\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO: REFERENCE\">\n        [26]\n    </button>\n\n    Botnets have moved away from using IRC because HTTPS provides many benefits such as increased stealthiness in\n    communication to, and relocation of, the C&C server\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO: REFERENCE\">\n        [26].\n    </button>\n</p>";
 	},"useData":true});
 
 /***/ },
@@ -18949,7 +18961,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    There are many exisitng algorithms for anomaly detection\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3].\n    </button>\n\n    These techniques exist to establish a sound process to find anomalous data in a data set. These methods usually involve a comparison between data points against the underlying distribution of typical behaviours and hence determining if they are indeed anomalous. Examples of these techniques include:\n    <b>Chebyshev’s Inequality</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4],\n    </button>\n\n    <b>Mahalanobis Distance</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5],\n    </button>\n\n    and a simplified equivalent\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n</p>\n\n<p>\n    Chebyshev’s Inequality, where\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.\">\n        [7]\n    </button>\n\n    X is a random variable k > 0 is a parameter:\n</p>\n\n<pre>\n    <p>P(|X - E(X)| &ge; K&sigma;) &le; 1&frasl;K^2</p>\n</pre>\n\n<p>\n    This formula sets an upper bound of points of bvalue more than k standard deviations away from the population mean\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    Thus Chebyshev’s Inequality states that not more than 1/k^2 of the distribution's values are further than k standard deviations away from the mean\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"https://en.wikipedia.org/wiki/Chebyshev%27s_inequality, accessed at 16:23 - 06/03/2016\">\n        [8].\n    </button>\n\n    We are taking data points that are more than k standard deviations from the mean to be anomalous\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    We are using the object’s distance away from the centre of the distribution as this measure\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5].\n    </button>\n\n    This is calculated using Mahalanobis distance.\n</p>\n\n<p>\n\n    <i>\n        Simplified Mahalanobis Distance, where\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n            [3].\n        </button>\n        n is no. of attributes, is the vector of standard deviations for each attribute of an object, ɑ is a smoothing constant:\n    </i>\n</p>\n\n<pre>\n    <p>mahalanobis'(x,y) = &sum; i=1 ^n (|xi-yi|&frasl;&sigma;yi + &alpha;)</p>\n</pre>\n\n\n<p>\n    An issue may arise where the computation of the inverse of the covariance matrix is expensive, in this case a simplification has been formulated\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n    The simplified mahalanobis distance equivalent relies on the assumption\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n\n    that the elements of σ are independent.\n    The smoothing constant exists to account for when attributes happen to be constant across recorded data points\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n</p>\n";
+	    return "<p>\n    DNS stands for Domain Name System. The DNS enables an internet address to have a unique globally valid name,\n    independent concrete address/location\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [13].\n    </button>\n\n    To access a domain name, first a query must be sent to the local DNS servers, these DNS databases receive the query\n    and convert it into the IP address to be returned\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10,\n    </button>\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n         13].\n    </button>\n</p>";
 	},"useData":true});
 
 /***/ },
@@ -18958,7 +18970,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    The problem with monitoring DNS traffic for Botnet detection is that DNS addresses used by botnets are also used for legitimate purposes\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Wills, C. E., Mikhailov, M. & Shang, H. (2003) Inferring Relative Popularity of Internet Applications by Actively Querying DNS Caches. Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement. PP . 78-90.\">\n        [9].\n    </button>\n\n    It is important to understand how Botnets behave before drawing any conclusions on observations\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ahmed M. Manasrah, Awsan Hasan, “Detecting Botnet Activities Based on Abnormal DNS traffic”, International Journal of Computer Science and Information Security, Vol. 6, No.1, 2009\">\n        [10].\n    </button>\n\n</p>";
+	    return "<p>\n    The honeypot method allows a given control\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”,\n             International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.\">[1]\n    </button>\n\n    pc to be infected with malware and become part of the botnet which is to be monitored.\n    This pc will appear to be a regular member of the botnet, so will be have as such.\n    As a prerequisite one must know:\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paul Bächer, Thorsten Holz, Markus Kötter, Georg Wicherski, “Know your Enemy: Tracking\n            Botnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.\">[2]\n    </button>\n</p>\n\n<ul>\n    <li>DNS/IP-address of the IRC server and it's port number.</li>\n    <li>Password of the IRC server (optional)</li>\n    <li>Nickname of bot and ident structure</li>\n    <li>Channel to join and it's password (optional)</li>\n</ul>\n\n<p>\n    With the dummy PC enrolled in the Botnet it's behaviour can now be monitored, taking note of which DNS/IP-adderss the bot connects to along with other information vital to the operation of the botnet.\n</p>";
 	},"useData":true});
 
 /***/ },
@@ -18967,16 +18979,34 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    Many different avenues are used to infiltrate target computers in order to spread bots.\n</p>\n\n<div>\n    <dl class=\"dl-horizontal\">\n        <dt class=\"col-sm-3\">Web downloads</dt>\n        <dd class=\"col-sm-9\">A recent google study showed that web-based infections are now commonplace [15].</dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\">Web-based malware creates botnet-like structures in which compromised\n            machines query web servers periodically for instructions and updates.\n        </dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\"> Simply visiting a malicious site with a PC that hasn’t been kept current\n            with security patches and antivirus can download and execute malware on the user’s PC, thus adding to that\n            botnet’s ranks. [18]\n        </dd>\n\n        <dt class=\"col-sm-3\">Mail attachments</dt>\n        <dd class=\"col-sm-9\">Mail attachments, such as Trojan and Virus attachments, also combined with manipulative\n            social\n            engineering techniques are used to entice the target computers user to uknowingly install the malware.\n        </dd>\n\n        <dt class=\"col-sm-3\">Pirated software</dt>\n        <dd class=\"col-sm-9\">Malware developers often hide malicious code inside a software download, which then\n            installs itself on a victim’s machine when the user opens the executable.\n        </dd>\n\n        <dt class=\"col-sm-3\">Worms</dt>\n        <dd class=\"col-sm-9\">Automated worms that actively scan the internet for vulnerable systems to break into.</dd>\n\n        <dt class=\"col-sm-3\">Malicious websites</dt>\n        <dd class=\"col-sm-9\">Websites are created that are looking to hijack a users computer through web browser\n            security\n            flaws [17].\n        </dd>\n    </dl>\n</div>\n\n\n";
+	    return "<p>\n    There are many exisitng algorithms for anomaly detection\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3].\n    </button>\n\n    These techniques exist to establish a sound process to find anomalous data in a data set. These methods usually involve a comparison between data points against the underlying distribution of typical behaviours and hence determining if they are indeed anomalous. Examples of these techniques include:\n    <b>Chebyshev’s Inequality</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4],\n    </button>\n\n    <b>Mahalanobis Distance</b>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5],\n    </button>\n\n    and a simplified equivalent\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n</p>\n\n<p>\n    Chebyshev’s Inequality, where\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.\">\n        [7]\n    </button>\n\n    X is a random variable k > 0 is a parameter:\n</p>\n\n<pre>\n    <p>P(|X - E(X)| &ge; K&sigma;) &le; 1&frasl;K^2</p>\n</pre>\n\n<p>\n    This formula sets an upper bound of points of bvalue more than k standard deviations away from the population mean\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    Thus Chebyshev’s Inequality states that not more than 1/k^2 of the distribution's values are further than k standard deviations away from the mean\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"https://en.wikipedia.org/wiki/Chebyshev%27s_inequality, accessed at 16:23 - 06/03/2016\">\n        [8].\n    </button>\n\n    We are taking data points that are more than k standard deviations from the mean to be anomalous\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.\">\n        [4].\n    </button>\n\n    We are using the object’s distance away from the centre of the distribution as this measure\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.\">\n        [5].\n    </button>\n\n    This is calculated using Mahalanobis distance.\n</p>\n\n<p>\n\n    <i>\n        Simplified Mahalanobis Distance, where\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n            [3].\n        </button>\n        n is no. of attributes, is the vector of standard deviations for each attribute of an object, ɑ is a smoothing constant:\n    </i>\n</p>\n\n<pre>\n    <p>mahalanobis'(x,y) = &sum; i=1 ^n (|xi-yi|&frasl;&sigma;yi + &alpha;)</p>\n</pre>\n\n\n<p>\n    An issue may arise where the computation of the inverse of the covariance matrix is expensive, in this case a simplification has been formulated\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n    The simplified mahalanobis distance equivalent relies on the assumption\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n\n    that the elements of σ are independent.\n    The smoothing constant exists to account for when attributes happen to be constant across recorded data points\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n</p>\n";
 	},"useData":true});
 
 /***/ },
 /* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    The problem with monitoring DNS traffic for Botnet detection is that DNS addresses used by botnets are also used for legitimate purposes\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Wills, C. E., Mikhailov, M. & Shang, H. (2003) Inferring Relative Popularity of Internet Applications by Actively Querying DNS Caches. Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement. PP . 78-90.\">\n        [9].\n    </button>\n\n    It is important to understand how Botnets behave before drawing any conclusions on observations\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ahmed M. Manasrah, Awsan Hasan, “Detecting Botnet Activities Based on Abnormal DNS traffic”, International Journal of Computer Science and Information Security, Vol. 6, No.1, 2009\">\n        [10].\n    </button>\n\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    Many different avenues are used to infiltrate target computers in order to spread bots.\n</p>\n\n<div>\n    <dl class=\"dl-horizontal\">\n        <dt class=\"col-sm-3\">Web downloads</dt>\n        <dd class=\"col-sm-9\">A recent google study showed that web-based infections are now commonplace [15].</dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\">Web-based malware creates botnet-like structures in which compromised\n            machines query web servers periodically for instructions and updates.\n        </dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\"> Simply visiting a malicious site with a PC that hasn’t been kept current\n            with security patches and antivirus can download and execute malware on the user’s PC, thus adding to that\n            botnet’s ranks. [18]\n        </dd>\n\n        <dt class=\"col-sm-3\">Mail attachments</dt>\n        <dd class=\"col-sm-9\">Mail attachments, such as Trojan and Virus attachments, also combined with manipulative\n            social\n            engineering techniques are used to entice the target computers user to uknowingly install the malware.\n        </dd>\n\n        <dt class=\"col-sm-3\">Pirated software</dt>\n        <dd class=\"col-sm-9\">Malware developers often hide malicious code inside a software download, which then\n            installs itself on a victim’s machine when the user opens the executable.\n        </dd>\n\n        <dt class=\"col-sm-3\">Worms</dt>\n        <dd class=\"col-sm-9\">Automated worms that actively scan the internet for vulnerable systems to break into.</dd>\n\n        <dt class=\"col-sm-3\">Malicious websites</dt>\n        <dd class=\"col-sm-9\">Websites are created that are looking to hijack a users computer through web browser\n            security\n            flaws [17].\n        </dd>\n    </dl>\n</div>\n\n\n";
+	},"useData":true});
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(50);
+	var template = __webpack_require__(52);
 	
 	var ScrollSpy = Marionette.ItemView.extend({
 	
@@ -19011,7 +19041,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 50 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19035,12 +19065,12 @@
 	    + "                    </ul>\n                </div>\n\n            </div>\n        </div>\n    </nav>\n\n    <div data-spy=\"scroll\" data-offset=\"0\" data-target=\"#"
 	    + alias2(alias1((depth0 != null ? depth0.scrollspyId : depth0), depth0))
 	    + "\" class=\"scrollspy-main\">\n\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(51),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(53),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "\n    </div>\n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 51 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19049,11 +19079,11 @@
 	},"useData":true});
 
 /***/ },
-/* 52 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var carousel = __webpack_require__(53);
-	var featurette = __webpack_require__(54);
+	var carousel = __webpack_require__(55);
+	var featurette = __webpack_require__(56);
 	
 	var JSON = {
 	    carousel: carousel,
@@ -19063,7 +19093,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 53 */
+/* 55 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19100,7 +19130,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 54 */
+/* 56 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19138,7 +19168,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 55 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Backbone = __webpack_require__(2);
@@ -19163,15 +19193,15 @@
 
 
 /***/ },
-/* 56 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var App = __webpack_require__(1);
-	var AppRouter = __webpack_require__(55);
-	var EstablishingBotnetsController = __webpack_require__(57);
-	var ArchitectureCommunicationController = __webpack_require__(68);
-	var DetectionController = __webpack_require__(73);
-	var CommandController = __webpack_require__(80);
+	var AppRouter = __webpack_require__(57);
+	var EstablishingBotnetsController = __webpack_require__(59);
+	var ArchitectureCommunicationController = __webpack_require__(72);
+	var DetectionController = __webpack_require__(77);
+	var CommandController = __webpack_require__(84);
 	
 	var API = {
 	
@@ -19253,19 +19283,19 @@
 
 
 /***/ },
-/* 57 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(58);
+	var appData = __webpack_require__(60);
 	
-	__webpack_require__(62);
 	__webpack_require__(64);
+	__webpack_require__(66);
 	__webpack_require__(39);
 	
-	__webpack_require__(66);
+	__webpack_require__(70);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19327,12 +19357,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 58 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var subjectPointers = __webpack_require__(59);
-	var featurette = __webpack_require__(60);
-	var jumbotron = __webpack_require__(61);
+	var subjectPointers = __webpack_require__(61);
+	var featurette = __webpack_require__(62);
+	var jumbotron = __webpack_require__(63);
 	
 	var JSON = {
 	    subjectPointers: subjectPointers,
@@ -19343,7 +19373,7 @@
 	module.exports= JSON;
 
 /***/ },
-/* 59 */
+/* 61 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19373,7 +19403,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 60 */
+/* 62 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19405,7 +19435,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 61 */
+/* 63 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19416,12 +19446,12 @@
 	module.exports = JSON;
 
 /***/ },
-/* 62 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var App = __webpack_require__(1);
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(63);
+	var template = __webpack_require__(65);
 	
 	var Pointer = Marionette.ItemView.extend({
 	
@@ -19453,7 +19483,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 63 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19484,12 +19514,12 @@
 	},"useData":true});
 
 /***/ },
-/* 64 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(65);
+	var template = __webpack_require__(67);
 	
 	var Jumbotron = Marionette.ItemView.extend({
 	
@@ -19503,26 +19533,50 @@
 
 
 /***/ },
-/* 65 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+	    var stack1;
 	
 	  return "<div class=\"jumbotron\">\n    <h1>"
-	    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-	    + "</h1>\n    <p>"
-	    + alias3(((helper = (helper = helpers.content || (depth0 != null ? depth0.content : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"content","hash":{},"data":data}) : helper)))
-	    + "</p>\n</div>";
+	    + this.escapeExpression(this.lambda((depth0 != null ? depth0.title : depth0), depth0))
+	    + "</h1>\n"
+	    + ((stack1 = this.invokePartial(__webpack_require__(68),depth0,{"name":"contentSelection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + "</div>";
+	},"usePartial":true,"useData":true});
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(69),depth0,{"name":"detection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.detection : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	},"usePartial":true,"useData":true});
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    In the following sections we will be considering the detection of a Botnet where a number of Bots - also known as\n    Zombies, are being controlled by a Botmaster within a Command and Control setup. We shall also presume Bots\n    communicate to the Botmaster using IRC or HTTP/DNS protocols\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">[20].\n    </button>\n\n    <br>\n\n    However in the real world a Botnet could tactically change structure to avoid detection, for example the\n    communication could become peer-2-peer amongst Bots\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">[21].\n    </button>\n\n</p>";
 	},"useData":true});
 
 /***/ },
-/* 66 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(67);
+	var template = __webpack_require__(71);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19545,7 +19599,7 @@
 
 
 /***/ },
-/* 67 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19554,19 +19608,19 @@
 	},"useData":true});
 
 /***/ },
-/* 68 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(69);
+	var appData = __webpack_require__(73);
 	
-	__webpack_require__(62);
 	__webpack_require__(64);
+	__webpack_require__(66);
 	__webpack_require__(39);
 	
-	__webpack_require__(71);
+	__webpack_require__(75);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19628,10 +19682,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 69 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(70);
+	var jumbotron = __webpack_require__(74);
 	var JSON = {
 	    jumbotron : jumbotron
 	};
@@ -19639,7 +19693,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 70 */
+/* 74 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19650,11 +19704,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 71 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(72);
+	var template = __webpack_require__(76);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19677,7 +19731,7 @@
 
 
 /***/ },
-/* 72 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19686,19 +19740,19 @@
 	},"useData":true});
 
 /***/ },
-/* 73 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(74);
+	var appData = __webpack_require__(78);
 	
-	__webpack_require__(62);
 	__webpack_require__(64);
+	__webpack_require__(66);
 	__webpack_require__(39);
 	
-	__webpack_require__(78);
+	__webpack_require__(82);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19760,12 +19814,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 74 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(75);
-	var featurette = __webpack_require__(76);
-	var subjectPointers = __webpack_require__(77);
+	var jumbotron = __webpack_require__(79);
+	var featurette = __webpack_require__(80);
+	var subjectPointers = __webpack_require__(81);
 	
 	var JSON = {
 	    jumbotron: jumbotron,
@@ -19776,21 +19830,31 @@
 	module.exports = JSON;
 
 /***/ },
-/* 75 */
+/* 79 */
 /***/ function(module, exports) {
 
 	var JSON = {
 	    title : "Detecting botnets",
-	    content : "Some content about detecting botnets"
+	    content : "Some content about detecting botnets",
+	    detection: true
 	};
 	
 	module.exports = JSON;
 
 /***/ },
-/* 76 */
+/* 80 */
 /***/ function(module, exports) {
 
 	var JSON = [
+	
+	    {
+	        heading: "A quick summary of IRC",
+	        ircSummary: true
+	    },
+	    {
+	        heading: "A quick summary of DNS",
+	        dnsSummary: true
+	    },
 	    {
 	        heading: "Honeypot Technique",
 	        subHeading: "",
@@ -19819,7 +19883,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 77 */
+/* 81 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19849,11 +19913,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 78 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(79);
+	var template = __webpack_require__(83);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19876,7 +19940,7 @@
 
 
 /***/ },
-/* 79 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19885,19 +19949,19 @@
 	},"useData":true});
 
 /***/ },
-/* 80 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(81);
+	var appData = __webpack_require__(85);
 	
-	__webpack_require__(62);
 	__webpack_require__(64);
+	__webpack_require__(66);
 	__webpack_require__(39);
 	
-	__webpack_require__(83);
+	__webpack_require__(87);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19959,10 +20023,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 81 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(82);
+	var jumbotron = __webpack_require__(86);
 	
 	var JSON = {
 	    jumbotron: jumbotron
@@ -19971,7 +20035,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 82 */
+/* 86 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19982,11 +20046,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 83 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(84);
+	var template = __webpack_require__(88);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20009,7 +20073,7 @@
 
 
 /***/ },
-/* 84 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);

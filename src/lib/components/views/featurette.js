@@ -1,6 +1,6 @@
 var Marionette = require('backbone.marionette');
 var App = require('../../../app');
-var template = require('../templates/feature.hbs');
+var template = require('../templates/featurette/feature.hbs');
 var _ = require('underscore');
 require('./scrollspy');
 

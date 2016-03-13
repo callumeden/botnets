@@ -1,4 +1,13 @@
 var JSON = [
+
+    {
+        heading: "A quick summary of IRC",
+        ircSummary: true
+    },
+    {
+        heading: "A quick summary of DNS",
+        dnsSummary: true
+    },
     {
         heading: "Honeypot Technique",
         subHeading: "",
