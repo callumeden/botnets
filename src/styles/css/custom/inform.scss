@@ -10,6 +10,7 @@
       margin-left: 10px;
     }
   }
+
 }
 
 .top-cmp {
@@ -108,5 +109,11 @@ dl.dl-horizontal {
 
   dt {
     white-space:normal;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .jumbotron {
+    padding: 10px;
   }
 }

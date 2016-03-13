@@ -3,7 +3,7 @@ var JSON = [
         subjectTitle: "Honeypot",
         subjectContent: "",
         buttonText : "View technique »",
-        image: "",
+        image: "img/honeypot2.jpg",
         destination: "#honeypot"
     },
     {
