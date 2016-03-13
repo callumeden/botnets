@@ -52,7 +52,7 @@
 	__webpack_require__(10);
 	__webpack_require__(25);
 	__webpack_require__(30);
-	__webpack_require__(62);
+	__webpack_require__(63);
 	
 	App.start();
 
@@ -18405,7 +18405,7 @@
 
 	var App = __webpack_require__(1);
 	var HomeController = __webpack_require__(31);
-	var AppRouter = __webpack_require__(61);
+	var AppRouter = __webpack_require__(62);
 	
 	var API = {
 	
@@ -18458,7 +18458,7 @@
 	__webpack_require__(38);
 	__webpack_require__(39);
 	
-	var HomeData = __webpack_require__(58);
+	var HomeData = __webpack_require__(59);
 	
 	var HomeShowController = Marionette.Object.extend({
 	
@@ -18721,7 +18721,7 @@
 	var App = __webpack_require__(1);
 	var template = __webpack_require__(40);
 	var _ = __webpack_require__(3);
-	__webpack_require__(55);
+	__webpack_require__(56);
 	
 	var Feature = Marionette.ItemView.extend({
 	
@@ -18913,7 +18913,11 @@
 	},"25":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(54),depth0,{"name":"avoidingDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(54),depth0,{"name":"botnetPropagation","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"27":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(55),depth0,{"name":"avoidingDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
@@ -18941,7 +18945,8 @@
 	    + "\n"
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.postInfection : depth0), depth0),{"name":"postInfection","hash":{},"fn":this.program(23, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.avoidingDetection : depth0), depth0),{"name":"avoidingDetection","hash":{},"fn":this.program(25, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.botnetPropagation : depth0), depth0),{"name":"botnetPropagation","hash":{},"fn":this.program(25, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.avoidingDetection : depth0), depth0),{"name":"avoidingDetection","hash":{},"fn":this.program(27, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -18950,7 +18955,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    The presense of botnet software on an infected computer poses many threats to the victim. The bot may be used to\n    participate in illegal activities, steal their information and identity or use to propagate their botnet\n    further.\n</p>\n\n<h3>Data leakage/theft</h3>\n<p>\n    The bot applications will scour the user’s system searching for sensitive data such as passwords, personal\n    identification information and bank account data which will then be automatically uploaded back to the master\n    controller.\n    This will allow the attacker to steal money from the victim’s bank account or through other means using\n    identification information or passwords that have been stolen.\n</p>\n\n<h3>Propagating the botnet further</h3>\n<p>\n    The botnet software on a compromised system will scan the local network to propagate; such as once a worm enters\n    a companies network, it can rapidly start spreading on the private network.\n    The infected system can also manipulate having access to a victim’s contacts and email account as a social\n    engineering technique to send emails with malicious attachments. This will often lead to a higher conversion in\n    malware installation as they will more likely perceive an email from a known contact to be genuine.\n    Once a company’s network has been infected it could become a candidate for sending outbound SPAM or network\n    attacks. This could possibly lead to the entire network being identified as a malicious source and therefore\n    added to blacklists, impacting business operations. [17]\n</p>\n";
+	    return "<p>\n    The presense of botnet software on an infected computer poses many threats to the victim. The bot may be used to\n    participate in illegal activities, steal their information and identity or use to propagate their botnet\n    further.\n</p>\n\n<h3>Data leakage/theft</h3>\n<p>\n    The bot applications will scour the user’s system searching for sensitive data such as passwords, personal\n    identification information and bank account data which will then be automatically uploaded back to the master\n    controller.\n    This will allow the attacker to steal money from the victim’s bank account or through other means using\n    identification information or passwords that have been stolen.\n</p>\n";
 	},"useData":true});
 
 /***/ },
@@ -19040,7 +19045,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    Many different avenues are used to infiltrate target computers in order to spread bots.\n</p>\n\n<div>\n    <dl class=\"dl-horizontal\">\n        <dt class=\"col-sm-3\">Web downloads</dt>\n        <dd class=\"col-sm-9\">A recent google study showed that web-based infections are now commonplace [15].</dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\">Web-based malware creates botnet-like structures in which compromised\n            machines query web servers periodically for instructions and updates.\n        </dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\"> Simply visiting a malicious site with a PC that hasn’t been kept current\n            with security patches and antivirus can download and execute malware on the user’s PC, thus adding to that\n            botnet’s ranks. [18]\n        </dd>\n\n        <dt class=\"col-sm-3\">Mail attachments</dt>\n        <dd class=\"col-sm-9\">Mail attachments, such as Trojan and Virus attachments, also combined with manipulative\n            social\n            engineering techniques are used to entice the target computers user to uknowingly install the malware.\n        </dd>\n\n        <dt class=\"col-sm-3\">Pirated software</dt>\n        <dd class=\"col-sm-9\">Malware developers often hide malicious code inside a software download, which then\n            installs itself on a victim’s machine when the user opens the executable.\n        </dd>\n\n        <dt class=\"col-sm-3\">Worms</dt>\n        <dd class=\"col-sm-9\">Automated worms that actively scan the internet for vulnerable systems to break into.</dd>\n\n        <dt class=\"col-sm-3\">Malicious websites</dt>\n        <dd class=\"col-sm-9\">Websites are created that are looking to hijack a users computer through web browser\n            security\n            flaws [17].\n        </dd>\n    </dl>\n</div>\n\n\n";
+	    return "<dl class=\"dl-horizontal\">\n    <dt class=\"col-sm-3\">Web downloads</dt>\n    <dd class=\"col-sm-9\">A recent google study showed that web-based infections are now commonplace [15].</dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">Web-based malware creates botnet-like structures in which compromised\n        machines query web servers periodically for instructions and updates.\n    </dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\"> Simply visiting a malicious site with a PC that hasn’t been kept current\n        with security patches and antivirus can download and execute malware on the user’s PC, thus adding to that\n        botnet’s ranks. [18]\n    </dd>\n\n    <dt class=\"col-sm-3\">Mail attachments</dt>\n    <dd class=\"col-sm-9\">Mail attachments, such as Trojan and Virus attachments, also combined with manipulative\n        social\n        engineering techniques are used to entice the target computers user to uknowingly install the malware.\n    </dd>\n\n    <dt class=\"col-sm-3\">Pirated software</dt>\n    <dd class=\"col-sm-9\">Malware developers often hide malicious code inside a software download, which then\n        installs itself on a victim’s machine when the user opens the executable.\n    </dd>\n\n    <dt class=\"col-sm-3\">Worms</dt>\n    <dd class=\"col-sm-9\">Automated worms that actively scan the internet for vulnerable systems to break into.</dd>\n\n    <dt class=\"col-sm-3\">Malicious websites</dt>\n    <dd class=\"col-sm-9\">Websites are created that are looking to hijack a users computer through web browser\n        security\n        flaws [17].\n    </dd>\n</dl>\n\n\n";
 	},"useData":true});
 
 /***/ },
@@ -19058,16 +19063,25 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    Botnets often use a range of techniques to evade the existing methods of detecting a bot and blocking its access to\n    its master C & C server.\n    For example, it may maintain a list of IP addresses with which it can connect with. It will then take a trial and\n    error approach until it finds an active C & C server which responds and it can connect with.\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        [ref].\n    </button>\n\n    More advanced bots use Domain Generation Algorithms (DGA) and fast flux to ensure the bot is always able to\n    communicate with its server.\n</p>\n\n<dl class=\"dl-horizontal\">\n    <dt class=\"col-sm-3\">DGA</dt>\n    <dd class=\"col-sm-9\">DGA is a method whereby the malware is able to generate the C&C server address; using an\n        algorithm the malware can determine when to connect to what appears to be a random address online\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n    </dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">The large number of potential rendezvous points makes it difficult for law\n        enforcement to effectively shut down botnets since infected computers will attempt to contact some of these\n        domain names every day to receive updates or commands\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n    </dd>\n\n    <dt class=\"col-sm-3\">Fast Flux</dt>\n    <dd class=\"col-sm-9\">The basic idea behind Fast flux is to have numerous IP addresses associated with a single fully\n        qualified domain name, where the IP addresses are swapped in and out with extremely high frequency, through\n        changing DNS records.\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n    </dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">This will allow the bot master to stay a step ahead of any potential actions to\n        shut down the C&C server\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n\n    </dd>\n\n</dl>";
+	    return "<p>\n    In order to propagate the Botnet further, the malware of a bot will seek to attack devices further through software\n    vulnerabilities, vulnerabilities caused by other infections, social engineering through the use of email, instant\n    messaging and malicious web\n    page content.[ref]\n    Further methods of propagation include the bot malware being propagated through peer to peer networks, open file\n    sharing, and direct client to client file exchange [ref]\n</p>\n\n<p>\n    However as the worm can duplicate itself and unceasingly take advantage of the system vulnerabilities and propagate\n    as far as possible through the network, it will lead to a sharp increase in network traffic.\n    This characteristic therefore makes the worm easily detectable.\n\n    In order to avoid being easily detectable, the bots will often only propagte within certain limits or infect certain\n    hosts according to the purpose of the controller during the process of propagating to avoid the detection by\n    security researchers.\n\n\n\n</p>\n\n<p>\n    <strong>A bot within a companies network</strong>\n    The infected system can manipulate having access to a victim’s contacts and email account as a social\n    engineering technique to send emails with malicious attachments. This will often lead to a higher conversion in\n    malware installation as they will more likely perceive an email from a known contact to be genuine.\n\n    Once a company’s network has been infected it could become a candidate for sending outbound SPAM or network\n    attacks. This could possibly lead to the entire network being identified as a malicious source and therefore\n    added to blacklists, impacting business operations. [17]\n</p>\n\n";
 	},"useData":true});
 
 /***/ },
 /* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    Botnets often use a range of techniques to evade the existing methods of detecting a bot and blocking its access to\n    its master C & C server.\n    For example, it may maintain a list of IP addresses with which it can connect with. It will then take a trial and\n    error approach until it finds an active C & C server which responds and it can connect with.\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        [ref].\n    </button>\n\n    More advanced bots use Domain Generation Algorithms (DGA) and fast flux to ensure the bot is always able to\n    communicate with its server.\n</p>\n\n<dl class=\"dl-horizontal\">\n    <dt class=\"col-sm-3\">DGA</dt>\n    <dd class=\"col-sm-9\">DGA is a method whereby the malware is able to generate the C&C server address; using an\n        algorithm the malware can determine when to connect to what appears to be a random address online\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n    </dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">The large number of potential rendezvous points makes it difficult for law\n        enforcement to effectively shut down botnets since infected computers will attempt to contact some of these\n        domain names every day to receive updates or commands\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n    </dd>\n\n    <dt class=\"col-sm-3\">Fast Flux</dt>\n    <dd class=\"col-sm-9\">The basic idea behind Fast flux is to have numerous IP addresses associated with a single fully\n        qualified domain name, where the IP addresses are swapped in and out with extremely high frequency, through\n        changing DNS records.\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n    </dd>\n    <dd class=\"col-sm-9 col-sm-offset-3\">This will allow the bot master to stay a step ahead of any potential actions to\n        shut down the C&C server\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"TODO : REF\">\n            [ref].\n        </button>\n\n    </dd>\n\n</dl>";
+	},"useData":true});
+
+/***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(56);
+	var template = __webpack_require__(57);
 	
 	var ScrollSpy = Marionette.ItemView.extend({
 	
@@ -19102,7 +19116,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19126,12 +19140,12 @@
 	    + "                    </ul>\n                </div>\n\n            </div>\n        </div>\n    </nav>\n\n    <div data-spy=\"scroll\" data-offset=\"0\" data-target=\"#"
 	    + alias2(alias1((depth0 != null ? depth0.scrollspyId : depth0), depth0))
 	    + "\" class=\"scrollspy-main\">\n\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(57),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(58),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "\n    </div>\n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19140,11 +19154,11 @@
 	},"useData":true});
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var carousel = __webpack_require__(59);
-	var featurette = __webpack_require__(60);
+	var carousel = __webpack_require__(60);
+	var featurette = __webpack_require__(61);
 	
 	var JSON = {
 	    carousel: carousel,
@@ -19154,7 +19168,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19191,7 +19205,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19229,7 +19243,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Backbone = __webpack_require__(2);
@@ -19254,15 +19268,15 @@
 
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var App = __webpack_require__(1);
-	var AppRouter = __webpack_require__(61);
-	var EstablishingBotnetsController = __webpack_require__(63);
-	var ArchitectureCommunicationController = __webpack_require__(77);
-	var DetectionController = __webpack_require__(82);
-	var CommandController = __webpack_require__(89);
+	var AppRouter = __webpack_require__(62);
+	var EstablishingBotnetsController = __webpack_require__(64);
+	var ArchitectureCommunicationController = __webpack_require__(78);
+	var DetectionController = __webpack_require__(83);
+	var CommandController = __webpack_require__(90);
 	
 	var API = {
 	
@@ -19344,19 +19358,19 @@
 
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(64);
+	var appData = __webpack_require__(65);
 	
-	__webpack_require__(68);
-	__webpack_require__(70);
+	__webpack_require__(69);
+	__webpack_require__(71);
 	__webpack_require__(39);
 	
-	__webpack_require__(75);
+	__webpack_require__(76);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19418,12 +19432,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var subjectPointers = __webpack_require__(65);
-	var featurette = __webpack_require__(66);
-	var jumbotron = __webpack_require__(67);
+	var subjectPointers = __webpack_require__(66);
+	var featurette = __webpack_require__(67);
+	var jumbotron = __webpack_require__(68);
 	
 	var JSON = {
 	    subjectPointers: subjectPointers,
@@ -19434,7 +19448,7 @@
 	module.exports= JSON;
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19445,43 +19459,50 @@
 	        image: "img/computer-infection.jpg",
 	        destination: "#infection"
 	    },
+	
+	    {
+	        subjectTitle: "Propagation",
+	        subjectContent: "How a Botnet spreads to control thousands of devices.",
+	        buttonText : "Find out more »",
+	        image: "",
+	        destination : "#propagation"
+	    },
 	    {
 	        subjectTitle: "Avoiding Detection",
 	        subjectContent: "How bots perform tasks without being detected by the users",
 	        buttonText: "View details »",
 	        image: "",
 	        destination : "#avoidingDetection"
-	    },
-	    {
-	        subjectTitle: "Botnet Motivation",
-	        subjectContent: "What motivates the creation of Botnets?",
-	        buttonText : "Find out more »",
-	        image: "",
-	        destination : "#motivation"
 	    }
+	
 	];
 	
 	module.exports = JSON;
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports) {
 
 	var JSON = [
 	    {
 	        heading: "Infecting a computer",
-	        subHeading: "",
+	        subHeading: "A selection of the many different avenues that are used to infiltrate target computers in order to spread bots.",
 	        infection: true,
 	        image: "img/global01.jpg",
 	        id: "infection"
 	    },
-	
 	    {
 	        heading: "After an infection",
 	        postInfection : true
 	    },
-	    {
 	
+	    {
+	        heading: "Propagation",
+	        subHeading: "How the botnet is propagated from an infected computer",
+	        botnetPropagation: true,
+	        id: "propagation"
+	    },
+	    {
 	        heading: "Avoiding detection",
 	        avoidingDetection: true,
 	        id: "avoidingDetection"
@@ -19499,7 +19520,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19510,12 +19531,12 @@
 	module.exports = JSON;
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var App = __webpack_require__(1);
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(69);
+	var template = __webpack_require__(70);
 	
 	var Pointer = Marionette.ItemView.extend({
 	
@@ -19547,7 +19568,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19578,12 +19599,12 @@
 	},"useData":true});
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(71);
+	var template = __webpack_require__(72);
 	
 	var Jumbotron = Marionette.ItemView.extend({
 	
@@ -19619,7 +19640,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19629,23 +19650,23 @@
 	  return "<div class=\"jumbotron\">\n    <h1>"
 	    + this.escapeExpression(this.lambda((depth0 != null ? depth0.title : depth0), depth0))
 	    + "</h1>\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(72),depth0,{"name":"contentSelection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(73),depth0,{"name":"contentSelection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(73),depth0,{"name":"detection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(74),depth0,{"name":"detection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"3":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(74),depth0,{"name":"establishing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(75),depth0,{"name":"establishing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
@@ -19655,7 +19676,7 @@
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19664,7 +19685,7 @@
 	},"useData":true});
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19673,11 +19694,11 @@
 	},"useData":true});
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(76);
+	var template = __webpack_require__(77);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19700,7 +19721,7 @@
 
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19709,19 +19730,19 @@
 	},"useData":true});
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(78);
+	var appData = __webpack_require__(79);
 	
-	__webpack_require__(68);
-	__webpack_require__(70);
+	__webpack_require__(69);
+	__webpack_require__(71);
 	__webpack_require__(39);
 	
-	__webpack_require__(80);
+	__webpack_require__(81);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19783,10 +19804,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(79);
+	var jumbotron = __webpack_require__(80);
 	var JSON = {
 	    jumbotron : jumbotron
 	};
@@ -19794,7 +19815,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19805,11 +19826,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(81);
+	var template = __webpack_require__(82);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19832,7 +19853,7 @@
 
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19841,19 +19862,19 @@
 	},"useData":true});
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(83);
+	var appData = __webpack_require__(84);
 	
-	__webpack_require__(68);
-	__webpack_require__(70);
+	__webpack_require__(69);
+	__webpack_require__(71);
 	__webpack_require__(39);
 	
-	__webpack_require__(87);
+	__webpack_require__(88);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19915,12 +19936,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(84);
-	var featurette = __webpack_require__(85);
-	var subjectPointers = __webpack_require__(86);
+	var jumbotron = __webpack_require__(85);
+	var featurette = __webpack_require__(86);
+	var subjectPointers = __webpack_require__(87);
 	
 	var JSON = {
 	    jumbotron: jumbotron,
@@ -19931,7 +19952,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19943,7 +19964,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19997,7 +20018,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20027,11 +20048,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(88);
+	var template = __webpack_require__(89);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20054,7 +20075,7 @@
 
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20063,19 +20084,19 @@
 	},"useData":true});
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(90);
+	var appData = __webpack_require__(91);
 	
-	__webpack_require__(68);
-	__webpack_require__(70);
+	__webpack_require__(69);
+	__webpack_require__(71);
 	__webpack_require__(39);
 	
-	__webpack_require__(92);
+	__webpack_require__(93);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20137,10 +20158,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 90 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(91);
+	var jumbotron = __webpack_require__(92);
 	
 	var JSON = {
 	    jumbotron: jumbotron
@@ -20149,7 +20170,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 91 */
+/* 92 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20160,11 +20181,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(93);
+	var template = __webpack_require__(94);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20187,7 +20208,7 @@
 
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);

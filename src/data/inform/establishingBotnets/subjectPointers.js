@@ -6,20 +6,22 @@ var JSON = [
         image: "img/computer-infection.jpg",
         destination: "#infection"
     },
+
+    {
+        subjectTitle: "Propagation",
+        subjectContent: "How a Botnet spreads to control thousands of devices.",
+        buttonText : "Find out more »",
+        image: "",
+        destination : "#propagation"
+    },
     {
         subjectTitle: "Avoiding Detection",
         subjectContent: "How bots perform tasks without being detected by the users",
         buttonText: "View details »",
         image: "",
         destination : "#avoidingDetection"
-    },
-    {
-        subjectTitle: "Botnet Motivation",
-        subjectContent: "What motivates the creation of Botnets?",
-        buttonText : "Find out more »",
-        image: "",
-        destination : "#motivation"
     }
+
 ];
 
 module.exports = JSON;
