@@ -24,7 +24,7 @@ var Feature = Marionette.ItemView.extend({
     },
 
     showIllegalActivities: function () {
-        var view = App.request('new:scrollspy:view');
+        var view = App.request('new:scrollspy:view', this.model);
 
         var region = new Marionette.Region({
             el: this.ui.illegalActivitiesContainer

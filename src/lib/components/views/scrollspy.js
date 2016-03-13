@@ -27,8 +27,8 @@ var ScrollSpy = Marionette.ItemView.extend({
     }
 });
 
-App.reqres.setHandler('new:scrollspy:view', function () {
-    return new ScrollSpy();
+App.reqres.setHandler('new:scrollspy:view', function (model) {
+    return new ScrollSpy({model : model});
 });
 
 module.exports = ScrollSpy;

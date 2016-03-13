@@ -1,7 +1,7 @@
-<h3>Performing illegal activities</h3>
+<h3>{{scrollspyHeading}}</h3>
 
 <div class="scrollspy-container">
-    <nav id="scrollspy-infection" class="navbar navbar-inverse navbar-static">
+    <nav id="{{scrollspyId}}" class="navbar navbar-inverse navbar-static">
         <div class="container-fluid">
             <div class="navbar-header">
 
@@ -15,11 +15,9 @@
 
                 <div class="collapse navbar-collapse scrollspy-navbar">
                     <ul data-role="content-links" class="nav navbar-nav">
-                        <li data-role="content-link" class="active"><a href="#DDos">DDos</a></li>
-                        <li class=""><a href="#ppcFraud">PPC fraud</a></li>
-                        <li class=""><a href="#seoPoisoning">SEO Poisoning</a></li>
-                        <li class=""><a href="#bitcoinMining">Bitcoin Mining</a></li>
-                        <li class=""><a href="#victim">Are you a victim?</a></li>
+                        {{#each scrollspyNav}}
+                            <li><a href="#{{this.href}}">{{this.title}}</a></li>
+                        {{/each}}
                     </ul>
                 </div>
 
@@ -27,7 +25,7 @@
         </div>
     </nav>
 
-    <div data-spy="scroll" data-offset="0" data-target="#scrollspy-infection" class="scrollspy-main">
+    <div data-spy="scroll" data-offset="0" data-target="#{{scrollspyId}}" class="scrollspy-main">
 
             {{>illegalActivities}}
 

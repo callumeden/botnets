@@ -52,7 +52,7 @@
 	__webpack_require__(10);
 	__webpack_require__(25);
 	__webpack_require__(30);
-	__webpack_require__(55);
+	__webpack_require__(56);
 	
 	App.start();
 
@@ -18404,7 +18404,7 @@
 
 	var App = __webpack_require__(1);
 	var HomeController = __webpack_require__(31);
-	var AppRouter = __webpack_require__(54);
+	var AppRouter = __webpack_require__(55);
 	
 	var API = {
 	
@@ -18457,7 +18457,7 @@
 	__webpack_require__(38);
 	__webpack_require__(39);
 	
-	var HomeData = __webpack_require__(51);
+	var HomeData = __webpack_require__(52);
 	
 	var HomeShowController = Marionette.Object.extend({
 	
@@ -18720,7 +18720,7 @@
 	var App = __webpack_require__(1);
 	var template = __webpack_require__(40);
 	var _ = __webpack_require__(3);
-	__webpack_require__(48);
+	__webpack_require__(49);
 	
 	var Feature = Marionette.ItemView.extend({
 	
@@ -18742,7 +18742,7 @@
 	    },
 	
 	    showIllegalActivities: function () {
-	        var view = App.request('new:scrollspy:view');
+	        var view = App.request('new:scrollspy:view', this.model);
 	
 	        var region = new Marionette.Region({
 	            el: this.ui.illegalActivitiesContainer
@@ -18853,7 +18853,7 @@
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.noImage : depth0), depth0),{"name":"noImage","hash":{},"fn":this.program(8, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n\n"
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.noImage : depth0), depth0),{"name":"noImage","hash":{},"fn":this.noop,"inverse":this.program(10, data, 0),"data":data})) != null ? stack1 : "")
-	    + "\n\n    <div class=\"col-md-12\" data-role=\"illegal-activities-container\"></div>\n    \n</div>";
+	    + "\n\n    <div class=\"col-md-12\" data-role=\"illegal-activities-container\"></div>\n\n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -18885,6 +18885,10 @@
 	    var stack1;
 	
 	  return ((stack1 = this.invokePartial(__webpack_require__(47),depth0,{"name":"dnsTraffic","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"13":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(48),depth0,{"name":"infection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
@@ -18898,7 +18902,9 @@
 	    + "\n"
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.anomalyDetection : depth0), depth0),{"name":"anomalyDetection","hash":{},"fn":this.program(9, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic : depth0), depth0),{"name":"dnsTraffic","hash":{},"fn":this.program(11, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic : depth0), depth0),{"name":"dnsTraffic","hash":{},"fn":this.program(11, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.infection : depth0), depth0),{"name":"infection","hash":{},"fn":this.program(13, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -18959,9 +18965,18 @@
 /* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    Many different avenues are used to infiltrate target computers in order to spread bots.\n</p>\n\n<div>\n    <dl class=\"dl-horizontal\">\n        <dt class=\"col-sm-3\">Web downloads</dt>\n        <dd class=\"col-sm-9\">A recent google study showed that web-based infections are now commonplace [15].</dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\">Web-based malware creates botnet-like structures in which compromised\n            machines query web servers periodically for instructions and updates.\n        </dd>\n        <dd class=\"col-sm-9 col-sm-offset-3\"> Simply visiting a malicious site with a PC that hasn’t been kept current\n            with security patches and antivirus can download and execute malware on the user’s PC, thus adding to that\n            botnet’s ranks. [18]\n        </dd>\n\n        <dt class=\"col-sm-3\">Mail attachments</dt>\n        <dd class=\"col-sm-9\">Mail attachments, such as Trojan and Virus attachments, also combined with manipulative\n            social\n            engineering techniques are used to entice the target computers user to uknowingly install the malware.\n        </dd>\n\n        <dt class=\"col-sm-3\">Pirated software</dt>\n        <dd class=\"col-sm-9\">Malware developers often hide malicious code inside a software download, which then\n            installs itself on a victim’s machine when the user opens the executable.\n        </dd>\n\n        <dt class=\"col-sm-3\">Worms</dt>\n        <dd class=\"col-sm-9\">Automated worms that actively scan the internet for vulnerable systems to break into.</dd>\n\n        <dt class=\"col-sm-3\">Malicious websites</dt>\n        <dd class=\"col-sm-9\">Websites are created that are looking to hijack a users computer through web browser\n            security\n            flaws [17].\n        </dd>\n    </dl>\n</div>\n\n\n";
+	},"useData":true});
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(49);
+	var template = __webpack_require__(50);
 	
 	var ScrollSpy = Marionette.ItemView.extend({
 	
@@ -18988,28 +19003,44 @@
 	    }
 	});
 	
-	App.reqres.setHandler('new:scrollspy:view', function () {
-	    return new ScrollSpy();
+	App.reqres.setHandler('new:scrollspy:view', function (model) {
+	    return new ScrollSpy({model : model});
 	});
 	
 	module.exports = ScrollSpy;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
-	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    var stack1;
+	module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
+	    var alias1=this.lambda, alias2=this.escapeExpression;
 	
-	  return "<h3>Performing illegal activities</h3>\n\n<div class=\"scrollspy-container\">\n    <nav id=\"scrollspy-infection\" class=\"navbar navbar-inverse navbar-static\">\n        <div class=\"container-fluid\">\n            <div class=\"navbar-header\">\n\n                <button class=\"navbar-toggle collapsed\" type=\"button\" data-toggle=\"collapse\"\n                        data-target=\".scrollspy-navbar\"><span\n                        class=\"sr-only\">Toggle navigation</span> <span\n                        class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n\n                <div class=\"collapse navbar-collapse scrollspy-navbar\">\n                    <ul data-role=\"content-links\" class=\"nav navbar-nav\">\n                        <li data-role=\"content-link\" class=\"active\"><a href=\"#DDos\">DDos</a></li>\n                        <li class=\"\"><a href=\"#ppcFraud\">PPC fraud</a></li>\n                        <li class=\"\"><a href=\"#seoPoisoning\">SEO Poisoning</a></li>\n                        <li class=\"\"><a href=\"#bitcoinMining\">Bitcoin Mining</a></li>\n                        <li class=\"\"><a href=\"#victim\">Are you a victim?</a></li>\n                    </ul>\n                </div>\n\n            </div>\n        </div>\n    </nav>\n\n    <div data-spy=\"scroll\" data-offset=\"0\" data-target=\"#scrollspy-infection\" class=\"scrollspy-main\">\n\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(50),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	  return "                            <li><a href=\"#"
+	    + alias2(alias1((depth0 != null ? depth0.href : depth0), depth0))
+	    + "\">"
+	    + alias2(alias1((depth0 != null ? depth0.title : depth0), depth0))
+	    + "</a></li>\n";
+	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+	
+	  return "<h3>"
+	    + alias2(alias1((depth0 != null ? depth0.scrollspyHeading : depth0), depth0))
+	    + "</h3>\n\n<div class=\"scrollspy-container\">\n    <nav id=\""
+	    + alias2(alias1((depth0 != null ? depth0.scrollspyId : depth0), depth0))
+	    + "\" class=\"navbar navbar-inverse navbar-static\">\n        <div class=\"container-fluid\">\n            <div class=\"navbar-header\">\n\n                <button class=\"navbar-toggle collapsed\" type=\"button\" data-toggle=\"collapse\"\n                        data-target=\".scrollspy-navbar\"><span\n                        class=\"sr-only\">Toggle navigation</span> <span\n                        class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n\n                <div class=\"collapse navbar-collapse scrollspy-navbar\">\n                    <ul data-role=\"content-links\" class=\"nav navbar-nav\">\n"
+	    + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.scrollspyNav : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "                    </ul>\n                </div>\n\n            </div>\n        </div>\n    </nav>\n\n    <div data-spy=\"scroll\" data-offset=\"0\" data-target=\"#"
+	    + alias2(alias1((depth0 != null ? depth0.scrollspyId : depth0), depth0))
+	    + "\" class=\"scrollspy-main\">\n\n"
+	    + ((stack1 = this.invokePartial(__webpack_require__(51),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "\n    </div>\n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19018,11 +19049,11 @@
 	},"useData":true});
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var carousel = __webpack_require__(52);
-	var featurette = __webpack_require__(53);
+	var carousel = __webpack_require__(53);
+	var featurette = __webpack_require__(54);
 	
 	var JSON = {
 	    carousel: carousel,
@@ -19032,7 +19063,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19069,7 +19100,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19084,7 +19115,16 @@
 	        subHeading: "",
 	        botnetThreats: true,
 	        image: "img/DDosAttack.jpg",
-	        imageCaption: "An image showing a DDoS attack on a location in America. The attacks originate from thousands of different geographical locations, which is often symbolic of a botnet based attack."
+	        imageCaption: "An image showing a DDoS attack on a location in America. The attacks originate from thousands of different geographical locations, which is often symbolic of a botnet based attack.",
+	        scrollspyHeading: "Performing Illegal Activities",
+	        scrollspyId: "scrollspy-infection",
+	        scrollspyNav: [
+	            {title: "DDoS", href: "DDos"},
+	            {title: "PPC Fraud", href: "ppcFraud"},
+	            {title: "SEO Poisoning", href: "seoPoisoning"},
+	            {title: "Bitcoin Mining", href: "bitcoinMining"},
+	            {title: "Are you a victim?", href: "victim"}
+	        ]
 	    },
 	    {
 	        heading: "Cases of virulent botnets",
@@ -19098,7 +19138,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Backbone = __webpack_require__(2);
@@ -19123,15 +19163,15 @@
 
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var App = __webpack_require__(1);
-	var AppRouter = __webpack_require__(54);
-	var EstablishingBotnetsController = __webpack_require__(56);
-	var ArchitectureCommunicationController = __webpack_require__(67);
-	var DetectionController = __webpack_require__(72);
-	var CommandController = __webpack_require__(79);
+	var AppRouter = __webpack_require__(55);
+	var EstablishingBotnetsController = __webpack_require__(57);
+	var ArchitectureCommunicationController = __webpack_require__(68);
+	var DetectionController = __webpack_require__(73);
+	var CommandController = __webpack_require__(80);
 	
 	var API = {
 	
@@ -19213,19 +19253,19 @@
 
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(57);
+	var appData = __webpack_require__(58);
 	
-	__webpack_require__(61);
-	__webpack_require__(63);
+	__webpack_require__(62);
+	__webpack_require__(64);
 	__webpack_require__(39);
 	
-	__webpack_require__(65);
+	__webpack_require__(66);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19287,12 +19327,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var subjectPointers = __webpack_require__(58);
-	var featurette = __webpack_require__(59);
-	var jumbotron = __webpack_require__(60);
+	var subjectPointers = __webpack_require__(59);
+	var featurette = __webpack_require__(60);
+	var jumbotron = __webpack_require__(61);
 	
 	var JSON = {
 	    subjectPointers: subjectPointers,
@@ -19303,7 +19343,7 @@
 	module.exports= JSON;
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19333,14 +19373,14 @@
 	module.exports = JSON;
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	var JSON = [
 	    {
 	        heading: "Infecting a computer",
 	        subHeading: "",
-	        infectionPartial: true,
+	        infection: true,
 	        image: "img/global01.jpg",
 	        id: "infection"
 	    },
@@ -19365,7 +19405,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19376,12 +19416,12 @@
 	module.exports = JSON;
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var App = __webpack_require__(1);
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(62);
+	var template = __webpack_require__(63);
 	
 	var Pointer = Marionette.ItemView.extend({
 	
@@ -19413,7 +19453,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19444,12 +19484,12 @@
 	},"useData":true});
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(64);
+	var template = __webpack_require__(65);
 	
 	var Jumbotron = Marionette.ItemView.extend({
 	
@@ -19463,7 +19503,7 @@
 
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19478,11 +19518,11 @@
 	},"useData":true});
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(66);
+	var template = __webpack_require__(67);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19505,7 +19545,7 @@
 
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19514,19 +19554,19 @@
 	},"useData":true});
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(68);
+	var appData = __webpack_require__(69);
 	
-	__webpack_require__(61);
-	__webpack_require__(63);
+	__webpack_require__(62);
+	__webpack_require__(64);
 	__webpack_require__(39);
 	
-	__webpack_require__(70);
+	__webpack_require__(71);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19588,10 +19628,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(69);
+	var jumbotron = __webpack_require__(70);
 	var JSON = {
 	    jumbotron : jumbotron
 	};
@@ -19599,7 +19639,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19610,11 +19650,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(71);
+	var template = __webpack_require__(72);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19637,7 +19677,7 @@
 
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19646,19 +19686,19 @@
 	},"useData":true});
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(73);
+	var appData = __webpack_require__(74);
 	
-	__webpack_require__(61);
-	__webpack_require__(63);
+	__webpack_require__(62);
+	__webpack_require__(64);
 	__webpack_require__(39);
 	
-	__webpack_require__(77);
+	__webpack_require__(78);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19720,12 +19760,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(74);
-	var featurette = __webpack_require__(75);
-	var subjectPointers = __webpack_require__(76);
+	var jumbotron = __webpack_require__(75);
+	var featurette = __webpack_require__(76);
+	var subjectPointers = __webpack_require__(77);
 	
 	var JSON = {
 	    jumbotron: jumbotron,
@@ -19736,7 +19776,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19747,7 +19787,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19779,7 +19819,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19809,11 +19849,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(78);
+	var template = __webpack_require__(79);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19836,7 +19876,7 @@
 
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19845,19 +19885,19 @@
 	},"useData":true});
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(80);
+	var appData = __webpack_require__(81);
 	
-	__webpack_require__(61);
-	__webpack_require__(63);
+	__webpack_require__(62);
+	__webpack_require__(64);
 	__webpack_require__(39);
 	
-	__webpack_require__(82);
+	__webpack_require__(83);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19919,10 +19959,10 @@
 	module.exports = Controller;
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(81);
+	var jumbotron = __webpack_require__(82);
 	
 	var JSON = {
 	    jumbotron: jumbotron
@@ -19931,7 +19971,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19942,11 +19982,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(83);
+	var template = __webpack_require__(84);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19969,7 +20009,7 @@
 
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);

@@ -103,6 +103,10 @@ pre {
 
 }
 
-dl {
+dl.dl-horizontal {
   font-size: 16px;
+
+  dt {
+    white-space:normal;
+  }
 }

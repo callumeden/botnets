@@ -116,8 +116,10 @@ pre {
     margin: 0;
     word-spacing: 4px; }
 
-dl {
+dl.dl-horizontal {
   font-size: 16px; }
+  dl.dl-horizontal dt {
+    white-space: normal; }
 
 footer {
   margin-top: 80px;
