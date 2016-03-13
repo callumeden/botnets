@@ -1,7 +1,8 @@
 var App = require('../../app');
 var AppRouter = require('../../config/appRouter');
 var EstablishingBotnetsController = require('./establishingBotnets/controller');
-var ArchitectureCommunicationController = require('./architectureCommunication/controller');
+var CommandControlTopsController = require('./commandControlTops/controller');
+var CommunicationProtocolsController = require('./communicationProtocols/controller');
 var DetectionController = require('./detection/controller');
 var CommandController = require('./commandControl/controller');
 
@@ -11,8 +12,12 @@ var API = {
         return new EstablishingBotnetsController();
     },
 
-    showArchitectureCommunication: function () {
-        return new ArchitectureCommunicationController();
+    showCommandControlTops: function () {
+        return new CommandControlTopsController();
+    },
+
+    showCommunicationProtocols: function () {
+        return new CommunicationProtocolsController();
     },
 
     showDetection: function () {
@@ -28,7 +33,8 @@ var InformAppRouter = AppRouter.extend({
 
     routes: {
         'establishing-botnets': 'showEstablishingBotnets',
-        'architecture-and-communication': 'showArchitectureCommunication',
+        'command-and-control-topologies': 'showCommandControlTops',
+        'communication-protocols': 'showCommunicationProtocols',
         'detecting-botnets': 'showDetection',
         'command-and-control-structure': 'showCommandControl'
     },
@@ -37,8 +43,12 @@ var InformAppRouter = AppRouter.extend({
         API.showEstablishingBotnets();
     },
 
-    showArchitectureCommunication: function () {
-        API.showArchitectureCommunication();
+    showCommandControlTops: function () {
+        API.showCommandControlTops();
+    },
+
+    showCommunicationProtocols: function () {
+        API.showCommunicationProtocols();
     },
 
     showDetection : function () {
@@ -61,9 +71,14 @@ App.commands.setHandler('show:establishingBotnets', function () {
     App.navigate('establishing-botnets');
 });
 
-App.commands.setHandler('show:architectureCommunication', function () {
-    API.showArchitectureCommunication();
-    App.navigate('architecture-and-communication');
+App.commands.setHandler('show:commandControlTops', function () {
+    API.showCommandControlTops();
+    App.navigate('command-and-control-topologies');
+});
+
+App.commands.setHandler('show:communicationProtocols', function () {
+    API.showCommunicationProtocols();
+    App.navigate('communication-protocols');
 });
 
 App.commands.setHandler('show:detection', function () {

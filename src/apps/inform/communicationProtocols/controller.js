@@ -1,7 +1,7 @@
 var Marionette = require('backbone.marionette');
 var Backbone = require('backbone');
 var App = require('../../../app');
-var appData = require('../../../data/inform/architectureCommunication');
+var appData = require('../../../data/inform/communicationProtocols');
 
 require('../../../lib/components/views/subjectPointers');
 require('../../../lib/components/views/jumbotron');
@@ -17,7 +17,7 @@ var Controller = Marionette.Object.extend({
     },
 
     showLayout: function () {
-        this.layout = App.request('new:architectureCommunication:layout');
+        this.layout = App.request('new:communicationProtocols:layout');
         this.region = App.getRegion('container');
         this.region.show(this.layout);
     },

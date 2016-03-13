@@ -1,0 +1,70 @@
+<p>
+    Star is the most basic type of botnet structure, with a single, central C&C server which communicates with every
+    bot. Each new instruction is placed on the central server and then communicated to each bot. As each agent is added
+    to the network, they will usually contact the central server toregister themselves as a bot, and then await
+    instructions
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ollmann G. Botnet Communication Topologies. Damballa. 2009;">
+        [27]
+    </button>
+
+    The obvious drawbacks of this option is that the single C&C represents a single point of failure
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ollmann G. Botnet Communication Topologies. Damballa. 2009;">
+        [27,
+    </button>
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Cooke E, Jahanian F, McPherson D. The zombie roundup: Understanding, detecting, and disrupting botnets. Networks [Internet]. 2005;7:39–44. Available from: http://www.usenix.org/events/sruti05/tech/full_papers/cooke/cooke_html">
+        29],
+    </button>
+
+    and that the server node contains the addresses of every bot in the network
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Jakobsson M, Ramzan Z. Crimeware: Understanding New Attacks and Defenses. In: 1st ed. Addison-Wesley Professional; 2008. p. 188–90.">
+        [28,
+    </button>
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Cooke E, Jahanian F, McPherson D. The zombie roundup: Understanding, detecting, and disrupting botnets. Networks [Internet]. 2005;7:39–44. Available from: http://www.usenix.org/events/sruti05/tech/full_papers/cooke/cooke_html">
+        29],
+    </button>
+
+    If this node were to be subject to a hijacking attempt from authorities or a competitor, this is a significant
+    concern.
+</p>
+
+<p>
+    Another issue with this topology is that of scalability; as the botnet grows in size, the single C&C server may not
+    be able to cope with the additional load
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Jakobsson M, Ramzan Z. Crimeware: Understanding New Attacks and Defenses. In: 1st ed. Addison-Wesley Professional; 2008. p. 188–90.">
+        [28]
+    </button>
+
+    It must be noted, however, that the direct communication between the bot and the server means that instructions and
+    data are quickly transferred between the two
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ollmann G. Botnet Communication Topologies. Damballa. 2009;">
+        [27]
+    </button>
+</p>

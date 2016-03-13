@@ -14,7 +14,7 @@ var Layout = Marionette.LayoutView.extend({
 
 });
 
-App.reqres.setHandler('new:architectureCommunication:layout', function () {
+App.reqres.setHandler('new:communicationProtocols:layout', function () {
     return new Layout();
 });
 

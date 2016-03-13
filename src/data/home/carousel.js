@@ -7,10 +7,17 @@ var JSON = [
         imgSrc: ""
     },
     {
-        title: "What architecture and communication protocols do they use?",
+        title: "What Command and Control Topologies do they use?",
         subTitle: "How do infected computers communicate and execute tasks?",
         ctaText: "Read more",
-        ctaInfo: "navigate-architectureCommunication",
+        ctaInfo: "navigate-commandControlTops",
+        imgSrc: ""
+    },
+    {
+        title: "Communication Protocols",
+        subTitle: "How do infected computers communicate and execute tasks?",
+        ctaText: "Read more",
+        ctaInfo: "navigate-communicationProtocols",
         imgSrc: ""
     },
     {

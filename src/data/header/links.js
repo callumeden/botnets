@@ -9,8 +9,12 @@ var JSON = [
         pageInfo: "navigate-establishingBotnets"
     },
     {
-        pageName: "Architecture and Communication",
-        pageInfo: "navigate-architectureCommunication"
+        pageName: "Command and Control Topologies",
+        pageInfo: "navigate-commandControlTops"
+    },
+    {
+        pageName: "Communication Protocols",
+        pageInfo: "navigate-communicationProtocols"
     },
     {
         pageName: "Detecting Botnets",

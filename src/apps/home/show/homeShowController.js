@@ -58,8 +58,11 @@ var HomeShowController = Marionette.Object.extend({
             case "navigate-establishingBotnets":
                 App.execute("show:establishingBotnets");
                 break;
-            case "navigate-architectureCommunication":
-                App.execute('show:architectureCommunication');
+            case "navigate-commandControlTops":
+                App.execute('show:commandControlTops');
+                break;
+            case "navigate-communicationProtocols":
+                App.execute('show:communicationProtocols');
                 break;
             case "navigate-detection":
                 App.execute('show:detection');
