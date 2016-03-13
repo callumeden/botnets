@@ -1,11 +1,1 @@
-footer {
-  margin-top: 80px;
-  background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
-  color: #fff;
-  padding: 60px 0;
-  margin-bottom: 0; }
-  footer a {
-    color: #2d9968; }
-    footer a:hover, footer a:focus {
-      color: #faa41c;
-      text-decoration: none; }
+footer{margin-top:80px;background:linear-gradient(160deg, #181c1d 0%, #475254 100%);color:#fff;padding:60px 0;margin-bottom:0}footer a{color:#2d9968}footer a:hover,footer a:focus{color:#faa41c;text-decoration:none}
