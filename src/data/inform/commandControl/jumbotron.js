@@ -1,6 +1,6 @@
 var JSON = {
-    title : "Command and Control Structure",
-    content : "Some content about comand and control structure"
+    title : "Uncovering Botnet C & Cs and Behaviours using Protocol Reverse Engineering",
+    cAndC : true
 };
 
 module.exports = JSON;

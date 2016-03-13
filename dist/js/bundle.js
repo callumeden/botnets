@@ -52,7 +52,7 @@
 	__webpack_require__(10);
 	__webpack_require__(25);
 	__webpack_require__(30);
-	__webpack_require__(105);
+	__webpack_require__(78);
 	
 	App.start();
 
@@ -18363,6 +18363,8 @@
 	        toTop: '[data-role="to-top"]'
 	    },
 	
+	    className : "inverse-footer",
+	
 	    template: template,
 	
 	    events: {
@@ -18403,7 +18405,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<h2>References</h2>\n<br>\n<div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-4\">\n        <span id=\"ref1\">[1] : Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”,\n             International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.</span>\n\n    <hr>\n\n        <span id=\"ref2\">[2] : Paul Bächer, Thorsten Holz, Markus Kötter, Georg Wicherski, “Know your Enemy: Tracking\nBotnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.</span>\n\n    <hr>\n\n    <span id=\"ref3\">[3] : Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”</span>\n\n    <hr>\n\n    <span id=\"ref4\">[4] : Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.</span>\n\n    <hr>\n\n    <span id=\"ref5\">[5] : Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.</span>\n\n    <hr>\n\n    <span id=\"ref6\">[6] : Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.</span>\n\n    <hr>\n\n    <span id=\"ref7\">[7] : DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.</span>\n\n    <hr>\n\n    <span id=\"ref8\">[8] : https://en.wikipedia.org/wiki/Chebyshev%27s_inequality, accessed at 16:23 - 06/03/2016</span>\n\n    <hr>\n\n         <span id=\"ref9\">[9] : Wills, C. E., Mikhailov, M. & Shang, H. (2003) Inferring Relative Popularity of Internet Applications by Actively Querying DNS Caches. Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement. PP . 78-90.\n        </span>\n\n    <hr>\n\n        <span id=\"ref10\">[10] : Ahmed M. Manasrah, Awsan Hasan, “Detecting Botnet Activities Based on Abnormal DNS traffic”, International Journal of Computer Science and Information Security, Vol. 6, No.1, 2009\n        </span>\n\n    <hr>\n\n        <span id=\"ref11\">[11] : Cooke, E., Jahanian, F. & Mcpherson, D. (2005) The Zombie Roundup: Understanding, Detecting, and Disrupting Botnets. In The 1st Workshop on Steps to Reducing Unwanted Traffic on the Internet (SRUTI 2005). pp. 39-44.\n        </span>\n\n    <hr>\n\n    <span id=\"ref12\">[12] : Schiller, C. A., Binkley, J., Harley, D., Evron, G., Bradley, T., Willems, C. & Cross.</span>\n\n    <hr>\n\n    <span id=\"ref13\">[13] : Daniel Karrenberg, www.internetsociety.org, “The Internet Domain Name System Explained For Non-Experts”, Internet Society Member Briefing No.16.</span>\n\n    <hr>\n\n    <span id=\"ref14\">[14] : Castillo-Perez, S. & Garcia-Alfaro, J. (2008) Anonymous Resolution of DNS Queries. Lecture Notes in Computer Science, International Workshop on Information Security (IS'08), International OTM Conference. pp. 987–1000.</span>\n\n    <hr>\n\n    <span id=\"ref15\">[15] : Mitsuaki Akiyama, Takanori Kawamoto, Masayoshi Shimamura, Teruaki Yokoyama, Youki Kadobayashi, Suguru Yamaguchi (2007) A proposal of metrics for botnet detection based on its cooperative behavior. Proceedings of the Internet Measurement Technology and its Applications to Building Next Generation Internet Workshop (SAINT 2007). pp. 82-82.</span>\n\n    <hr>\n\n    <span id=\"ref16\">[16] : Choi, H., Lee, H., Lee, H. & Kim, H. (2007) Botnet Detection by Monitoring Group Activities in DNS Traffic. Seventh IEEE International Conference on Computer and Information Technology (CIT 2007). pp. 715-720.</span>\n\n    <hr>\n\n    <span id=\"ref17\">[17] : Rieck, K., Laskov, P. & Klaus-Robertmuller. (2006) Efficient Algorithms for Similarity Measures over Sequential Data: A Look Beyond Kernels. Proc of 28th DAGM Symposium (LNCS). pp. 374– 383.</span>\n\n    <hr>\n\n    <span id=\"ref18\">[18] : https://en.wikipedia.org/wiki/Jaccard_index, accessed at 14:58 on the 12/03/2016.</span>\n\n    <hr>\n\n    <span id=\"ref19\">[19] : N. Ianelli and A. Hackworth. Botnets as a Vehicle for Online Crime. CERT Coordination Center, 2005.</span>\n\n    <hr>\n\n    <span id=\"ref20\">[20] : Hossein Rouhani Zeidanloo, Mohammad Jorjor Zadeh, shooshtari, Payam Vahdani Amoli, M. Safari, Mazdak Zamani, August 2010, “A Taxonomy of Botnet Detection Techniques”, Computer Science and Information Technology (ICCSIT), 2010 3rd IEEE International Conference, Volume 2, pp. 158-162.</span>\n\n    <hr>\n\n    <span id=\"ref21\">[21] : https://en.wikipedia.org/wiki/Botnet, accessed at 22:32 on the 12/03/2016</span>\n\n    <hr>\n\n    <span id=\"ref22\">[22] : Patrick Butler, Kui Xu, and Danfeng (Daphne) Yao, “Quantitatively Analysing Stealthy Communication Channels”, Dept. of Computer Science, Virginia Tech, Blacksburg, VA 24060.</span>\n\n    <hr>\n\n    <span id=\"ref23\">[23] : Matthew Thomas, Aziz Mohaisen, “Kindred Domains: Detecting and Clustering Botnet Domains Using DNS Traffic”, http://www.cse.buffalo.edu/~mohaisen/doc/www14ws.pdf, accessed at 12:01 on the 11/03/2016</span>\n\n    <hr>\n\n        <span id=\"ref24\">[24] : Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013\n</span>\n\n    <hr>\n\n    <span id=\"ref25\">[25] : https://en.wikipedia.org/wiki/Internet_Relay_Chat, accessed at 11:19 on the 11/03/2016</span>\n\n    <hr>\n\n    <span id=\"ref26\">[26] : http://www.theregister.co.uk/2010/11/16/irc_botnets_dying_off/, accessed at 10:34 on the 10/03/2016</span>\n\n\n</div>\n\n<div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-4\">\n    <span id=\"ref27\">[27] : Ollmann G. Botnet Communication Topologies. Damballa. 2009</span>\n\n    <hr>\n\n    <span id=\"ref28\">[28] : Jakobsson M, Ramzan Z. Crimeware: Understanding New Attacks and Defenses. In: 1st ed. Addison-Wesley Professional; 2008. p. 188–90</span>\n\n    <hr>\n\n    <span id=\"ref29\">[29] : Cooke E, Jahanian F, McPherson D. The zombie roundup: Understanding, detecting, and disrupting botnets. Networks [Internet]. 2005;7:39–44. Available from: http://www.usenix.org/events/sruti05/tech/full_papers/cooke/cooke_html</span>\n\n    <hr>\n\n    <span id=\"ref30\">[30] :  Dagon D, Gu G, Lee CP. A Taxonomy of Botnet Structures. Botnet Detect [Internet]. :143–64. Available from: http://link.springer.com/10.1007/978-0-387-68768-1_8\n</span>\n\n    <hr>\n\n    <span id=\"ref31\">[31] : Grizzard JB, Sharma V, Nunnery C, Kang BB, Dagon D. Peer-to-peer botnets: overview and case study. HotBots’07 Proc first Conf First Work Hot Top Underst Botnets [Internet]. 2007;1. Available from: http://dl.acm.org/citation.cfm?id=1323128.1323129</span>\n\n    <hr>\n\n    <span id=\"ref32\">[32] :  Zeidanloo HR, Manaf  a. a. Botnet Command and Control Mechanisms. 2009 Second Int Conf Comput Electr Eng [Internet]. 2009;1:564–8. Available from: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5380180\n</span>\n\n    <hr>\n\n    <span id=\"ref33\">[33] : Puri R. Bots & Botnet: An Overview. SANS Inst. 2003</span>\n\n    <hr>\n\n    <span id=\"ref34\">[34] : Paganini P. HTTP-Botnets: The Dark Side of an Standard Protocol! [Internet]. 2013 [cited 2016 Mar 11]. Available from: http://securityaffairs.co/wordpress/13747/cyber-crime/http-botnets-the-dark-side-of-an-standard-protocol.html</span>\n\n    <hr>\n\n    <span id=\"ref35\">[35] : Burghouwt P, Spruit M, Sips H. Towards Detection of Botnet Communication through Social Media by Monitoring User Activity. 2011;131–43. </span>\n\n    <hr>\n\n    <span id=\"ref36\">[36] : Cho CY, Babi ć D, Shin ECR, Song D. Inference and analysis of formal models of botnet command and control protocols. Acm Ccs [Internet]. 2010;426–39. Available from: http://doi.acm.org/10.1145/1866307.1866355</span>\n\n    <hr>\n\n    <span id=\"ref37\">[37] : Holz T, Gorecki C, Rieck K, Freiling FC. Measuring and Detecting Fast-Flux Service Networks. Ndss [Internet]. 2008;24–31. Available from: {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.188</span>\n\n    <hr>\n\n    <span id=\"ref38\">[38] : Holz T, Gorecki C, Rieck K, Freiling FC. Measuring and Detecting Fast-Flux Service Networks. Ndss [Internet]. 2008;24–31. Available from: {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.188</span>\n\n    <hr>\n</div>\n\n<div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-4\">\n    <span id=\"ref11\">[27] : Example reference 27</span>\n    <hr>\n    <span id=\"ref12\">[28] : Example reference 28</span>\n    <hr>\n</div>\n";
+	    return "<h2>References</h2>\n<br>\n<div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-4\">\n        <span id=\"ref1\">[1] : Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”,\n             International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.</span>\n\n    <hr>\n\n        <span id=\"ref2\">[2] : Paul Bächer, Thorsten Holz, Markus Kötter, Georg Wicherski, “Know your Enemy: Tracking\nBotnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.</span>\n\n    <hr>\n\n    <span id=\"ref3\">[3] : Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”</span>\n\n    <hr>\n\n    <span id=\"ref4\">[4] : Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.</span>\n\n    <hr>\n\n    <span id=\"ref5\">[5] : Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.</span>\n\n    <hr>\n\n    <span id=\"ref6\">[6] : Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.</span>\n\n    <hr>\n\n    <span id=\"ref7\">[7] : DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.</span>\n\n    <hr>\n\n    <span id=\"ref8\">[8] : https://en.wikipedia.org/wiki/Chebyshev%27s_inequality, accessed at 16:23 - 06/03/2016</span>\n\n    <hr>\n\n         <span id=\"ref9\">[9] : Wills, C. E., Mikhailov, M. & Shang, H. (2003) Inferring Relative Popularity of Internet Applications by Actively Querying DNS Caches. Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement. PP . 78-90.\n        </span>\n\n    <hr>\n\n        <span id=\"ref10\">[10] : Ahmed M. Manasrah, Awsan Hasan, “Detecting Botnet Activities Based on Abnormal DNS traffic”, International Journal of Computer Science and Information Security, Vol. 6, No.1, 2009\n        </span>\n\n    <hr>\n\n        <span id=\"ref11\">[11] : Cooke, E., Jahanian, F. & Mcpherson, D. (2005) The Zombie Roundup: Understanding, Detecting, and Disrupting Botnets. In The 1st Workshop on Steps to Reducing Unwanted Traffic on the Internet (SRUTI 2005). pp. 39-44.\n        </span>\n\n    <hr>\n\n    <span id=\"ref12\">[12] : Schiller, C. A., Binkley, J., Harley, D., Evron, G., Bradley, T., Willems, C. & Cross.</span>\n\n    <hr>\n\n    <span id=\"ref13\">[13] : Daniel Karrenberg, www.internetsociety.org, “The Internet Domain Name System Explained For Non-Experts”, Internet Society Member Briefing No.16.</span>\n\n    <hr>\n\n    <span id=\"ref14\">[14] : Castillo-Perez, S. & Garcia-Alfaro, J. (2008) Anonymous Resolution of DNS Queries. Lecture Notes in Computer Science, International Workshop on Information Security (IS'08), International OTM Conference. pp. 987–1000.</span>\n\n    <hr>\n\n    <span id=\"ref15\">[15] : Mitsuaki Akiyama, Takanori Kawamoto, Masayoshi Shimamura, Teruaki Yokoyama, Youki Kadobayashi, Suguru Yamaguchi (2007) A proposal of metrics for botnet detection based on its cooperative behavior. Proceedings of the Internet Measurement Technology and its Applications to Building Next Generation Internet Workshop (SAINT 2007). pp. 82-82.</span>\n\n    <hr>\n\n    <span id=\"ref16\">[16] : Choi, H., Lee, H., Lee, H. & Kim, H. (2007) Botnet Detection by Monitoring Group Activities in DNS Traffic. Seventh IEEE International Conference on Computer and Information Technology (CIT 2007). pp. 715-720.</span>\n\n    <hr>\n\n    <span id=\"ref17\">[17] : Rieck, K., Laskov, P. & Klaus-Robertmuller. (2006) Efficient Algorithms for Similarity Measures over Sequential Data: A Look Beyond Kernels. Proc of 28th DAGM Symposium (LNCS). pp. 374– 383.</span>\n\n    <hr>\n\n    <span id=\"ref18\">[18] : https://en.wikipedia.org/wiki/Jaccard_index, accessed at 14:58 on the 12/03/2016.</span>\n\n    <hr>\n\n    <span id=\"ref19\">[19] : N. Ianelli and A. Hackworth. Botnets as a Vehicle for Online Crime. CERT Coordination Center, 2005.</span>\n\n    <hr>\n\n    <span id=\"ref20\">[20] : Hossein Rouhani Zeidanloo, Mohammad Jorjor Zadeh, shooshtari, Payam Vahdani Amoli, M. Safari, Mazdak Zamani, August 2010, “A Taxonomy of Botnet Detection Techniques”, Computer Science and Information Technology (ICCSIT), 2010 3rd IEEE International Conference, Volume 2, pp. 158-162.</span>\n\n    <hr>\n\n    <span id=\"ref21\">[21] : https://en.wikipedia.org/wiki/Botnet, accessed at 22:32 on the 12/03/2016</span>\n\n</div>\n\n<div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-4\">\n\n\n    <span id=\"ref22\">[22] : Patrick Butler, Kui Xu, and Danfeng (Daphne) Yao, “Quantitatively Analysing Stealthy Communication Channels”, Dept. of Computer Science, Virginia Tech, Blacksburg, VA 24060.</span>\n\n    <hr>\n\n    <span id=\"ref23\">[23] : Matthew Thomas, Aziz Mohaisen, “Kindred Domains: Detecting and Clustering Botnet Domains Using DNS Traffic”, http://www.cse.buffalo.edu/~mohaisen/doc/www14ws.pdf, accessed at 12:01 on the 11/03/2016</span>\n\n    <hr>\n\n    <span id=\"ref24\">[24] : Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013</span>\n\n    <hr>\n\n    <span id=\"ref25\">[25] : https://en.wikipedia.org/wiki/Internet_Relay_Chat, accessed at 11:19 on the 11/03/2016</span>\n\n    <hr>\n\n    <span id=\"ref26\">[26] : http://www.theregister.co.uk/2010/11/16/irc_botnets_dying_off/, accessed at 10:34 on the 10/03/2016</span>\n\n    <hr>\n\n    <span id=\"ref27\">[27] : Ollmann G. Botnet Communication Topologies. Damballa. 2009</span>\n\n    <hr>\n\n    <span id=\"ref28\">[28] : Jakobsson M, Ramzan Z. Crimeware: Understanding New Attacks and Defenses. In: 1st ed. Addison-Wesley Professional; 2008. p. 188–90</span>\n\n    <hr>\n\n    <span id=\"ref29\">[29] : Cooke E, Jahanian F, McPherson D. The zombie roundup: Understanding, detecting, and disrupting botnets. Networks [Internet]. 2005;7:39–44. Available from: http://www.usenix.org/events/sruti05/tech/full_papers/cooke/cooke_html</span>\n\n    <hr>\n\n    <span id=\"ref30\">[30] :  Dagon D, Gu G, Lee CP. A Taxonomy of Botnet Structures. Botnet Detect [Internet]. :143–64. Available from: http://link.springer.com/10.1007/978-0-387-68768-1_8\n</span>\n\n    <hr>\n\n    <span id=\"ref31\">[31] : Grizzard JB, Sharma V, Nunnery C, Kang BB, Dagon D. Peer-to-peer botnets: overview and case study. HotBots’07 Proc first Conf First Work Hot Top Underst Botnets [Internet]. 2007;1. Available from: http://dl.acm.org/citation.cfm?id=1323128.1323129</span>\n\n    <hr>\n\n    <span id=\"ref32\">[32] :  Zeidanloo HR, Manaf  a. a. Botnet Command and Control Mechanisms. 2009 Second Int Conf Comput Electr Eng [Internet]. 2009;1:564–8. Available from: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5380180\n</span>\n\n    <hr>\n\n    <span id=\"ref33\">[33] : Puri R. Bots & Botnet: An Overview. SANS Inst. 2003</span>\n\n    <hr>\n\n    <span id=\"ref34\">[34] : Paganini P. HTTP-Botnets: The Dark Side of an Standard Protocol! [Internet]. 2013 [cited 2016 Mar 11]. Available from: http://securityaffairs.co/wordpress/13747/cyber-crime/http-botnets-the-dark-side-of-an-standard-protocol.html</span>\n\n    <hr>\n\n    <span id=\"ref35\">[35] : Burghouwt P, Spruit M, Sips H. Towards Detection of Botnet Communication through Social Media by Monitoring User Activity. 2011;131–43. </span>\n\n    <hr>\n\n    <span id=\"ref36\">[36] : Cho CY, Babi ć D, Shin ECR, Song D. Inference and analysis of formal models of botnet command and control protocols. Acm Ccs [Internet]. 2010;426–39. Available from: http://doi.acm.org/10.1145/1866307.1866355</span>\n\n    <hr>\n\n    <span id=\"ref37\">[37] : Holz T, Gorecki C, Rieck K, Freiling FC. Measuring and Detecting Fast-Flux Service Networks. Ndss [Internet]. 2008;24–31. Available from: {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.188</span>\n\n    <hr>\n\n    <span id=\"ref38\">[38] : Holz T, Gorecki C, Rieck K, Freiling FC. Measuring and Detecting Fast-Flux Service Networks. Ndss [Internet]. 2008;24–31. Available from: {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.188</span>\n\n    <hr>\n\n    <span id=\"ref39\">[39] : Juan Caballero, Pongsin Poosankam, Christian Kreibich, and Dawn Song. Dispatcher: Enabling active botnet infiltration using automatic protocol reverse-engineering. In CCS’09: Proceedings of the 16th ACM conference on Computer and communications security, pages 621–634, New York, NY, USA, 2009. ACM.</span>\n\n    <hr>\n\n    <span id=\"ref40\">[40] : Windows Sockets 2 Documentaion - https://msdn.microsoft.com/en-us/library/windows/desktop/ms738532(v=vs.85).aspx 13:03, Sunday 13th March 2016.</span>\n</div>\n\n<div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-4\">\n    <span id=\"ref41\">[41] : C. Kanich, C. Kreibich, K. Levchenko, B. Enright, G. M. Voelker, V. Paxson, and S. Savage. Spamalytics: An empirical analysis of spam marketing conversion. In ACM Conference on Computer and Communications Security, Alexandria, VA, October 2008.</span>\n\n    <hr>\n\n    <span id=\"ref42\">[42] : J. Caballero, S. Venkataraman, P. Poosankam, M. G. Kang, D. Song, and A. Blum. FiG: Automatic fingerprint generation. In Network and Distributed System Security Symposium, San Diego, CA, February 2007.</span>\n\n    <hr>\n\n    <span id=\"ref43\">[43] : P. M. Comparetti, G. Wondracek, C. Kruegel, and E. Kirda. Prospex: Protocol specification extraction. In IEEE Symposium on Security and Privacy, Oakland, CA, May 2009.</span>\n\n    <hr>\n\n    <span id=\"ref44\">[44] : W. Cui, M. Peinado, K. Chen, H. J. Wang, and L. Irun-Briz. Tupni: Automatic reverse engineering of input formats. In ACM Conference on Computer and Communications Security, Alexandria, VA, October 2008</span>\n\n    <hr>\n\n    <span id=\"ref45\">[45] :H. Dreger, A. Feldmann, M. Mai, V. Paxson, and R. Sommer. Dynamic application-layer protocol analysis for network intrusion detection. In USENIX Security Symposium, Vancouver, Canada, July 2006. </span>\n\n    <hr>\n\n    <span id=\"ref46\">[46] : Dana Angluin. Learning regular sets from queries and counterexamples. Information and Computation, 75(2):87–106, 1987.</span>\n\n    <hr>\n\n    <span id=\"ref47\">[47] : George H. Mealy. A method for synthesizing sequential circuits. Bell System Technical Journal, 34(5):1045–1079, 1955.</span>\n\n    <hr>\n\n    <span id=\"ref48\">[48] : Chia Yuan Cho, Domagoj Babić, Richard Shin and Dawn Song. Inference and Analysis of Formal Models Botnet Command and Control Protocols. In CCS'10: Proceedings of the 2010 ACM Conference on Computer and Communications Security, pages 426–440, Chicago, Illinois, USA, 2010. ACM.</span>\n\n    <hr>\n\n    <span id=\"ref49\">[49] : Muzammil Shahbaz and Roland Groz. Inferring Mealy machines. In FM’09: Proceedings of the 2nd World Congress on Formal Methods, pages 207–222, Berlin, Heidelberg, 2009. Springer.</span>\n\n</div>\n";
 	},"useData":true});
 
 /***/ },
@@ -18412,7 +18414,7 @@
 
 	var App = __webpack_require__(1);
 	var HomeController = __webpack_require__(31);
-	var AppRouter = __webpack_require__(104);
+	var AppRouter = __webpack_require__(77);
 	
 	var API = {
 	
@@ -18464,7 +18466,7 @@
 	__webpack_require__(38);
 	__webpack_require__(39);
 	
-	var HomeData = __webpack_require__(101);
+	var HomeData = __webpack_require__(74);
 	
 	var HomeShowController = Marionette.Object.extend({
 	
@@ -18730,7 +18732,7 @@
 	var App = __webpack_require__(1);
 	var template = __webpack_require__(40);
 	var _ = __webpack_require__(3);
-	__webpack_require__(98);
+	__webpack_require__(71);
 	
 	var Feature = Marionette.ItemView.extend({
 	
@@ -18954,11 +18956,39 @@
 	},"41":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(147),depth0,{"name":"hyperText","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(62),depth0,{"name":"hyperText","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"43":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
 	  return ((stack1 = this.invokePartial(__webpack_require__(63),depth0,{"name":"fluxing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"45":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(64),depth0,{"name":"messageStructure","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"47":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(65),depth0,{"name":"encryption","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"49":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(66),depth0,{"name":"protocolStateMachine","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"51":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(67),depth0,{"name":"mealyMachines","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"53":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(68),depth0,{"name":"inferringMealyMachines","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"55":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(69),depth0,{"name":"applyingMealyMachines","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"57":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
+	  return ((stack1 = this.invokePartial(__webpack_require__(70),depth0,{"name":"resultingInsights","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
@@ -19004,7 +19034,21 @@
 	    + "\n"
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.hyperText : depth0), depth0),{"name":"hyperText","hash":{},"fn":this.program(41, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.fluxing : depth0), depth0),{"name":"fluxing","hash":{},"fn":this.program(43, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.fluxing : depth0), depth0),{"name":"fluxing","hash":{},"fn":this.program(43, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.messageStructure : depth0), depth0),{"name":"messageStructure","hash":{},"fn":this.program(45, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.encryption : depth0), depth0),{"name":"encryption","hash":{},"fn":this.program(47, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.protocolStateMachine : depth0), depth0),{"name":"protocolStateMachine","hash":{},"fn":this.program(49, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.mealyMachines : depth0), depth0),{"name":"mealyMachines","hash":{},"fn":this.program(51, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.inferringMealyMachines : depth0), depth0),{"name":"inferringMealyMachines","hash":{},"fn":this.program(53, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.applyingMealyMachines : depth0), depth0),{"name":"applyingMealyMachines","hash":{},"fn":this.program(55, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.resultingInsights : depth0), depth0),{"name":"resultingInsights","hash":{},"fn":this.program(57, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -19188,7 +19232,15 @@
 	},"useData":true});
 
 /***/ },
-/* 62 */,
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    HTTP is an alternative to IRC which has much the same architecture as IRC. The benefit of using HTTP is that it\n    hides botnet traffic in normal web traffic, and so can bypass firewalls with port-based filtering systems; Firewalls\n    usually block traffic through unwanted ports, which often includes IRC\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Zeidanloo HR, Manaf  a. a. Botnet Command and Control Mechanisms. 2009 Second Int Conf Comput Electr Eng [Internet]. 2009;1:564–8. Available from: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5380180\">\n        [32].\n    </button>\n\n    HTTP is a “pull” style protocol i.e. bots periodically visit certain websites to retrieve instructions, whereas IRC\n    is a “push” style protocol\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Zeidanloo HR, Manaf  a. a. Botnet Command and Control Mechanisms. 2009 Second Int Conf Comput Electr Eng [Internet]. 2009;1:564–8. Available from: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5380180\">\n        [32,\n    </button>\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paganini P. HTTP-Botnets: The Dark Side of an Standard Protocol! [Internet]. 2013 [cited 2016 Mar 11]. Available from: http://securityaffairs.co/wordpress/13747/cyber-crime/http-botnets-the-dark-side-of-an-standard-protocol.html\">\n        34].\n    </button>\n\n    The periodic pattern exhibited by Http botnets is similar to that of many other HTTP services, such as auto-updaters\n    and Gmail session, which makes detection of HTTP botnets with low rates of false negatives and positives a\n    significant challenge\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paganini P. HTTP-Botnets: The Dark Side of an Standard Protocol! [Internet]. 2013 [cited 2016 Mar 11]. Available from: http://securityaffairs.co/wordpress/13747/cyber-crime/http-botnets-the-dark-side-of-an-standard-protocol.html\">\n        [34].\n    </button>\n\n</p>\n\n<p>\n\n    These are just two examples of communication protocols used by botnets. Others include social media, where the\n    botmaster posts instructions as messages on a social media site such as Facebook or Twitter, and the bots retrieve\n    the instructions by regularly polling certain pages\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Burghouwt P, Spruit M, Sips H. Towards Detection of Botnet Communication through Social Media by Monitoring User Activity. 2011;131–43\">\n        [35],\n    </button>\n\n    and SMTP; MegaD, a spamming bot which was responsible for 1/3 of the world’s spam at its peak, used a custom SMTP\n    implementation as its C&C protocol\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Cho CY, Babi ć D, Shin ECR, Song D. Inference and analysis of formal models of botnet command and control protocols. Acm Ccs [Internet]. 2010;426–39. Available from: http://doi.acm.org/10.1145/1866307.1866355\">\n        [36].\n    </button>\n\n\n</p>";
+	},"useData":true});
+
+/***/ },
 /* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -19198,46 +19250,75 @@
 	},"useData":true});
 
 /***/ },
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */,
-/* 97 */,
-/* 98 */
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    Before being transmitted, the information sent by a bot to a C&C server is stored somewhere on the infected machine.\n    Likewise, after being received, the information sent to a machine by a C&C server is stored to be processed by the\n    bot. By using as much information as possible about the origins of information sent and the subsequent processing of\n    information received by a bot, it is possible to build an understanding of the message structure - and the meaning\n    of specific message fields - utilised by the communication protocol.\n</p>\n\n<p>\n    This intuition, of Caballero et al\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Juan Caballero, Pongsin Poosankam, Christian Kreibich, and Dawn Song. Dispatcher: Enabling active botnet infiltration using automatic protocol reverse-engineering. In CCS’09: Proceedings of the 16th ACM conference on Computer and communications security, pages 621–634, New York, NY, USA, 2009. ACM.\">\n        [39],\n    </button>\n\n    has allowed for the automatic reverse engineering of message structures and field semantics of an unknown protocol,\n    most notably the bespoke protocol used by MegaD. The technique cited requires the studying of the execution trace of\n    the application employing the protocol on at least one side of the communication (in this case the bot side).\n</p>\n\n<p>\n    In a basic sense, the technique works as follows: by studying how a message is constructed or deconstructed, it is\n    possible to ascertain the start and end of specific fields within a message. Specifically (in the construction\n    case), by observing when contiguous blocks of a message are copied from a single buffer in the application. Each\n    such block should represent a field of the message. Furthermore, the meaning of the field can also be derived by\n    taking note of where the data that was copied to the message came from. For example, if the data written to a field\n    came from a function or instruction that returns the current wall-clock time of the machine, it is likely that the\n    field is a timestamp. The technique works for received messages too; for example, suppose the IP address argument\n    for some networking function (e.g. Winsock’s getnameinfo\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Windows Sockets 2 Documentaion - https://msdn.microsoft.com/en-us/library/windows/desktop/ms738532(v=vs.85).aspx 13:03, Sunday 13th March 2016.\">\n        [40])\n    </button>\n\n    is copied/derived from a field in a received message, we can deduce the semantics of the field as an IP address\n    field.\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    What about encryption! Part of the beauty of this technique is that it side steps the problem of encryption. At some\n    point before sending an encrypted message, the fields that make up the message must have existed in memory in an\n    unencrypted form. Similarly, after an encrypted message is received its fields must be decrypted by the application,\n    otherwise the application couldn’t use them. Encryption can be bypassed by simply following data through program\n    execution (either forwards or backwards) until its unencrypted state is found.\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    The remaining mystery of a studied protocol is that of what constitutes a valid session of messages. Or more\n    specifically, what sequences of messages are valid during an exchange and what sequences aren’t. This set of message\n    sequences is best expressed by a finite state machine, specifically a Mealy machine\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"George H. Mealy. A method for synthesizing sequential circuits. Bell System Technical Journal, 34(5):1045–1079, 1955.\">\n        [47].\n    </button>\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<blockquote class=\"blockquote\">\n    “A Mealy machine is a six-tuple (Q,ΣI ,ΣO,δ,λ,q0), where Q is a finite non-empty set of states, q0 ∈ Q is the\n    initial state, ΣI is a finite set of input symbols, ΣO is a finite set of output symbols, δ : Q × ΣI → Q is the\n    transition relation, and λ : Q×ΣI → ΣO is the output relation.”\n\n    <footer class=\"blockquote-footer\">\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"George H. Mealy. A method for synthesizing sequential circuits. Bell System Technical Journal, 34(5):1045–1079, 1955.\">\n            [47,\n        </button>\n        <button type=\"button\"\n                class=\"btn btn-sm reference\"\n                data-toggle=\"tooltip\" data-placement=\"right\"\n                title=\"Chia Yuan Cho, Domagoj Babić, Richard Shin and Dawn Song. Inference and Analysis of Formal Models Botnet Command and Control Protocols. In CCS'10: Proceedings of the 2010 ACM Conference on Computer and Communications Security, pages 426–440, Chicago, Illinois, USA, 2010. ACM.\">\n            48].\n        </button>\n    </footer>\n</blockquote>\n\n<p>\n    In simpler terms, a mealy machine is a finite state machine whose output is determined by current state and input.\n    The inputs to the machine, in this case, are representative of messages sent by the bot to a botnet server. And the\n    outputs representative of the botnet server’s response.\n</p>\n";
+	},"useData":true});
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    A modification to the L* algorithm\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Dana Angluin. Learning regular sets from queries and counterexamples. Information and Computation, 75(2):87–106, 1987\">\n        [46],\n    </button>\n\n    allows for mealy machine inference provided there is some teacher that can confirm a correct proposition or respond\n    with a counter example when supplied with a mealy machine\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Muzammil Shahbaz and Roland Groz. Inferring Mealy machines. In FM’09: Proceedings of the 2nd World Congress on Formal Methods, pages 207–222, Berlin, Heidelberg, 2009. Springer.\">\n        [49].\n    </button>\n\n    In brief, queries are made to the teacher in the form of strings representing sequences of input who responds with\n    strings representing sequences of output behaviour. The input and output strings are stored in an observation table.\n    The algorithm processes the observation table and proposes a mealy machine to the teacher. The teacher replies with\n    some counter-example that distinguishes the proposed mealy machine with the actual mealy machine.\n\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    The work of Yuan Cho et al\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Chia Yuan Cho, Domagoj Babić, Richard Shin and Dawn Song. Inference and Analysis of Formal Models Botnet Command and Control Protocols. In CCS'10: Proceedings of the 2010 ACM Conference on Computer and Communications Security, pages 426–440, Chicago, Illinois, USA, 2010. ACM.\">\n        [48],\n    </button>\n\n    demonstrates how the Mealy Machine Inference algorithm can be applied to a botnet protocol. Provided with a bot\n    emulator and a knowledge of the message structure and field semantics of the protocol, it is possible to construct a\n    complete finite state machine representation of a botnet protocol\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Chia Yuan Cho, Domagoj Babić, Richard Shin and Dawn Song. Inference and Analysis of Formal Models Botnet Command and Control Protocols. In CCS'10: Proceedings of the 2010 ACM Conference on Computer and Communications Security, pages 426–440, Chicago, Illinois, USA, 2010. ACM.\">\n        [48].\n    </button>\n\n    This is achieved by indirectly using botnet servers as the teacher in the aforementioned algorithm. The idea being\n    to essentially look for a counter-example rather than being provided with one by constructing valid messages and\n    sending them to the intended botnet server. The technique is limited in a few senses; it relies on the assumption\n    that the protocol is deterministic and supports a finite amount of states. There is also no way to guarantee that\n    all message type of the protocol have been identified, so can only produce a complete finite state machine with\n    respect to known input message types (those sent by the bot). Finally, the confidence in the resulting finite state\n    machine is not 100% due to the stochastic search for counter-examples. On the upside, the confidence is scalable, in\n    that the results can be made more confident by making more queries.\n\n</p>\n";
+	},"useData":true});
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    New insights of sophisticated botnets have been reached due to the discussed techniques, both of which were applied\n    to MegaD\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Juan Caballero, Pongsin Poosankam, Christian Kreibich, and Dawn Song. Dispatcher: Enabling active botnet infiltration using automatic protocol reverse-engineering. In CCS’09: Proceedings of the 16th ACM conference on Computer and communications security, pages 621–634, New York, NY, USA, 2009. ACM.\">\n        [39,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Chia Yuan Cho, Domagoj Babić, Richard Shin and Dawn Song. Inference and Analysis of Formal Models Botnet Command and Control Protocols. In CCS'10: Proceedings of the 2010 ACM Conference on Computer and Communications Security, pages 426–440, Chicago, Illinois, USA, 2010. ACM.\">\n        48].\n    </button>\n\n    With an understanding of the message structure and field semantics of MegaD’s protocol messages, it became apparent\n    that the C&C of MegaD is split into three servers. There exists a C&C server which provides instructions to bots\n    when probed; an SMTP server which is used to test the spamming capabilities of bots, the hostname of which is sent\n    to bots by the C&C server; and finally a spam server which bots download their spam templates from, the details of\n    which are also supplied by the C&C server.\n\n</p>\n\n<p>\n    Moreover, with a complete finite state machine model of the protocol, it became clear that there is some, previously\n    unknown, communication backchannel between C&C master server and the spam template servers. These kinds of insights\n    into the C&C structure and behaviour of sophisticated botnets like MegaD are made possible with the understanding of\n    their protocols.\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(99);
+	var template = __webpack_require__(72);
 	
 	var ScrollSpy = Marionette.ItemView.extend({
 	
@@ -19272,7 +19353,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 99 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19296,12 +19377,12 @@
 	    + "                    </ul>\n                </div>\n\n            </div>\n        </div>\n    </nav>\n\n    <div data-spy=\"scroll\" data-offset=\"0\" data-target=\"#"
 	    + alias2(alias1((depth0 != null ? depth0.scrollspyId : depth0), depth0))
 	    + "\" class=\"scrollspy-main\">\n\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(100),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(73),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "\n    </div>\n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 100 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19310,11 +19391,11 @@
 	},"useData":true});
 
 /***/ },
-/* 101 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var carousel = __webpack_require__(102);
-	var featurette = __webpack_require__(103);
+	var carousel = __webpack_require__(75);
+	var featurette = __webpack_require__(76);
 	
 	var JSON = {
 	    carousel: carousel,
@@ -19324,7 +19405,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 102 */
+/* 75 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19368,7 +19449,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 103 */
+/* 76 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19406,7 +19487,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 104 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Backbone = __webpack_require__(2);
@@ -19431,16 +19512,16 @@
 
 
 /***/ },
-/* 105 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var App = __webpack_require__(1);
-	var AppRouter = __webpack_require__(104);
-	var EstablishingBotnetsController = __webpack_require__(106);
-	var CommandControlTopsController = __webpack_require__(121);
-	var CommunicationProtocolsController = __webpack_require__(128);
-	var DetectionController = __webpack_require__(135);
-	var CommandController = __webpack_require__(142);
+	var AppRouter = __webpack_require__(77);
+	var EstablishingBotnetsController = __webpack_require__(79);
+	var CommandControlTopsController = __webpack_require__(95);
+	var CommunicationProtocolsController = __webpack_require__(102);
+	var DetectionController = __webpack_require__(109);
+	var CommandController = __webpack_require__(116);
 	
 	var API = {
 	
@@ -19536,19 +19617,19 @@
 
 
 /***/ },
-/* 106 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(107);
+	var appData = __webpack_require__(80);
 	
-	__webpack_require__(111);
-	__webpack_require__(113);
+	__webpack_require__(84);
+	__webpack_require__(86);
 	__webpack_require__(39);
 	
-	__webpack_require__(119);
+	__webpack_require__(93);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19610,12 +19691,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 107 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var subjectPointers = __webpack_require__(108);
-	var featurette = __webpack_require__(109);
-	var jumbotron = __webpack_require__(110);
+	var subjectPointers = __webpack_require__(81);
+	var featurette = __webpack_require__(82);
+	var jumbotron = __webpack_require__(83);
 	
 	var JSON = {
 	    subjectPointers: subjectPointers,
@@ -19626,7 +19707,7 @@
 	module.exports= JSON;
 
 /***/ },
-/* 108 */
+/* 81 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19658,7 +19739,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 109 */
+/* 82 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19699,7 +19780,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 110 */
+/* 83 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19710,12 +19791,12 @@
 	module.exports = JSON;
 
 /***/ },
-/* 111 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var App = __webpack_require__(1);
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(112);
+	var template = __webpack_require__(85);
 	
 	var Pointer = Marionette.ItemView.extend({
 	
@@ -19747,7 +19828,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 112 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19778,12 +19859,12 @@
 	},"useData":true});
 
 /***/ },
-/* 113 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(114);
+	var template = __webpack_require__(87);
 	
 	var Jumbotron = Marionette.ItemView.extend({
 	
@@ -19819,7 +19900,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 114 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19829,39 +19910,45 @@
 	  return "<div class=\"jumbotron\">\n    <h1>"
 	    + this.escapeExpression(this.lambda((depth0 != null ? depth0.title : depth0), depth0))
 	    + "</h1>\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(115),depth0,{"name":"contentSelection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(88),depth0,{"name":"contentSelection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 115 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(116),depth0,{"name":"detection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(89),depth0,{"name":"detection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"3":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(117),depth0,{"name":"establishing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(90),depth0,{"name":"establishing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"5":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(118),depth0,{"name":"commandControlTops","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
-	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	  return ((stack1 = this.invokePartial(__webpack_require__(91),depth0,{"name":"commandControlTops","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"7":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.detection : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	  return ((stack1 = this.invokePartial(__webpack_require__(92),depth0,{"name":"cAndC","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
+	
+	  return ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.detection : depth0), depth0),{"name":"detection","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.establishing : depth0),{"name":"if","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.establishing : depth0), depth0),{"name":"establishing","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.commandControlTops : depth0),{"name":"if","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.commandControlTops : depth0), depth0),{"name":"commandControlTops","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.cAndC : depth0), depth0),{"name":"cAndC","hash":{},"fn":this.program(7, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 116 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19870,7 +19957,7 @@
 	},"useData":true});
 
 /***/ },
-/* 117 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19879,7 +19966,7 @@
 	},"useData":true});
 
 /***/ },
-/* 118 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19888,11 +19975,20 @@
 	},"useData":true});
 
 /***/ },
-/* 119 */
+/* 92 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    Sophisticated botnets employ proprietary communication protocols\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        [1],\n    </button>\n\n    presumably to hinder the efforts of security experts, such as active infiltration or analysis\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        [1,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        3],\n    </button>\n\n    amongst other things\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        [4,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        5,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        6,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        7].\n    </button>\n\n    Gaining an understanding of the protocols used by a botnet can allow for a large amounts of information to be\n    uncovered about its capabilities and intent.\n</p>";
+	},"useData":true});
+
+/***/ },
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(120);
+	var template = __webpack_require__(94);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -19915,7 +20011,7 @@
 
 
 /***/ },
-/* 120 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19924,19 +20020,19 @@
 	},"useData":true});
 
 /***/ },
-/* 121 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(122);
+	var appData = __webpack_require__(96);
 	
-	__webpack_require__(111);
-	__webpack_require__(113);
+	__webpack_require__(84);
+	__webpack_require__(86);
 	__webpack_require__(39);
 	
-	__webpack_require__(126);
+	__webpack_require__(100);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19998,12 +20094,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 122 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(123);
-	var featurette = __webpack_require__(124);
-	var subjectPointers = __webpack_require__(125);
+	var jumbotron = __webpack_require__(97);
+	var featurette = __webpack_require__(98);
+	var subjectPointers = __webpack_require__(99);
 	
 	var JSON = {
 	    jumbotron : jumbotron,
@@ -20014,7 +20110,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 123 */
+/* 97 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20025,7 +20121,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 124 */
+/* 98 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20068,7 +20164,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 125 */
+/* 99 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20100,11 +20196,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 126 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(127);
+	var template = __webpack_require__(101);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20127,7 +20223,7 @@
 
 
 /***/ },
-/* 127 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20136,19 +20232,19 @@
 	},"useData":true});
 
 /***/ },
-/* 128 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(129);
+	var appData = __webpack_require__(103);
 	
-	__webpack_require__(111);
-	__webpack_require__(113);
+	__webpack_require__(84);
+	__webpack_require__(86);
 	__webpack_require__(39);
 	
-	__webpack_require__(133);
+	__webpack_require__(107);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20210,12 +20306,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 129 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(130);
-	var featurette = __webpack_require__(131);
-	var subjectPointers = __webpack_require__(132);
+	var jumbotron = __webpack_require__(104);
+	var featurette = __webpack_require__(105);
+	var subjectPointers = __webpack_require__(106);
 	
 	var JSON = {
 	    jumbotron : jumbotron,
@@ -20226,7 +20322,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 130 */
+/* 104 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20237,7 +20333,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 131 */
+/* 105 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20264,7 +20360,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 132 */
+/* 106 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20294,11 +20390,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 133 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(134);
+	var template = __webpack_require__(108);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20321,7 +20417,7 @@
 
 
 /***/ },
-/* 134 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20330,19 +20426,19 @@
 	},"useData":true});
 
 /***/ },
-/* 135 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(136);
+	var appData = __webpack_require__(110);
 	
-	__webpack_require__(111);
-	__webpack_require__(113);
+	__webpack_require__(84);
+	__webpack_require__(86);
 	__webpack_require__(39);
 	
-	__webpack_require__(140);
+	__webpack_require__(114);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20404,12 +20500,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 136 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(137);
-	var featurette = __webpack_require__(138);
-	var subjectPointers = __webpack_require__(139);
+	var jumbotron = __webpack_require__(111);
+	var featurette = __webpack_require__(112);
+	var subjectPointers = __webpack_require__(113);
 	
 	var JSON = {
 	    jumbotron: jumbotron,
@@ -20420,7 +20516,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 137 */
+/* 111 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20432,7 +20528,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 138 */
+/* 112 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20486,7 +20582,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 139 */
+/* 113 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20516,11 +20612,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 140 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(141);
+	var template = __webpack_require__(115);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20543,7 +20639,7 @@
 
 
 /***/ },
-/* 141 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20552,19 +20648,20 @@
 	},"useData":true});
 
 /***/ },
-/* 142 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(143);
+	var appData = __webpack_require__(117);
 	
-	__webpack_require__(111);
-	__webpack_require__(113);
+	__webpack_require__(84);
+	__webpack_require__(86);
 	__webpack_require__(39);
+	__webpack_require__(121);
 	
-	__webpack_require__(145);
+	__webpack_require__(123);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20581,6 +20678,10 @@
 	
 	    showDetection: function () {
 	
+	        this.showPreamble({
+	           region: this.layout.getRegion('preamble')
+	        });
+	
 	        this.showSubjectPointers({
 	            region: this.layout.getRegion('subjectPointers'),
 	            data: appData.subjectPointers
@@ -20596,6 +20697,11 @@
 	            data : appData.featurette
 	        });
 	
+	    },
+	
+	    showPreamble: function (options) {
+	        var view = App.request('new:preamble:view');
+	        options.region.show(view);
 	    },
 	
 	    showSubjectPointers: function (options) {
@@ -20626,34 +20732,167 @@
 	module.exports = Controller;
 
 /***/ },
-/* 143 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(144);
-	
+	var jumbotron = __webpack_require__(118);
+	var featurette = __webpack_require__(119);
+	var subjectPointers = __webpack_require__(120);
 	var JSON = {
-	    jumbotron: jumbotron
+	    jumbotron: jumbotron,
+	    featurette: featurette,
+	    subjectPointers: subjectPointers
 	};
 	
 	module.exports = JSON;
 
 /***/ },
-/* 144 */
+/* 118 */
 /***/ function(module, exports) {
 
 	var JSON = {
-	    title : "Command and Control Structure",
-	    content : "Some content about comand and control structure"
+	    title : "Uncovering Botnet C & Cs and Behaviours using Protocol Reverse Engineering",
+	    cAndC : true
 	};
 	
 	module.exports = JSON;
 
 /***/ },
-/* 145 */
+/* 119 */
+/***/ function(module, exports) {
+
+	var JSON = [
+	    {
+	        heading: "Message Structure and Field Semantics",
+	        subHeading: "",
+	        messageStructure: true,
+	        image: "",
+	        id: ""
+	    },
+	    {
+	        heading: "What about Encryption?",
+	        subHeading: "",
+	        encryption: true,
+	        id: "encryption"
+	    },
+	    {
+	        heading: "Protocol State Machine",
+	        protocolStateMachine: true
+	    },
+	    {
+	        heading: "Mealy Machines",
+	        mealyMachines: true,
+	        id: "mealyMachines"
+	    },
+	
+	    {
+	        heading: "Infering Mealy Machines",
+	        inferringMealyMachines: true
+	    },
+	    {
+	        heading: "Applying Mealy Machine Inference to Botnet Protocols",
+	        applyingMealyMachines: true
+	    },
+	    {
+	        heading: "Resulting Insights",
+	        resultingInsights: true,
+	        id: "resultingInsights"
+	    }
+	
+	];
+	
+	module.exports = JSON;
+
+/***/ },
+/* 120 */
+/***/ function(module, exports) {
+
+	var JSON = [
+	    {
+	        subjectTitle: "Encryption",
+	        subjectContent: "",
+	        buttonText: "Read more »",
+	        image: "",
+	        destination: "#encryption"
+	    },
+	
+	    {
+	        subjectTitle: "Mealy Machines",
+	        subjectContent: "",
+	        buttonText: "Read more »",
+	        image: "",
+	        destination: "#mealyMachines"
+	    },
+	    {
+	        subjectTitle: "Resulting Insights",
+	        subjectContent: "",
+	        buttonText: "Read more »",
+	        image: "",
+	        destination: "#resultingInsights"
+	    }
+	
+	];
+	
+	module.exports = JSON;
+
+/***/ },
+/* 121 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
+	var App = __webpack_require__(1);
+	var template = __webpack_require__(122);
+	
+	var Preamble = Marionette.ItemView.extend({
+	
+	    template: template,
+	
+	    ui: {
+	        tooltips: '[data-toggle="tooltip"]'
+	    },
+	
+	    events : {
+	        'click @ui.tooltips' : 'scrollToBottom'
+	    },
+	
+	    onRender: function () {
+	        this.activateTooltips();
+	    },
+	
+	    activateTooltips: function () {
+	        this.bindUIElements();
+	        this.ui.tooltips.tooltip();//Bootstrap JS method to activate tooltips
+	    },
+	
+	    scrollToBottom: function () {
+	        $("html, body").animate({ scrollTop: $('footer').offset().top - 100 }, "slow");
+	    }
+	
+	
+	});
+	
+	App.reqres.setHandler('new:preamble:view', function () {
+	    return new Preamble();
+	});
+	
+	module.exports = Preamble;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<blockquote class=\"preamble blockquote\">\n    To learn about unknown proprietary protocols, protocol reverse engineering can be employed. Protocol reverse\n    engineering intends to provide information on the structure of the messages used in the protocol, as well as what\n    constitutes valid sequences of messages\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REF\">\n        [1].\n    </button>\n\n    Protocol reverse engineering obviously requires studying the protocol as it is used. As such, emulation of an\n    infected bot is required to gain knowledge about the protocol it employs.\n\n</blockquote>";
+	},"useData":true});
+
+/***/ },
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(146);
+	var template = __webpack_require__(124);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20661,6 +20900,7 @@
 	    template: template,
 	
 	    regions: {
+	        preamble: '[data-region="preamble"]',
 	        subjectPointers: '[data-region="subject-pointers"]',
 	        jumbotron: '[data-region="jumbotron"]',
 	        featurette : '[data-region="featurette"]'
@@ -20676,21 +20916,12 @@
 
 
 /***/ },
-/* 146 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<div class=\"container top-cmp\">\n    <div data-region=\"jumbotron\"></div>\n    <div class=\"row subject-pointers\" data-region=\"subject-pointers\"></div>\n    <div data-region=\"featurette\"></div>\n</div>\n";
-	},"useData":true});
-
-/***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Handlebars = __webpack_require__(14);
-	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    HTTP is an alternative to IRC which has much the same architecture as IRC. The benefit of using HTTP is that it\n    hides botnet traffic in normal web traffic, and so can bypass firewalls with port-based filtering systems; Firewalls\n    usually block traffic through unwanted ports, which often includes IRC\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Zeidanloo HR, Manaf  a. a. Botnet Command and Control Mechanisms. 2009 Second Int Conf Comput Electr Eng [Internet]. 2009;1:564–8. Available from: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5380180\">\n        [32].\n    </button>\n\n    HTTP is a “pull” style protocol i.e. bots periodically visit certain websites to retrieve instructions, whereas IRC\n    is a “push” style protocol\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Zeidanloo HR, Manaf  a. a. Botnet Command and Control Mechanisms. 2009 Second Int Conf Comput Electr Eng [Internet]. 2009;1:564–8. Available from: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5380180\">\n        [32,\n    </button>\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paganini P. HTTP-Botnets: The Dark Side of an Standard Protocol! [Internet]. 2013 [cited 2016 Mar 11]. Available from: http://securityaffairs.co/wordpress/13747/cyber-crime/http-botnets-the-dark-side-of-an-standard-protocol.html\">\n        34].\n    </button>\n\n    The periodic pattern exhibited by Http botnets is similar to that of many other HTTP services, such as auto-updaters\n    and Gmail session, which makes detection of HTTP botnets with low rates of false negatives and positives a\n    significant challenge\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Paganini P. HTTP-Botnets: The Dark Side of an Standard Protocol! [Internet]. 2013 [cited 2016 Mar 11]. Available from: http://securityaffairs.co/wordpress/13747/cyber-crime/http-botnets-the-dark-side-of-an-standard-protocol.html\">\n        [34].\n    </button>\n\n</p>\n\n<p>\n\n    These are just two examples of communication protocols used by botnets. Others include social media, where the\n    botmaster posts instructions as messages on a social media site such as Facebook or Twitter, and the bots retrieve\n    the instructions by regularly polling certain pages\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Burghouwt P, Spruit M, Sips H. Towards Detection of Botnet Communication through Social Media by Monitoring User Activity. 2011;131–43\">\n        [35],\n    </button>\n\n    and SMTP; MegaD, a spamming bot which was responsible for 1/3 of the world’s spam at its peak, used a custom SMTP\n    implementation as its C&C protocol\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Cho CY, Babi ć D, Shin ECR, Song D. Inference and analysis of formal models of botnet command and control protocols. Acm Ccs [Internet]. 2010;426–39. Available from: http://doi.acm.org/10.1145/1866307.1866355\">\n        [36].\n    </button>\n\n\n</p>";
+	    return "<div class=\"container top-cmp\">\n    <div data-region=\"jumbotron\"></div>\n    <div data-region=\"preamble\"></div>\n    <div class=\"row subject-pointers\" data-region=\"subject-pointers\"></div>\n    <div data-region=\"featurette\"></div>\n</div>\n";
 	},"useData":true});
 
 /***/ }

@@ -1,0 +1,25 @@
+<p>
+    A modification to the L* algorithm
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Dana Angluin. Learning regular sets from queries and counterexamples. Information and Computation, 75(2):87–106, 1987">
+        [46],
+    </button>
+
+    allows for mealy machine inference provided there is some teacher that can confirm a correct proposition or respond
+    with a counter example when supplied with a mealy machine
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Muzammil Shahbaz and Roland Groz. Inferring Mealy machines. In FM’09: Proceedings of the 2nd World Congress on Formal Methods, pages 207–222, Berlin, Heidelberg, 2009. Springer.">
+        [49].
+    </button>
+
+    In brief, queries are made to the teacher in the form of strings representing sequences of input who responds with
+    strings representing sequences of output behaviour. The input and output strings are stored in an observation table.
+    The algorithm processes the observation table and proposes a mealy machine to the teacher. The teacher replies with
+    some counter-example that distinguishes the proposed mealy machine with the actual mealy machine.
+
+</p>

@@ -1,0 +1,31 @@
+<p>
+    The work of Yuan Cho et al
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Chia Yuan Cho, Domagoj Babić, Richard Shin and Dawn Song. Inference and Analysis of Formal Models Botnet Command and Control Protocols. In CCS'10: Proceedings of the 2010 ACM Conference on Computer and Communications Security, pages 426–440, Chicago, Illinois, USA, 2010. ACM.">
+        [48],
+    </button>
+
+    demonstrates how the Mealy Machine Inference algorithm can be applied to a botnet protocol. Provided with a bot
+    emulator and a knowledge of the message structure and field semantics of the protocol, it is possible to construct a
+    complete finite state machine representation of a botnet protocol
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Chia Yuan Cho, Domagoj Babić, Richard Shin and Dawn Song. Inference and Analysis of Formal Models Botnet Command and Control Protocols. In CCS'10: Proceedings of the 2010 ACM Conference on Computer and Communications Security, pages 426–440, Chicago, Illinois, USA, 2010. ACM.">
+        [48].
+    </button>
+
+    This is achieved by indirectly using botnet servers as the teacher in the aforementioned algorithm. The idea being
+    to essentially look for a counter-example rather than being provided with one by constructing valid messages and
+    sending them to the intended botnet server. The technique is limited in a few senses; it relies on the assumption
+    that the protocol is deterministic and supports a finite amount of states. There is also no way to guarantee that
+    all message type of the protocol have been identified, so can only produce a complete finite state machine with
+    respect to known input message types (those sent by the bot). Finally, the confidence in the resulting finite state
+    machine is not 100% due to the stochastic search for counter-examples. On the upside, the confidence is scalable, in
+    that the results can be made more confident by making more queries.
+
+</p>

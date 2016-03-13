@@ -8,6 +8,8 @@ var Footer = Marionette.ItemView.extend({
         toTop: '[data-role="to-top"]'
     },
 
+    className : "inverse-footer",
+
     template: template,
 
     events: {

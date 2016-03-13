@@ -72,3 +72,6 @@ dl.dl-horizontal {
 @media (max-width: 768px) {
   .jumbotron {
     padding: 10px; } }
+
+.preamble {
+  padding: 40px; }

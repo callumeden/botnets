@@ -1,0 +1,43 @@
+<p>
+    Before being transmitted, the information sent by a bot to a C&C server is stored somewhere on the infected machine.
+    Likewise, after being received, the information sent to a machine by a C&C server is stored to be processed by the
+    bot. By using as much information as possible about the origins of information sent and the subsequent processing of
+    information received by a bot, it is possible to build an understanding of the message structure - and the meaning
+    of specific message fields - utilised by the communication protocol.
+</p>
+
+<p>
+    This intuition, of Caballero et al
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Juan Caballero, Pongsin Poosankam, Christian Kreibich, and Dawn Song. Dispatcher: Enabling active botnet infiltration using automatic protocol reverse-engineering. In CCS’09: Proceedings of the 16th ACM conference on Computer and communications security, pages 621–634, New York, NY, USA, 2009. ACM.">
+        [39],
+    </button>
+
+    has allowed for the automatic reverse engineering of message structures and field semantics of an unknown protocol,
+    most notably the bespoke protocol used by MegaD. The technique cited requires the studying of the execution trace of
+    the application employing the protocol on at least one side of the communication (in this case the bot side).
+</p>
+
+<p>
+    In a basic sense, the technique works as follows: by studying how a message is constructed or deconstructed, it is
+    possible to ascertain the start and end of specific fields within a message. Specifically (in the construction
+    case), by observing when contiguous blocks of a message are copied from a single buffer in the application. Each
+    such block should represent a field of the message. Furthermore, the meaning of the field can also be derived by
+    taking note of where the data that was copied to the message came from. For example, if the data written to a field
+    came from a function or instruction that returns the current wall-clock time of the machine, it is likely that the
+    field is a timestamp. The technique works for received messages too; for example, suppose the IP address argument
+    for some networking function (e.g. Winsock’s getnameinfo
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Windows Sockets 2 Documentaion - https://msdn.microsoft.com/en-us/library/windows/desktop/ms738532(v=vs.85).aspx 13:03, Sunday 13th March 2016.">
+        [40])
+    </button>
+
+    is copied/derived from a field in a received message, we can deduce the semantics of the field as an IP address
+    field.
+</p>

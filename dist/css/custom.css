@@ -125,16 +125,19 @@ dl.dl-horizontal {
   .jumbotron {
     padding: 10px; } }
 
-footer {
+.preamble {
+  padding: 40px; }
+
+.inverse-footer {
   margin-top: 80px;
   background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
   color: #fff;
   padding: 60px 0;
   margin-bottom: 0; }
-  footer a {
+  .inverse-footer a {
     color: #2d9968; }
-    footer a:hover, footer a:focus {
+    .inverse-footer a:hover, .inverse-footer a:focus {
       color: #faa41c;
       text-decoration: none; }
-  footer span {
+  .inverse-footer span {
     font-size: 10px; }
