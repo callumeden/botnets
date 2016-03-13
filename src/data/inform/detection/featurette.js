@@ -2,17 +2,19 @@ var JSON = [
 
     {
         heading: "A quick summary of IRC",
-        ircSummary: true
+        ircSummary: true,
+        image: "img/irc.jpeg"
     },
     {
         heading: "A quick summary of DNS",
-        dnsSummary: true
+        dnsSummary: true,
+        image: "img/dnsSummary.jpeg"
     },
     {
         heading: "Honeypot Technique",
         subHeading: "",
         honeypot: true,
-        image: "",
+        image: "img/honeypot.jpeg",
         id: "honeypot"
     },
     {
@@ -28,7 +30,7 @@ var JSON = [
         heading: "An example of the use of mahalanobis distance",
         subHeading: "...",
         anomalyDetection2: true,
-        image: ""
+        image: "img/mahlanobis.jpeg"
     },
     {
 
@@ -42,7 +44,7 @@ var JSON = [
     {
         heading: "An example of the use of Jaccard index",
         dnsTraffic2: true,
-        image: ""
+        image: "img/jaccard.jpeg"
     }
 ];
 
