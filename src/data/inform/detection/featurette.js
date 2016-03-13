@@ -21,7 +21,15 @@ var JSON = [
         subHeading: "...",
         anomalyDetection: true,
         image: "",
-        id: "anomalyDetection"
+        id: "anomalyDetection",
+        noImage: true
+    },
+    {
+
+        heading: "An example of the use of mahalanobis distance",
+        subHeading: "...",
+        anomalyDetection2: true,
+        image: ""
     },
     {
 

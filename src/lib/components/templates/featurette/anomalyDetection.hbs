@@ -1,4 +1,15 @@
 <p>
+
+    Anomaly detection techniques can use various attributes to ascertain if some observances are anomalous. Points of
+    interest are: volume of traffic and the port being used
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [20].
+    </button>
+
     There are many exisitng algorithms for anomaly detection
     <button type="button"
             class="btn btn-sm reference"
@@ -7,7 +18,11 @@
         [3].
     </button>
 
-    These techniques exist to establish a sound process to find anomalous data in a data set. These methods usually involve a comparison between data points against the underlying distribution of typical behaviours and hence determining if they are indeed anomalous. Examples of these techniques include:
+
+    These techniques exist to establish a sound process to find anomalous data in a data set. These methods usually
+    involve a comparison between data points against the underlying distribution of typical behaviours and hence
+    determining if they are indeed anomalous. Examples of these techniques include:
+
     <b>Chebyshev’s Inequality</b>
     <button type="button"
             class="btn btn-sm reference"
@@ -59,7 +74,8 @@
         [4].
     </button>
 
-    Thus Chebyshev’s Inequality states that not more than 1/k^2 of the distribution's values are further than k standard deviations away from the mean
+    Thus Chebyshev’s Inequality states that not more than 1/k^2 of the distribution's values are further than k standard
+    deviations away from the mean
 
     <button type="button"
             class="btn btn-sm reference"
@@ -77,59 +93,67 @@
         [4].
     </button>
 
-    We are using the object’s distance away from the centre of the distribution as this measure
-    <button type="button"
-            class="btn btn-sm reference"
-            data-toggle="tooltip" data-placement="right"
-            title="Pang-Ning Tan, Michael Steinbach, Vipin Kumar, “Introduction to Data Mining”, 1st edition.">
-        [5].
-    </button>
-
-    This is calculated using Mahalanobis distance.
-</p>
-
-<p>
-
     <i>
-        Simplified Mahalanobis Distance, where
+        Mahalanobis Distance, where
         <button type="button"
                 class="btn btn-sm reference"
                 data-toggle="tooltip" data-placement="right"
                 title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
             [3].
         </button>
-        n is no. of attributes, is the vector of standard deviations for each attribute of an object, ɑ is a smoothing constant:
+        &sum; ^ -1 is the inverse covariance matrix:
     </i>
 </p>
 
-<pre>
-    <p>mahalanobis'(x,y) = &sum; i=1 ^n (|xi-yi|&frasl;&sigma;yi + &alpha;)</p>
-</pre>
-
-
 <p>
-    An issue may arise where the computation of the inverse of the covariance matrix is expensive, in this case a simplification has been formulated
-    <button type="button"
-            class="btn btn-sm reference"
-            data-toggle="tooltip" data-placement="right"
-            title="Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.">
-        [6].
-    </button>
+    The underpinning principle
 
-    The simplified mahalanobis distance equivalent relies on the assumption
     <button type="button"
             class="btn btn-sm reference"
             data-toggle="tooltip" data-placement="right"
-            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+            title="TODO : REFERENCE">
         [3]
     </button>
 
-    that the elements of σ are independent.
-    The smoothing constant exists to account for when attributes happen to be constant across recorded data points
+
+    is that the distance between two data objects, x and y, can provide a measure of their dissimilarity. These data
+    objects are n-dimensional (n ≥ 1) vectors of attributes
+
     <button type="button"
             class="btn btn-sm reference"
             data-toggle="tooltip" data-placement="right"
-            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+            title="TODO : REFERENCE">
+        [3].
+    </button>
+
+
+    Given a multivariate Gaussian distribution
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REFERENCE">
         [3]
+    </button>
+
+    if a given point resides in a probabilistically unlikely region, with respect to the expected distribution of the
+    data, it is classified as anomalous
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REFERENCE">
+        [5]
+    </button>
+
+
+    We are using the object’s distance away from the centre of the distribution as this measure
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REFERENCE">
+        [5].
     </button>
 </p>
+

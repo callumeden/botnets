@@ -7,14 +7,25 @@
              International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.">[1]
     </button>
 
-    pc to be infected with malware and become part of the botnet which is to be monitored.
-    This pc will appear to be a regular member of the botnet, so will be have as such.
-    As a prerequisite one must know:
+    pc to be infected with malware and become part of the Botnet which is to be monitored.
+    This pc will appear to be a regular member of the Botnet, so will behave as such.
+
+
+    To get the computer infected it must be as vulnerable as possible and ideally have no useful function in a network
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REFERENCE">[20],
+    </button>
+    to remove adding any noise to the data.
+
+
+    As a prerequisite one must know
     <button type="button"
             class="btn btn-sm reference"
             data-toggle="tooltip" data-placement="right"
             title="Paul Bächer, Thorsten Holz, Markus Kötter, Georg Wicherski, “Know your Enemy: Tracking
-            Botnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.">[2]
+            Botnets”, 08/10/2008, accessed at 19:20 - 05/03/2016, www.honeynet.org.">[2]:
     </button>
 </p>
 
@@ -26,5 +37,34 @@
 </ul>
 
 <p>
-    With the dummy PC enrolled in the Botnet it's behaviour can now be monitored, taking note of which DNS/IP-adderss the bot connects to along with other information vital to the operation of the botnet.
+    With the dummy PC enrolled in the Botnet it's behaviour can now be monitored, taking note of which DNS/IP-adderss
+    the bot connects to along with other information vital to the operation of the Botnet.
+
+    All interactions between the infected computer and others inside a network, and the outside world, are suspicious
+    and thus should be monitored closely
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REF">[20].
+    </button>
+
+    One such implementation
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REF">[2]
+    </button>
+
+    uses a firewall to stop outgoing messages and record them, matching them against known suspicious IRC messages. This
+    method has it’s drawbacks as we cannot account for any machines that may become infected due to the propagation of
+    the Botnet
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REF">[20],
+    </button>
+
+    hence the behaviour of the Botnet can only be observed to a limited scale.
 </p>
