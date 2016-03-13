@@ -15,12 +15,13 @@ var JSON = [
         heading: "Propagation",
         subHeading: "How the botnet is propagated from an infected computer",
         botnetPropagation: true,
-        id: "propagation"
+        id: "propagation",
+        noImage: true
     },
     {
         heading: "Avoiding detection",
         avoidingDetection: true,
-        id: "avoidingDetection"
+        id: "avoidingDetection",
     },
     {
 

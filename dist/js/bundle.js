@@ -19063,7 +19063,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    In order to propagate the Botnet further, the malware of a bot will seek to attack devices further through software\n    vulnerabilities, vulnerabilities caused by other infections, social engineering through the use of email, instant\n    messaging and malicious web\n    page content.[ref]\n    Further methods of propagation include the bot malware being propagated through peer to peer networks, open file\n    sharing, and direct client to client file exchange [ref]\n</p>\n\n<p>\n    However as the worm can duplicate itself and unceasingly take advantage of the system vulnerabilities and propagate\n    as far as possible through the network, it will lead to a sharp increase in network traffic.\n    This characteristic therefore makes the worm easily detectable.\n\n    In order to avoid being easily detectable, the bots will often only propagte within certain limits or infect certain\n    hosts according to the purpose of the controller during the process of propagating to avoid the detection by\n    security researchers.\n\n\n\n</p>\n\n<p>\n    <strong>A bot within a companies network</strong>\n    The infected system can manipulate having access to a victim’s contacts and email account as a social\n    engineering technique to send emails with malicious attachments. This will often lead to a higher conversion in\n    malware installation as they will more likely perceive an email from a known contact to be genuine.\n\n    Once a company’s network has been infected it could become a candidate for sending outbound SPAM or network\n    attacks. This could possibly lead to the entire network being identified as a malicious source and therefore\n    added to blacklists, impacting business operations. [17]\n</p>\n\n";
+	    return "<p>\n    The Botnet propagation technique is based on the 'backdoor' which propagates and controls the Botnet with malware\n    such as worm and spyware.[ref]\n\n    In order to propagate the Botnet further, the malware of a bot will seek to attack devices further through software\n    vulnerabilities, vulnerabilities caused by other infections, social engineering through the use of email, instant\n    messaging and malicious web\n    page content.[ref]\n    Further methods of propagation include the bot malware being propagated through peer to peer networks, open file\n    sharing, and direct client to client file exchange [ref]\n</p>\n\n<p>\n    However as the worm can duplicate itself unceasingly by taking advantage of the system vulnerabilities and propagate\n    as far as possible through the network, it will lead to a sharp increase in network traffic.\n    This characteristic therefore makes the worm easily detectable.\n\n    The controlled propagation of Botnets will allow the prevention of Botnets being easily detectable.\n    The bots will often only propagte within certain limits or infect certain hosts according to the purpose of the\n    controller during the process of propagating to avoid the detection by security researchers.\n\n    Furthermore, the controller also has the capability to activate or suspend the propagation function of some\n    controlled hosts in order to adjust the propagation speed in an attempt to avoid being detected by security\n    researchers.\n\n    Moreover, even if the security researchers are able to identify a bot, other bots can also take place of them to\n    maintain the network.\n\n\n</p>\n\n<p>\n    <strong>A bot within a companies network</strong>\n    The infected system can manipulate having access to a victim’s contacts and email account as a social\n    engineering technique to send emails with malicious attachments. This will often lead to a higher conversion in\n    malware installation as they will more likely perceive an email from a known contact to be genuine.\n\n    Once a company’s network has been infected it could become a candidate for sending outbound SPAM or network\n    attacks. This could possibly lead to the entire network being identified as a malicious source and therefore\n    added to blacklists, impacting business operations. [17]\n</p>\n\n";
 	},"useData":true});
 
 /***/ },
@@ -19471,7 +19471,7 @@
 	        subjectTitle: "Avoiding Detection",
 	        subjectContent: "How bots perform tasks without being detected by the users",
 	        buttonText: "View details »",
-	        image: "",
+	        image: "img/hacker01.jpg",
 	        destination : "#avoidingDetection"
 	    }
 	
@@ -19500,12 +19500,13 @@
 	        heading: "Propagation",
 	        subHeading: "How the botnet is propagated from an infected computer",
 	        botnetPropagation: true,
-	        id: "propagation"
+	        id: "propagation",
+	        noImage: true
 	    },
 	    {
 	        heading: "Avoiding detection",
 	        avoidingDetection: true,
-	        id: "avoidingDetection"
+	        id: "avoidingDetection",
 	    },
 	    {
 	
