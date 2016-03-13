@@ -18362,7 +18362,8 @@
 	        'click @ui.toTop' : 'scrollToTop'
 	    },
 	
-	    scrollToTop: function () {
+	    scrollToTop: function (ev) {
+	        ev.preventDefault();
 	        $("html, body").animate({scrollTop : 0}, "slow");
 	    }
 	
@@ -18900,6 +18901,10 @@
 	},"19":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
+	  return ((stack1 = this.invokePartial(__webpack_require__(90),depth0,{"name":"dnsTraffic2","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	},"21":function(depth0,helpers,partials,data) {
+	    var stack1;
+	
 	  return ((stack1 = this.invokePartial(__webpack_require__(50),depth0,{"name":"infection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
@@ -18922,7 +18927,9 @@
 	    + "\n"
 	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic : depth0), depth0),{"name":"dnsTraffic","hash":{},"fn":this.program(17, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
 	    + "\n"
-	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.infection : depth0), depth0),{"name":"infection","hash":{},"fn":this.program(19, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.dnsTraffic2 : depth0), depth0),{"name":"dnsTraffic2","hash":{},"fn":this.program(19, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+	    + "\n"
+	    + ((stack1 = alias2.call(depth0,alias1((depth0 != null ? depth0.infection : depth0), depth0),{"name":"infection","hash":{},"fn":this.program(21, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 	},"usePartial":true,"useData":true});
 
 /***/ },
@@ -18994,7 +19001,7 @@
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-	    return "<p>\n    The problem with monitoring DNS traffic for Botnet detection is that DNS addresses used by botnets are also used for legitimate purposes\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Wills, C. E., Mikhailov, M. & Shang, H. (2003) Inferring Relative Popularity of Internet Applications by Actively Querying DNS Caches. Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement. PP . 78-90.\">\n        [9].\n    </button>\n\n    It is important to understand how Botnets behave before drawing any conclusions on observations\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ahmed M. Manasrah, Awsan Hasan, “Detecting Botnet Activities Based on Abnormal DNS traffic”, International Journal of Computer Science and Information Security, Vol. 6, No.1, 2009\">\n        [10].\n    </button>\n\n</p>";
+	    return "<p>\n    Botnets are able to use the DNS and DNS query servers as any legitimate host would, therefore it can be tricky to\n    discern when traffic is malicious\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10].\n    </button>\n\n    Each Bot under the influence of a command and control server is receiving a continual\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        11]\n    </button>\n\n    stream of commands from the C&C server. An obvious solution arises from this, blacklisting the C&C server should\n    halt communication between the Bots and the Botmaster, it is not as simple as this because the bomaster is able to\n    use the dynamic domain name system (DDNS) to relocate the C&C server\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        12];\n    </button>\n\n    this is easy because the DNS servers are indifferent to the source of the query\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        14].\n    </button>\n\n    When a Botmaster uses the DNS system to distribute commands to Bots there are deviations from normal traffic\n    patterns, this is because of the following behaviors\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        15]:\n    </button>\n</p>\n\n<ul>\n    <li>A ‘one-to-many’ relationship exists between the Botmaster and it’s Bots</li>\n    <li>All Bots receive an identical set of commands</li>\n    <li>The Bots respond to commands immediately, precisely and in discrete intervals</li>\n</ul>\n\n<p>\n    Under the assumption of these behaviours, a sound method for detection should analyse traffic at discrete time\n    intervals, as the Bots will attack as a group and all at once; it should also produce a measure of the similarity\n    between two groups of hosts, A and B, accessing the same domain name over a total time period T at two different\n    times ta and tb\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10]\n    </button>\n\n    The Jaccard index (Jaccard similarity coefficient) is a good method of producing this statistic, due to its reliable\n    nature in this case\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10,\n    </button>\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        16,\n    </button>\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        17].\n    </button>\n\n    <i>\n        Jaccard similarity coefficient, where[18] A and B are finite sample sets:\n    </i>\n</p>\n\n<pre>\n    <p>J(A,B) = |A &cap; B|/|A &cup; B| = |A &cap; B| / |A| + |B| - |A &cap; B|</p>\n    <p>0 <= J(A,B) <= 1 </p>\n</pre>\n\n<p>\n    The Jaccard similarity coefficient calculates the similarity between two finite sample sets\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [18].\n    </button>\n\n    A value of 1 denotes complete similarity and a value of 0 denotes complete dissimilarity. One can infer from this\n    that if the sets A and B are empty then result will be 1, however we will attach the condition that the sets A and B\n    are non-empty; drawing conclusions from zero data will likely introduce false positives. We are taking a value of\n    J(A,B) ≥ 0.8to be denote an abnormal domain name and anything below that may conclude to a false positive\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10].\n    </button>\n\n    Moreover the choice of identifier for hosts is important, Botmasters can easily change an IP address using the\n    Dynamic Host Configuration Protocol, this can be implemented with immediate effect\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [19];\n    </button>\n\n    the MAC address is therefore preferred\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [10].\n    </button>\n\n    although we will not take MAC address spoofing into account.\n</p>\n\n\n";
 	},"useData":true});
 
 /***/ },
@@ -19873,7 +19880,6 @@
 	        heading: "Anomaly Detection Technique",
 	        subHeading: "...",
 	        anomalyDetection: true,
-	        image: "",
 	        id: "anomalyDetection",
 	        noImage: true
 	    },
@@ -19889,8 +19895,14 @@
 	        heading: "DNS traffic",
 	        subHeading: "",
 	        dnsTraffic: true,
-	        image: "",
+	        noImage: true,
 	        id: "dnsTraffic"
+	    },
+	
+	    {
+	        heading: "An example of the use of Jaccard index",
+	        dnsTraffic2: true,
+	        image: ""
 	    }
 	];
 	
@@ -20102,6 +20114,15 @@
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    return "<p>\n    To keep up and running Botmasters may try to change domain name of the C&C server, one way to achieve this is to get\n    Bots to generate the new domain name using a one-way hash function\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [22].\n    </button>\n\n    We can then calculate the dissimilarity between a generated domain and a legitimate domain, compared to the\n    dissimilarity between two legitimate domains, we would expect, on average, the generated name and the legitimate one\n    to have a larger mahalanobis distance than domains of the same type\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [22].\n    </button>\n\n    An unrecognised domain is classified as generated when\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [24].\n    </button>\n\n\n    the attribute vector is deemed anomalous by criteria of the Mahalanobis distance function shown above. We take a\n    constants λ and Λ to be the 70th and 90th percentile, respectively, of the underlying distribution to estimate a\n    threshold for generated domains\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [24].\n    </button>\n\n    The specific threshold depends largely on the domain generation algorithm\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [24].\n    </button>\n\n    Shown in (IMAGE BELOW) is the plotted cumulative distribution function of top 100,000 Alexa domains, where X is is\n    an attribute vector\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [24].\n    </button>\n\n</p>\n\n<pre>\n    <p>mahalanobis'(x,y) = &sum; i=1 ^n (|xi-yi|&frasl;&sigma;yi + &alpha;)</p>\n</pre>\n\n\n<p>\n    An issue may arise where the computation of the inverse of the covariance matrix is expensive, in this case a\n    simplification has been formulated\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.\">\n        [6].\n    </button>\n\n    The simplified mahalanobis distance equivalent relies on the assumption\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n\n    that the elements of σ are independent.\n    The smoothing constant exists to account for when attributes happen to be constant across recorded data points\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”\">\n        [3]\n    </button>\n\n</p>\n";
+	},"useData":true});
+
+/***/ },
+/* 90 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(14);
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+	    return "<p>\n    Show in the (IMAGE BELOW) is the result of plotting the cumulative distribution function of the Jaccard\n    similarities, pairwise, from generated domains\n\n    <button type=\"button\"\n            class=\"btn btn-sm reference\"\n            data-toggle=\"tooltip\" data-placement=\"right\"\n            title=\"TODO : REFERENCE\">\n        [23].\n    </button>\n\n    As you can see any domains generated on a given day have very high Jaccard coefficients, compared to a day before or\n    after.\n</p>";
 	},"useData":true});
 
 /***/ }

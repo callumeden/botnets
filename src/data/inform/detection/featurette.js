@@ -20,7 +20,6 @@ var JSON = [
         heading: "Anomaly Detection Technique",
         subHeading: "...",
         anomalyDetection: true,
-        image: "",
         id: "anomalyDetection",
         noImage: true
     },
@@ -36,8 +35,14 @@ var JSON = [
         heading: "DNS traffic",
         subHeading: "",
         dnsTraffic: true,
-        image: "",
+        noImage: true,
         id: "dnsTraffic"
+    },
+
+    {
+        heading: "An example of the use of Jaccard index",
+        dnsTraffic2: true,
+        image: ""
     }
 ];
 

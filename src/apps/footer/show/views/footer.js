@@ -14,7 +14,8 @@ var Footer = Marionette.ItemView.extend({
         'click @ui.toTop' : 'scrollToTop'
     },
 
-    scrollToTop: function () {
+    scrollToTop: function (ev) {
+        ev.preventDefault();
         $("html, body").animate({scrollTop : 0}, "slow");
     }
 
