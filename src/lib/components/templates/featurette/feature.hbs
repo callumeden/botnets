@@ -30,6 +30,19 @@
     {{^noImage}}
         <div class="col-md-5 {{#isPushed}} col-md-pull-7 {{/isPushed}}">
             <div class="featurette-image img-responsive center-block background-image hidden-xs"
+
+                 data-toggle = "tooltip"
+
+                {{#isPushed}}
+                 data-placement="right"
+                {{/isPushed}}
+
+                {{^isPushed}}
+                 data-placement="left"
+                {{/isPushed}}
+
+                 title = "{{imageRef}}"
+
                 {{#if image}}
                  style="background-image: url({{image}})"
                 {{/if}}>

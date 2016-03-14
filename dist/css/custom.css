@@ -128,6 +128,9 @@ dl.dl-horizontal {
 .preamble {
   padding: 40px; }
 
+.tooltip {
+  word-wrap: break-word; }
+
 .inverse-footer {
   margin-top: 80px;
   background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
