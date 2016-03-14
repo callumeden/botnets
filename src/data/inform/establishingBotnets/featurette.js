@@ -24,7 +24,8 @@ var JSON = [
     {
         heading: "Avoiding detection",
         avoidingDetection: true,
-        id: "avoidingDetection"
+        id: "avoidingDetection",
+        noImage: true
     }
 ];
 
