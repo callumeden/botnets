@@ -1,1 +1,38 @@
-.navbar-wrapper{position:absolute;top:0;right:0;left:0;z-index:20}.navbar-wrapper .container.outer{padding-left:0;padding-right:0}.navbar-wrapper .navbar-inverse{background:linear-gradient(160deg, #181c1d 0%, #475254 100%);border-radius:0;padding:20px}.navbar-wrapper .navbar-inverse .navbar-brand a{font-size:20px}.navbar-wrapper .navbar-inverse li a{font-size:16px}.navbar-wrapper .navbar.affix{background:linear-gradient(160deg, #181c1d 0%, #475254 100%);width:100%;box-shadow:1px 1px 1px 1px white}.navbar-wrapper .navbar.affix a{color:white}.navbar-wrapper .navbar.affix a:hover{color:#faa41c}.navbar-wrapper .navbar-inverse.affix-top{margin-top:20px;background:transparent;border-color:transparent}@media (max-width: 768px){.navbar-wrapper .navbar-inverse.affix-top{background:linear-gradient(160deg, #181c1d 0%, #475254 100%);margin-top:0}}.navbar-wrapper .navbar-inverse.affix-top a:hover,.navbar-wrapper .navbar-inverse.affix-top a:focus{color:black}.navbar-inverse{background:linear-gradient(160deg, #181c1d 0%, #475254 100%)}
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20; }
+  .navbar-wrapper .container.outer {
+    padding-left: 0;
+    padding-right: 0; }
+  .navbar-wrapper .navbar-inverse {
+    background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
+    border-radius: 0;
+    padding: 20px; }
+    .navbar-wrapper .navbar-inverse .navbar-brand a {
+      font-size: 20px; }
+    .navbar-wrapper .navbar-inverse li a {
+      font-size: 16px; }
+  .navbar-wrapper .navbar.affix {
+    background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px white; }
+    .navbar-wrapper .navbar.affix a {
+      color: white; }
+      .navbar-wrapper .navbar.affix a:hover {
+        color: #faa41c; }
+  .navbar-wrapper .navbar-inverse.affix-top {
+    margin-top: 20px;
+    background: transparent;
+    border-color: transparent; }
+    @media (max-width: 768px) {
+      .navbar-wrapper .navbar-inverse.affix-top {
+        background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
+        margin-top: 0; } }
+    .navbar-wrapper .navbar-inverse.affix-top a:hover, .navbar-wrapper .navbar-inverse.affix-top a:focus {
+      color: black; }
+
+.navbar-inverse {
+  background: linear-gradient(160deg, #181c1d 0%, #475254 100%); }
