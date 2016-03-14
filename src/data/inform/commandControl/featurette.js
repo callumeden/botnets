@@ -4,8 +4,9 @@ var JSON = [
         subHeading: "",
         messageStructure: true,
         image: "",
-        id: ""
+        id: "messageStructure"
     },
+
     {
         heading: "What about Encryption?",
         subHeading: "",
@@ -14,7 +15,8 @@ var JSON = [
     },
     {
         heading: "Protocol State Machine",
-        protocolStateMachine: true
+        protocolStateMachine: true,
+        id : "protocolState"
     },
     {
         heading: "Mealy Machines",

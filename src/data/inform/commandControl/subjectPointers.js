@@ -1,18 +1,18 @@
 var JSON = [
     {
-        subjectTitle: "Encryption",
+        subjectTitle: "Message Structure and Field Semantics",
         subjectContent: "",
         buttonText: "Read more",
         image: "",
-        destination: "#encryption"
+        destination: "#messageStructure"
     },
 
     {
-        subjectTitle: "Mealy Machines",
+        subjectTitle: "Protocol State Machine",
         subjectContent: "",
         buttonText: "Read more",
         image: "",
-        destination: "#mealyMachines"
+        destination: "#protocolState"
     },
     {
         subjectTitle: "Resulting Insights",
