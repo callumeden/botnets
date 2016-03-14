@@ -52,7 +52,7 @@ var Feature = Marionette.ItemView.extend({
     },
 
     scrollToBottom: function () {
-        $("html, body").animate({ scrollTop: $('footer').offset().top - 100 }, "slow");
+        $("html, body").animate({ scrollTop: $('[data-role="footer"]').offset().top - 100 }, "slow");
     }
 
 });

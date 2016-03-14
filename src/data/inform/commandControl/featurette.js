@@ -14,20 +14,11 @@ var JSON = [
         id: "encryption"
     },
     {
-        heading: "Protocol State Machine",
+        heading: "Protocol State Machine Inference",
         protocolStateMachine: true,
         id : "protocolState"
     },
-    {
-        heading: "Mealy Machines",
-        mealyMachines: true,
-        id: "mealyMachines"
-    },
 
-    {
-        heading: "Infering Mealy Machines",
-        inferringMealyMachines: true
-    },
     {
         heading: "Applying Mealy Machine Inference to Botnet Protocols",
         applyingMealyMachines: true
