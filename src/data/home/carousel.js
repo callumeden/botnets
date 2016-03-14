@@ -29,7 +29,7 @@ var JSON = [
     },
     {
         title: "How to uncover their C & C structure and behavior? ",
-        subTitle: "",
+        subTitle: "Techniques to reverse engineer unknown communication protocols to better understand the botnets employing them.",
         ctaText: "Read more",
         ctaInfo: "navigate-ccStructure",
         imgSrc: ""
