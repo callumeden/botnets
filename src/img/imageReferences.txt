@@ -12,3 +12,7 @@ dnsTraffic.png
 
 p2p.png
 	[Adapted] Ibrahim, M. Fishing Pier White Clip Art [Internet]. 2008 [cited 16:33 - 14/03/2016]. Available from: http://www.clker.com/clipart-map-symbols-fishing-pier-white.html
+
+random.png
+	[Adapted] flaticon. White question mark on a black circular background. 2015 [cited 17:16 - 14/03/2016]. Available from: http://www.freepik.com/free-icon/white-question-mark-on-a-black-circular-background_750291.htm#term=question mark&page=1&position=8
+
