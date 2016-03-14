@@ -1,0 +1,27 @@
+botnetPropagation.png
+	[Adapted] Stonedahl, F. VirusOnANetwork.png [Internet]. 2008 [cited 13:46 - 14/03/2016]. Available from: http://ccl.northwestern.edu/netlogo/models/VirusonaNetwork
+
+anomalyDetection.png
+	[Adapted] Lancope, Inc. banner-detect.png [Internet]. 2016 [cited 13:52 - 14/03/2016]. Available from: https://www.lancope.com/sites/default/files/banner-detect.png
+
+fluxing.png
+	[Adapted] jdraimer. FLUX CAPACITOR VINYL DECAL [Internet]. 2016 [cited 16:29 - 14/03/2016]. Available from: https://www.etsy.com/listing/85421827/flux-capacitor-back-to-the-future-vinyl
+
+dnsTraffic.png
+	[Adapted] OpenTox. server_room.jpg [Internet]. 2016 [cited 16:32 - 14/03/2016]. Available from: http://www.opentox.net/resources/toxicity-data-warehouse
+
+p2p.png
+	[Adapted] Ibrahim, M. Fishing Pier White Clip Art [Internet]. 2008 [cited 16:33 - 14/03/2016]. Available from: http://www.clker.com/clipart-map-symbols-fishing-pier-white.html
+
+random.png
+	[Adapted] flaticon. White question mark on a black circular background. 2015 [cited 17:16 - 14/03/2016]. Available from: http://www.freepik.com/free-icon/white-question-mark-on-a-black-circular-background_750291.htm#term=question mark&page=1&position=8
+
+msfs.png
+	[Adapted] Fantoja, P. Speech bubble cloud with question mark. 2014 [cited 17:44 - 14/03/2016]. Available from: http://freevector.co/vector-icons/education/speech-bubble-cloud-with-question-mark.html
+
+
+hierarchical.png
+	[Adapted] Taub, A. hierarchy-of-paying-for-things-in-the-startup. 2013 [cited 19:57 - 14/03/2016]. Available from: http://alexstechthoughts.com/post/38868297967/hierarchy-of-paying-for-things-in-the-startup
+
+avoidingDetection.png
+	[Adapted] Neven, T. i-robot.jpg. 2004 [cited 20:40 - 14/03/2016]. Available from: http://www.pluggedin.com/movie-reviews/irobot/
