@@ -52,7 +52,7 @@
 	__webpack_require__(10);
 	__webpack_require__(25);
 	__webpack_require__(30);
-	__webpack_require__(78);
+	__webpack_require__(77);
 	
 	App.start();
 
@@ -18407,7 +18407,7 @@
 
 	var App = __webpack_require__(1);
 	var HomeController = __webpack_require__(31);
-	var AppRouter = __webpack_require__(77);
+	var AppRouter = __webpack_require__(76);
 	
 	var API = {
 	
@@ -18459,7 +18459,7 @@
 	__webpack_require__(38);
 	__webpack_require__(39);
 	
-	var HomeData = __webpack_require__(74);
+	var HomeData = __webpack_require__(73);
 	
 	var HomeShowController = Marionette.Object.extend({
 	
@@ -18725,7 +18725,7 @@
 	var App = __webpack_require__(1);
 	var template = __webpack_require__(40);
 	var _ = __webpack_require__(3);
-	__webpack_require__(71);
+	__webpack_require__(70);
 	
 	var Feature = Marionette.ItemView.extend({
 	
@@ -18911,79 +18911,79 @@
 	},"17":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(50),depth0,{"name":"dnsTraffic","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(51),depth0,{"name":"dnsTraffic","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"19":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(51),depth0,{"name":"dnsTraffic2","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(52),depth0,{"name":"dnsTraffic2","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"21":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(52),depth0,{"name":"infection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(53),depth0,{"name":"infection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"23":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(53),depth0,{"name":"postInfection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(54),depth0,{"name":"postInfection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"25":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(54),depth0,{"name":"botnetPropagation","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(55),depth0,{"name":"botnetPropagation","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"27":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(55),depth0,{"name":"avoidingDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(56),depth0,{"name":"avoidingDetection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"29":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(56),depth0,{"name":"centralisedServer1","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(57),depth0,{"name":"centralisedServer1","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"31":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(57),depth0,{"name":"centralisedServer2","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(58),depth0,{"name":"centralisedServer2","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"33":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(58),depth0,{"name":"hierarchical","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(59),depth0,{"name":"hierarchical","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"35":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(59),depth0,{"name":"random","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(60),depth0,{"name":"random","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"37":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(60),depth0,{"name":"p2p","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(61),depth0,{"name":"p2p","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"39":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(61),depth0,{"name":"irc","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(62),depth0,{"name":"irc","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"41":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(62),depth0,{"name":"hyperText","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(63),depth0,{"name":"hyperText","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"43":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(63),depth0,{"name":"fluxing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(64),depth0,{"name":"fluxing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"45":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(64),depth0,{"name":"messageStructure","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(65),depth0,{"name":"messageStructure","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"47":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(65),depth0,{"name":"encryption","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(66),depth0,{"name":"encryption","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"49":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(66),depth0,{"name":"protocolStateMachine","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(67),depth0,{"name":"protocolStateMachine","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"51":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(69),depth0,{"name":"applyingMealyMachines","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(68),depth0,{"name":"applyingMealyMachines","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"53":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(70),depth0,{"name":"resultingInsights","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(69),depth0,{"name":"resultingInsights","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
@@ -19115,7 +19115,8 @@
 	},"useData":true});
 
 /***/ },
-/* 50 */
+/* 50 */,
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19124,7 +19125,7 @@
 	},"useData":true});
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19133,7 +19134,7 @@
 	},"useData":true});
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19142,7 +19143,7 @@
 	},"useData":true});
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19151,7 +19152,7 @@
 	},"useData":true});
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19160,7 +19161,7 @@
 	},"useData":true});
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19169,7 +19170,7 @@
 	},"useData":true});
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19178,7 +19179,7 @@
 	},"useData":true});
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19187,7 +19188,7 @@
 	},"useData":true});
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19196,7 +19197,7 @@
 	},"useData":true});
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19205,7 +19206,7 @@
 	},"useData":true});
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19214,7 +19215,7 @@
 	},"useData":true});
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19223,7 +19224,7 @@
 	},"useData":true});
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19232,7 +19233,7 @@
 	},"useData":true});
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19241,7 +19242,7 @@
 	},"useData":true});
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19250,7 +19251,7 @@
 	},"useData":true});
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19259,7 +19260,7 @@
 	},"useData":true});
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19268,9 +19269,7 @@
 	},"useData":true});
 
 /***/ },
-/* 67 */,
-/* 68 */,
-/* 69 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19279,7 +19278,7 @@
 	},"useData":true});
 
 /***/ },
-/* 70 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19288,12 +19287,12 @@
 	},"useData":true});
 
 /***/ },
-/* 71 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(72);
+	var template = __webpack_require__(71);
 	
 	var ScrollSpy = Marionette.ItemView.extend({
 	
@@ -19341,7 +19340,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 72 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19365,12 +19364,12 @@
 	    + "                    </ul>\n                </div>\n\n            </div>\n        </div>\n    </nav>\n\n    <div data-spy=\"scroll\" data-offset=\"0\" data-target=\"#"
 	    + alias2(alias1((depth0 != null ? depth0.scrollspyId : depth0), depth0))
 	    + "\" class=\"scrollspy-main\">\n\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(73),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(72),depth0,{"name":"illegalActivities","data":data,"indent":"            ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "\n    </div>\n</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 73 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19379,11 +19378,11 @@
 	},"useData":true});
 
 /***/ },
-/* 74 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var carousel = __webpack_require__(75);
-	var featurette = __webpack_require__(76);
+	var carousel = __webpack_require__(74);
+	var featurette = __webpack_require__(75);
 	
 	var JSON = {
 	    carousel: carousel,
@@ -19393,7 +19392,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 75 */
+/* 74 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19437,7 +19436,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 76 */
+/* 75 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19478,7 +19477,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 77 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Backbone = __webpack_require__(2);
@@ -19503,16 +19502,16 @@
 
 
 /***/ },
-/* 78 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var App = __webpack_require__(1);
-	var AppRouter = __webpack_require__(77);
-	var EstablishingBotnetsController = __webpack_require__(79);
-	var CommandControlTopsController = __webpack_require__(95);
-	var CommunicationProtocolsController = __webpack_require__(102);
-	var DetectionController = __webpack_require__(109);
-	var CommandController = __webpack_require__(116);
+	var AppRouter = __webpack_require__(76);
+	var EstablishingBotnetsController = __webpack_require__(78);
+	var CommandControlTopsController = __webpack_require__(94);
+	var CommunicationProtocolsController = __webpack_require__(101);
+	var DetectionController = __webpack_require__(108);
+	var CommandController = __webpack_require__(115);
 	
 	var API = {
 	
@@ -19608,19 +19607,19 @@
 
 
 /***/ },
-/* 79 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(80);
+	var appData = __webpack_require__(79);
 	
-	__webpack_require__(84);
-	__webpack_require__(86);
+	__webpack_require__(83);
+	__webpack_require__(85);
 	__webpack_require__(39);
 	
-	__webpack_require__(93);
+	__webpack_require__(92);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -19682,12 +19681,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 80 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var subjectPointers = __webpack_require__(81);
-	var featurette = __webpack_require__(82);
-	var jumbotron = __webpack_require__(83);
+	var subjectPointers = __webpack_require__(80);
+	var featurette = __webpack_require__(81);
+	var jumbotron = __webpack_require__(82);
 	
 	var JSON = {
 	    subjectPointers: subjectPointers,
@@ -19698,7 +19697,7 @@
 	module.exports= JSON;
 
 /***/ },
-/* 81 */
+/* 80 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19733,7 +19732,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 82 */
+/* 81 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -19770,7 +19769,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 83 */
+/* 82 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -19781,12 +19780,12 @@
 	module.exports = JSON;
 
 /***/ },
-/* 84 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var App = __webpack_require__(1);
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(85);
+	var template = __webpack_require__(84);
 	
 	var Pointer = Marionette.ItemView.extend({
 	
@@ -19834,7 +19833,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 85 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19867,12 +19866,12 @@
 	},"useData":true});
 
 /***/ },
-/* 86 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(87);
+	var template = __webpack_require__(86);
 	
 	var Jumbotron = Marionette.ItemView.extend({
 	
@@ -19908,7 +19907,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 87 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19918,31 +19917,31 @@
 	  return "<div class=\"jumbotron\">\n    <h1>"
 	    + this.escapeExpression(this.lambda((depth0 != null ? depth0.title : depth0), depth0))
 	    + "</h1>\n"
-	    + ((stack1 = this.invokePartial(__webpack_require__(88),depth0,{"name":"contentSelection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+	    + ((stack1 = this.invokePartial(__webpack_require__(87),depth0,{"name":"contentSelection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
 	    + "</div>";
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 88 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
 	module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(89),depth0,{"name":"detection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(88),depth0,{"name":"detection","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"3":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(90),depth0,{"name":"establishing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(89),depth0,{"name":"establishing","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"5":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(91),depth0,{"name":"commandControlTops","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(90),depth0,{"name":"commandControlTops","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"7":function(depth0,helpers,partials,data) {
 	    var stack1;
 	
-	  return ((stack1 = this.invokePartial(__webpack_require__(92),depth0,{"name":"cAndC","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+	  return ((stack1 = this.invokePartial(__webpack_require__(91),depth0,{"name":"cAndC","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
 	},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
 	    var stack1, alias1=this.lambda, alias2=helpers.blockHelperMissing;
 	
@@ -19956,7 +19955,7 @@
 	},"usePartial":true,"useData":true});
 
 /***/ },
-/* 89 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19965,7 +19964,7 @@
 	},"useData":true});
 
 /***/ },
-/* 90 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19974,7 +19973,7 @@
 	},"useData":true});
 
 /***/ },
-/* 91 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19983,7 +19982,7 @@
 	},"useData":true});
 
 /***/ },
-/* 92 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -19992,11 +19991,11 @@
 	},"useData":true});
 
 /***/ },
-/* 93 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(94);
+	var template = __webpack_require__(93);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20019,7 +20018,7 @@
 
 
 /***/ },
-/* 94 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20028,19 +20027,19 @@
 	},"useData":true});
 
 /***/ },
-/* 95 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(96);
+	var appData = __webpack_require__(95);
 	
-	__webpack_require__(84);
-	__webpack_require__(86);
+	__webpack_require__(83);
+	__webpack_require__(85);
 	__webpack_require__(39);
 	
-	__webpack_require__(100);
+	__webpack_require__(99);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20102,12 +20101,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 96 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(97);
-	var featurette = __webpack_require__(98);
-	var subjectPointers = __webpack_require__(99);
+	var jumbotron = __webpack_require__(96);
+	var featurette = __webpack_require__(97);
+	var subjectPointers = __webpack_require__(98);
 	
 	var JSON = {
 	    jumbotron : jumbotron,
@@ -20118,7 +20117,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 97 */
+/* 96 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20129,7 +20128,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 98 */
+/* 97 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20177,7 +20176,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 99 */
+/* 98 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20210,11 +20209,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 100 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(101);
+	var template = __webpack_require__(100);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20237,7 +20236,7 @@
 
 
 /***/ },
-/* 101 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20246,19 +20245,19 @@
 	},"useData":true});
 
 /***/ },
-/* 102 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(103);
+	var appData = __webpack_require__(102);
 	
-	__webpack_require__(84);
-	__webpack_require__(86);
+	__webpack_require__(83);
+	__webpack_require__(85);
 	__webpack_require__(39);
 	
-	__webpack_require__(107);
+	__webpack_require__(106);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20320,12 +20319,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 103 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(104);
-	var featurette = __webpack_require__(105);
-	var subjectPointers = __webpack_require__(106);
+	var jumbotron = __webpack_require__(103);
+	var featurette = __webpack_require__(104);
+	var subjectPointers = __webpack_require__(105);
 	
 	var JSON = {
 	    jumbotron : jumbotron,
@@ -20336,7 +20335,7 @@
 	module.exports=  JSON;
 
 /***/ },
-/* 104 */
+/* 103 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20347,7 +20346,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 105 */
+/* 104 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20380,7 +20379,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 106 */
+/* 105 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20411,11 +20410,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 107 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(108);
+	var template = __webpack_require__(107);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20438,7 +20437,7 @@
 
 
 /***/ },
-/* 108 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20447,19 +20446,19 @@
 	},"useData":true});
 
 /***/ },
-/* 109 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(110);
+	var appData = __webpack_require__(109);
 	
-	__webpack_require__(84);
-	__webpack_require__(86);
+	__webpack_require__(83);
+	__webpack_require__(85);
 	__webpack_require__(39);
 	
-	__webpack_require__(114);
+	__webpack_require__(113);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20521,12 +20520,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 110 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(111);
-	var featurette = __webpack_require__(112);
-	var subjectPointers = __webpack_require__(113);
+	var jumbotron = __webpack_require__(110);
+	var featurette = __webpack_require__(111);
+	var subjectPointers = __webpack_require__(112);
 	
 	var JSON = {
 	    jumbotron: jumbotron,
@@ -20537,7 +20536,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 111 */
+/* 110 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20549,7 +20548,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 112 */
+/* 111 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20603,7 +20602,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 113 */
+/* 112 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20635,11 +20634,11 @@
 	module.exports = JSON;
 
 /***/ },
-/* 114 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(115);
+	var template = __webpack_require__(114);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20662,7 +20661,7 @@
 
 
 /***/ },
-/* 115 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20671,20 +20670,20 @@
 	},"useData":true});
 
 /***/ },
-/* 116 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
 	var Backbone = __webpack_require__(2);
 	var App = __webpack_require__(1);
-	var appData = __webpack_require__(117);
+	var appData = __webpack_require__(116);
 	
-	__webpack_require__(84);
-	__webpack_require__(86);
+	__webpack_require__(83);
+	__webpack_require__(85);
 	__webpack_require__(39);
-	__webpack_require__(121);
+	__webpack_require__(120);
 	
-	__webpack_require__(123);
+	__webpack_require__(122);
 	
 	var Controller = Marionette.Object.extend({
 	
@@ -20755,12 +20754,12 @@
 	module.exports = Controller;
 
 /***/ },
-/* 117 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jumbotron = __webpack_require__(118);
-	var featurette = __webpack_require__(119);
-	var subjectPointers = __webpack_require__(120);
+	var jumbotron = __webpack_require__(117);
+	var featurette = __webpack_require__(118);
+	var subjectPointers = __webpack_require__(119);
 	var JSON = {
 	    jumbotron: jumbotron,
 	    featurette: featurette,
@@ -20770,7 +20769,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 118 */
+/* 117 */
 /***/ function(module, exports) {
 
 	var JSON = {
@@ -20781,7 +20780,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 119 */
+/* 118 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20820,7 +20819,7 @@
 	module.exports = JSON;
 
 /***/ },
-/* 120 */
+/* 119 */
 /***/ function(module, exports) {
 
 	var JSON = [
@@ -20852,12 +20851,12 @@
 	module.exports = JSON;
 
 /***/ },
-/* 121 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {var Marionette = __webpack_require__(5);
 	var App = __webpack_require__(1);
-	var template = __webpack_require__(122);
+	var template = __webpack_require__(121);
 	
 	var Preamble = Marionette.ItemView.extend({
 	
@@ -20895,7 +20894,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 122 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
@@ -20904,11 +20903,11 @@
 	},"useData":true});
 
 /***/ },
-/* 123 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Marionette = __webpack_require__(5);
-	var template = __webpack_require__(124);
+	var template = __webpack_require__(123);
 	var App = __webpack_require__(1);
 	
 	var Layout = Marionette.LayoutView.extend({
@@ -20932,7 +20931,7 @@
 
 
 /***/ },
-/* 124 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Handlebars = __webpack_require__(14);
