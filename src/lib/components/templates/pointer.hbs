@@ -1,4 +1,4 @@
-<div class="col-lg-4">
+<div class="col-lg-4 hidden-xs">
 
     <img class="img-circle"
          {{#if image}}
@@ -8,6 +8,12 @@
         {{^if image}}
          src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
         {{/if}}
+
+         data-toggle = "tooltip"
+
+         data-placement="top"
+
+         title = "{{imageRef}}"
 
          alt="Generic placeholder image" width="140" height="140">
 

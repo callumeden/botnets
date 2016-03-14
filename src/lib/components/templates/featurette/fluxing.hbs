@@ -1,0 +1,59 @@
+<p>
+    Fluxing is a technique whereby botmasters can increase the resilience of their botnet. IP fluxing, or fast-flux,
+    refers to constantly changing the IP address associated with a particular domain name. It makes use of a DNS method,
+    Round-robin DNS (RRDNS). In RRDNS, instead of a DNS server responding to a DNS request with a single record, it
+    returns a list of records. The DNS client then selects one of the records and returns the corresponding IP address.
+    Each record also has a Time To Live (TTL) value, which specifies how long the record remains valid for
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Holz T, Gorecki C, Rieck K, Freiling FC. Measuring and Detecting Fast-Flux Service Networks. Ndss [Internet]. 2008;24–31. Available from: {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.188">
+        [37].
+    </button>
+
+    The IP addresses linked to a DNS record are generally switched in and out of flux with high frequency, changing as
+    quickly as once every 3 minutes
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Riden J. HOW FAST-FLUX SERVICE NETWORKS WORK [Internet]. www.honeypot.org. 2008 [cited 2016 Mar 12]. Available from: https://www.honeynet.org/node/132">
+        [38],
+    </button>
+
+    giving rise to the name fast-flux. If an infected bot was programmed to poll a certain DNS address periodically, the
+    use of fast flux would mean that the bot would be connected to a different IP address each time
+
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Riden J. HOW FAST-FLUX SERVICE NETWORKS WORK [Internet]. www.honeypot.org. 2008 [cited 2016 Mar 12]. Available from: https://www.honeynet.org/node/132">
+        [38].
+    </button>
+
+    This increases the botnet&apos;s resilience against attacks, because as long as one of the IP addresses returned in the
+    list is working, the botnet can remain operational
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Holz T, Gorecki C, Rieck K, Freiling FC. Measuring and Detecting Fast-Flux Service Networks. Ndss [Internet]. 2008;24–31. Available from: {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.188">
+        [37].
+    </button>
+
+</p>
+
+<p>
+    The IP addresses returned could point to the botnet&apos;s C&C servers, or for added security they could employ a method
+    known as blind proxy redirection, whereby the changing IP addresses fluctuate between many front-end proxies, which
+    funnel requests and data to the actual C&C servers
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Riden J. HOW FAST-FLUX SERVICE NETWORKS WORK [Internet]. www.honeypot.org. 2008 [cited 2016 Mar 12]. Available from: https://www.honeynet.org/node/132">
+        [38].
+    </button>
+</p>

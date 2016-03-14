@@ -15,7 +15,6 @@ var HomeAppRouter = AppRouter.extend({
     routes: {
         '' : 'showHome',
         'home' : 'showHome'
-        //'*path' : 'showHome'
     },
 
     showHome: function () {

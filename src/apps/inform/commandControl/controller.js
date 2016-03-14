@@ -6,6 +6,7 @@ var appData = require('../../../data/inform/commandControl');
 require('../../../lib/components/views/subjectPointers');
 require('../../../lib/components/views/jumbotron');
 require('../../../lib/components/views/featurette');
+require('./views/preamble');
 
 require('./layout/layout');
 
@@ -24,6 +25,10 @@ var Controller = Marionette.Object.extend({
 
     showDetection: function () {
 
+        this.showPreamble({
+           region: this.layout.getRegion('preamble')
+        });
+
         this.showSubjectPointers({
             region: this.layout.getRegion('subjectPointers'),
             data: appData.subjectPointers
@@ -39,6 +44,11 @@ var Controller = Marionette.Object.extend({
             data : appData.featurette
         });
 
+    },
+
+    showPreamble: function (options) {
+        var view = App.request('new:preamble:view');
+        options.region.show(view);
     },
 
     showSubjectPointers: function (options) {

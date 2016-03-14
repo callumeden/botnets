@@ -1,0 +1,98 @@
+<p>
+    The general principle of a random botnet topology is that no one bot should know any more about the net than any
+    other bot
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Cooke E, Jahanian F, McPherson D. The zombie roundup: Understanding, detecting, and disrupting botnets. Networks [Internet]. 2005;7:39–44. Available from: http://www.usenix.org/events/sruti05/tech/full_papers/cooke/cooke_html">
+        [29].
+    </button>
+
+    As such, each bot is connected to the other bots in the network with equal probability, and generally the number of
+    connections a bot can have is limited to some small value
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Dagon D, Gu G, Lee CP. A Taxonomy of Botnet Structures. Botnet Detect [Internet]. :143–64. Available from: http://link.springer.com/10.1007/978-0-387-68768-1_8">
+        [30].
+    </button>
+
+
+    The limit could be high, to allow each bot to connect to many other bots, known as &quot;meshing&quot;, but this would put
+    strain on a bot&apos;s resources
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Dagon D, Gu G, Lee CP. A Taxonomy of Botnet Structures. Botnet Detect [Internet]. :143–64. Available from: http://link.springer.com/10.1007/978-0-387-68768-1_8">
+        [30].
+    </button>
+
+    In a random topology there is no central C&C server; instructions are injected to the network via any bot, and are
+    &quot;signed&quot; as authoritative, which tells the bot to automatically propagate the instructions to other bots
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ollmann G. Botnet Communication Topologies. Damballa. 2009">
+        [27].
+    </button>
+
+
+    This approach is generally the most robust of all topologies due to its lack of a single point of failure
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ollmann G. Botnet Communication Topologies. Damballa. 2009">
+        [27,
+    </button>
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Jakobsson M, Ramzan Z. Crimeware: Understanding New Attacks and Defenses. In: 1st ed. Addison-Wesley Professional; 2008. p. 188–90">
+        28],
+    </button>
+
+    though a drawback is that the C&C network diameter can be large, leading to message latency
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Jakobsson M, Ramzan Z. Crimeware: Understanding New Attacks and Defenses. In: 1st ed. Addison-Wesley Professional; 2008. p. 188–90">
+        [28].
+    </button>
+
+</p>
+
+<p>
+    There are some propagation difficulties in a random topology: when a bot is added to the net, by definition of a
+    random topology it must have some probability of being connected to any other agent already in the net, so there
+    must be some central record of bot addresses; a list of this kind may be discovered, so the botmaster has incentive
+    not to create it. Another issue is that due to the limitation on the number of connections a bot can have, the
+    probability of one of the first agents being connected to a subsequent agent is biased towards 0. A possible
+    solution to these two issues is for the botmaster to monitor bots being added to the network, and generate a
+    &quot;random&quot; graph for the network, transmitting the required edgesets to each bot
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Dagon D, Gu G, Lee CP. A Taxonomy of Botnet Structures. Botnet Detect [Internet]. :143–64. Available from: http://link.springer.com/10.1007/978-0-387-68768-1_8">
+        [30].
+    </button>
+</p>
+
+<p>
+    Another potential method of implementing a random topology is for each bot to scan the internet looking for other
+    bots, passing on the message when one is detected. In this case however, there would be no guarantee that the
+    message is delivered, and would have high latency if it was
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Cooke E, Jahanian F, McPherson D. The zombie roundup: Understanding, detecting, and disrupting botnets. Networks [Internet]. 2005;7:39–44. Available from: http://www.usenix.org/events/sruti05/tech/full_papers/cooke/cooke_html">
+        [29].
+    </button>
+</p>
