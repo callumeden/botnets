@@ -5,7 +5,7 @@ var JSON = [
         buttonText : "Read more",
         image: "img/computer-infection.jpg",
         destination: "#infection",
-        imageRef: "[53] : http://www.clevertechnology.net/tag/infection/ accessed on 14-03-2015 at 13:50"
+        imageRef: "[62] : http://www.clevertechnology.net/tag/infection/ accessed on 14-03-2015 at 13:50"
     },
 
     {
@@ -21,7 +21,7 @@ var JSON = [
         buttonText: "Read more",
         image: "img/hacker01.jpg",
         destination : "#avoidingDetection",
-        imageRef: "[52] : http://www.deletetrojaninfection.com/tag/clean-digitalcleaner-on-computer accessed on 14-03-2015 at 13:47"
+        imageRef: "[61] : http://www.deletetrojaninfection.com/tag/clean-digitalcleaner-on-computer accessed on 14-03-2015 at 13:47"
     }
 
 ];
