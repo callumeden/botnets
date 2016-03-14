@@ -2,21 +2,21 @@ var JSON = [
     {
         subjectTitle: "IRC",
         subjectContent: "",
-        buttonText: "Read how »",
+        buttonText: "Read more",
         image: "",
         destination: "#irc"
     },
     {
         subjectTitle: "HTTP",
         subjectContent: "",
-        buttonText: "Read how »",
+        buttonText: "Read more",
         image: "",
         destination: "#http"
     },
     {
         subjectTitle: "Fluxing",
         subjectContent: "",
-        buttonText: "Read how »",
+        buttonText: "Read more",
         image: "",
         destination: "#fluxing"
     }

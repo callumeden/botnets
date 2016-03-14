@@ -2,7 +2,7 @@ var JSON = [
     {
         subjectTitle: "Encryption",
         subjectContent: "",
-        buttonText: "Read more »",
+        buttonText: "Read more",
         image: "",
         destination: "#encryption"
     },
@@ -10,14 +10,14 @@ var JSON = [
     {
         subjectTitle: "Mealy Machines",
         subjectContent: "",
-        buttonText: "Read more »",
+        buttonText: "Read more",
         image: "",
         destination: "#mealyMachines"
     },
     {
         subjectTitle: "Resulting Insights",
         subjectContent: "",
-        buttonText: "Read more »",
+        buttonText: "Read more",
         image: "",
         destination: "#resultingInsights"
     }
