@@ -7,11 +7,27 @@ var Pointer = Marionette.ItemView.extend({
     template: template,
 
     ui: {
-        details : '[data-role="details"]'
+        details : '[data-role="details"]',
+        tooltips: '[data-toggle="tooltip"]'
     },
 
     events: {
+        'click @ui.tooltips' : 'scrollToBottom',
         'click @ui.details' : 'scrollTo'
+    },
+
+
+    onRender: function () {
+        this.activateTooltips();
+    },
+
+    activateTooltips: function () {
+        this.bindUIElements();
+        this.ui.tooltips.tooltip();//Bootstrap JS method to activate tooltips
+    },
+
+    scrollToBottom: function () {
+        $("html, body").animate({ scrollTop: $('footer').offset().top - 100 }, "slow");
     },
 
     scrollTo: function (ev) {

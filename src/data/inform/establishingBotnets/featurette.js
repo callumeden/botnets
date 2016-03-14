@@ -21,15 +21,7 @@ var JSON = [
     {
         heading: "Avoiding detection",
         avoidingDetection: true,
-        id: "avoidingDetection",
-    },
-    {
-
-        heading: "Botnet motivation",
-        subHeading: "...",
-        otherPartial: true,
-        image: "",
-        id: "motivation"
+        id: "avoidingDetection"
     }
 ];
 
