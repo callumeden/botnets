@@ -1,0 +1,106 @@
+<p>
+    Dagon et al. have observed that Dynamic DNS query rates are far higher for a C&C domain name than a given regular
+    domain
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [8];
+    </button>
+
+    They introduce “Canonical DNS Request Rate” (a.k.a. CDRR), which is an aggregate of the query rate of a second level
+    domain (SLD) with it’s respective third level domain (3LD) children
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [3].
+    </button>
+
+    A SLD is the label to the left of the top level domain e.g “.com”, and any third levels domains are labels to the
+    left of the SLD
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [28].
+    </button>
+
+</p>
+
+<p>
+    <strong>
+        Canonical DNS Request Rate
+        <button type="button"
+                class="btn btn-sm reference"
+                data-toggle="tooltip" data-placement="right"
+                title="TODO : REf">
+            [29]:
+        </button>
+    </strong>
+</p>
+
+<pre>
+    EQUATION
+</pre>
+
+<p>
+    Shown in the image adjacent is the result from applying the CDRR to a specific
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [3]
+    </button>
+
+    subset of domains, most of which have been independently verified as malicious(*).
+
+    The data was produced by calculating the total CDRR of a SLD for a period of 192 hours
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [3].
+    </button>
+
+    Subsequently the mean and standard deviation is found from the total CDDRs
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [3].
+    </button>
+
+    Finally each SLD is classified as anomalous according to Chebyshev’s inequality, with parameter k = 4.47
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [3];
+    </button>
+
+
+    this ensures that on average 5% of data will be more than 4.47 standard deviations from the mean
+
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="TODO : REf">
+        [30].
+    </button>
+
+    As is clear, anomalous traffic has a much higher query rate than regular traffic.
+
+</p>
+
+<p class="lead">
+    (*) http://www.srtforums.com/forums/showthread.php?t=334294, http://google.com/search?q=fscking.com+site%3Aosdir.com, http://google.com/search?q=3lefties.com+site%3Aosdir.com, http://google.com/search?q=busitec.jp+site%3Aosdir.com , http://google.com/search?q= shacknet.nu+site%3Aosdir.com, http://google.com/search?q=macher.fake-ip.shacknet.nu
+
+</p>

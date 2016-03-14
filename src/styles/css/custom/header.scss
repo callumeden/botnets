@@ -7,6 +7,18 @@
   left: 0;
   z-index: 20;
 
+  @media (max-width: $screen-lg) {
+    .nav {
+      float: none;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    .navbar-toggle {
+      display: none;
+    }
+  }
+
   .container.outer {
     padding-left: 0;
     padding-right: 0;
@@ -47,7 +59,7 @@
 
   .navbar-inverse.affix-top {
 
-    @media (max-width : $screen-sm) {
+    @media (max-width: $screen-sm) {
       background: $gradient-blue-background;
       margin-top: 0;
     }

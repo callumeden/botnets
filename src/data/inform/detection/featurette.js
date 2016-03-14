@@ -26,6 +26,11 @@ var JSON = [
         noImage: true
     },
     {
+        heading: "An example of the use of Chebyshev's inequality",
+        anomalyDetection3: true,
+        image: "img/cherbyshevExample.png"
+    },
+    {
 
         heading: "An example of the use of mahalanobis distance",
         anomalyDetection2: true,

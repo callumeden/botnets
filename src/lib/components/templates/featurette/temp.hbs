@@ -1,0 +1,97 @@
+
+<p>
+    This formula sets an upper bound of points of bvalue more than k standard deviations away from the population mean
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.">
+        [4].
+    </button>
+
+    Thus Chebyshev&apos;s Inequality states that not more than 1/k^2 of the distribution&apos;s values are further than
+    k standard
+    deviations away from the mean
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="https://en.wikipedia.org/wiki/Chebyshev%27s_inequality, accessed at 16:23 - 06/03/2016">
+        [8].
+    </button>
+
+    We are taking data points that are more than k standard deviations from the mean to be anomalous
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.">
+        [4].
+    </button>
+
+    <i>
+        Mahalanobis Distance, where
+        <button type="button"
+                class="btn btn-sm reference"
+                data-toggle="tooltip" data-placement="right"
+                title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+            [3].
+        </button>
+        &sum; ^ -1 is the inverse covariance matrix:
+    </i>
+</p>
+
+<pre>
+    <p>mahalanobis(x,y)=(x-y) &sum; ^ -1 (x-y)^T</p>
+</pre>
+<p>
+    The underpinning principle
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3]
+    </button>
+
+
+    is that the distance between two data objects, x and y, can provide a measure of their dissimilarity. These data
+    objects are n-dimensional (n &ge; 1) vectors of attributes
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3].
+    </button>
+
+
+    Given a multivariate Gaussian distribution
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3]
+    </button>
+
+    if a given point resides in a probabilistically unlikely region, with respect to the expected distribution of the
+    data, it is classified as anomalous
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”, International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.">
+        [5]
+    </button>
+
+
+    We are using the object&apos;s distance away from the centre of the distribution as this measure
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”, International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.">
+        [5].
+    </button>
+</p>
+
