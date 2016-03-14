@@ -1,10 +1,6 @@
 var JSON = [
 
     {
-        pageName: "Home",
-        pageInfo: "navigate-home"
-    },
-    {
         pageName: "Establishing Botnets",
         pageInfo: "navigate-establishingBotnets"
     },

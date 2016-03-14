@@ -36,9 +36,6 @@ var Controller = Marionette.Object.extend({
         var navigateType = view.ui.navigateLink.data('info');
 
         switch (navigateType) {
-            case "navigate-home" :
-                this.navigateHome();
-                break;
             case "navigate-establishingBotnets":
                 App.execute("show:establishingBotnets");
                 break;

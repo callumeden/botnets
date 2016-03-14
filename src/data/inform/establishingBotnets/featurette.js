@@ -3,12 +3,15 @@ var JSON = [
         heading: "Infecting a computer",
         subHeading: "A selection of the many different avenues that are used to infiltrate target computers in order to spread bots.",
         infection: true,
-        image: "img/global01.jpg",
-        id: "infection"
+        image: "img/malware.jpeg",
+        id: "infection",
+        imageRef: "[64] : http://mobileadvertisingwatch.com/threat-post-malware-ios-ad-thief-11402 Accessed on 14-03-2016 at 16:38"
     },
     {
         heading: "After an infection",
-        postInfection : true
+        postInfection : true,
+        image: "img/zombie2.jpg",
+        imageRef: "[65]: http://uvmzombies.blogspot.co.uk/2013/02/computer-zombies.html Accessed on 14-03-2016 at 16:38"
     },
 
     {

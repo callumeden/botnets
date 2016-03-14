@@ -18,7 +18,7 @@ var JSON = [
         subjectTitle: "P2P",
         subjectContent: "Peer-to-Peer botnet structure",
         buttonText: "Read more",
-        image: "",
+        image: "img/p2p.png",
         destination: "#p2p"
     }
 

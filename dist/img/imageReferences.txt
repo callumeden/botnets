@@ -1,0 +1,6 @@
+botnetPropagation.png
+	Stonedahl, F. VirusOnANetwork.png [Internet]. 2008 [cited 13:46 - 14/03/2016]. Available from: http://ccl.northwestern.edu/netlogo/models/VirusonaNetwork
+
+anomalyDetection.png
+	Lancope, Inc. banner-detect.png [Internet]. 2016 [cited 13:52 - 14/03/2016]. Available from: https://www.lancope.com/sites/default/files/banner-detect.png
+

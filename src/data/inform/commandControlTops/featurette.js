@@ -17,7 +17,7 @@ var JSON = [
         heading: "Hierarchical",
         subHeading: "",
         hierarchical: true,
-        id: "hierarchical"
+        id: "hierarchical",
         image: "img/Hierarchical.jpg"
     },
 
@@ -33,7 +33,7 @@ var JSON = [
         heading: "P2P",
         subHeading: "Peer to Peer",
         p2p: true,
-        id: "p2p"
+        id: "p2p",
         image: "img/P2P.jpg",
         imageRef: "Zeidanloo HR, Manaf  a. a. Botnet Command and Control Mechanisms. 2009 Second Int Conf Comput Electr Eng [Internet]. 2009;1:564-8. Available from: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5380180"
     }
