@@ -12,8 +12,9 @@ var JSON = [
         subjectTitle: "Random",
         subjectContent: "",
         buttonText: "Read more",
-        image: "",
-        destination: "#random"
+        image: "img/random.png",
+        destination: "#random",
+        imageRef: "[79] : [Adapted] flaticon. White question mark on a black circular background. 2015 [cited 17:16 - 14/03/2016]. Available from: http://www.freepik.com/free-icon/white-question-mark-on-a-black-circular-background_750291.htm#term=question mark&page=1&position=8"
     },
     {
         subjectTitle: "P2P",

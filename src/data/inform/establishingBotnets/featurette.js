@@ -25,8 +25,9 @@ var JSON = [
         heading: "Avoiding detection",
         avoidingDetection: true,
         id: "avoidingDetection",
-        image: "img/avoidingDetection.png",
-        imageRef: "[78] : [Adapted] Neven, T. i-robot.jpg. 2004 [cited 20:40 - 14/03/2016]. Available from: http://www.pluggedin.com/movie-reviews/irobot/"
+        noImage: true
+        //image: "img/avoidingDetection.png",
+        //imageRef: "[78] : [Adapted] Neven, T. i-robot.jpg. 2004 [cited 20:40 - 14/03/2016]. Available from: http://www.pluggedin.com/movie-reviews/irobot/"
     }
 ];
 
