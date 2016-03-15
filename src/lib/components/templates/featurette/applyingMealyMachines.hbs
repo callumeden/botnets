@@ -23,7 +23,7 @@
     to essentially look for a counter-example rather than being provided with one by constructing valid messages and
     sending them to the intended botnet server. The technique is limited in a few senses; it relies on the assumption
     that the protocol is deterministic and supports a finite amount of states. There is also no way to guarantee that
-    all message type of the protocol have been identified, so can only produce a complete finite state machine with
+    all message types of the protocol have been identified, so its only possible to produce complete finite state machine with
     respect to known input message types (those sent by the bot). Finally, the confidence in the resulting finite state
     machine is not 100% due to the stochastic search for counter-examples. On the upside, the confidence is scalable, in
     that the results can be made more confident by making more queries.

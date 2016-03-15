@@ -55,7 +55,6 @@ var JSON = [
         subHeading: "continued...",
         noBreak: true,
         image: "img/mahlanobis.jpeg",
-        imageCaption: "Simplified Mahalanobis Distance, where[3] n is no. of attributes, is the vector of standard deviations for each attribute in the object vector, ɑ is a smoothing constant:",
         mahlanobisDistanceExample2: true,
         imageRef: "[24] : Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, \"Tracking and Detection Botnets Using Automatically Generated Domains\", arXiv:1311.5612v1 [cs.CR] 21 Nov 2013"
     },
