@@ -4,7 +4,8 @@ var JSON = [
         subjectContent: "",
         buttonText: "View technique",
         image: "img/honeypot2.jpg",
-        destination: "#honeypot"
+        destination: "#honeypot",
+        imageRef : "[86] : [Adapted] http://www.icravefreebies.com/ accessed on 15-03-2016 at 10:32."
     },
     {
         subjectTitle: "Anomaly detection",
