@@ -36,3 +36,6 @@ resultingInsights.png
 
 whatAboutEncryption.png
 	[Adapted] Igntaov, P. interent lock. 2016 [cited 10:44 - 14/03/2016]. Available from: http://betanews.com/2016/01/27/continuous-security-helps-protect-consumer-data/
+
+messageStructureFieldSemantics.png
+	[39]
