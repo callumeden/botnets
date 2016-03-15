@@ -13,7 +13,7 @@ var JSON = [
         buttonText: "Read more",
         image: "img/internetIcon.png",
         destination: "#http",
-        imageReF: "[81] https://www.iconfinder.com/icons/61632/earth_internet_network_icon accessed on 15-03-2016 at 10:24"
+        imageRef: "[81] https://www.iconfinder.com/icons/61632/earth_internet_network_icon accessed on 15-03-2016 at 10:24"
     },
     {
         subjectTitle: "Fluxing",
