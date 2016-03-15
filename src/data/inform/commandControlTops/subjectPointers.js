@@ -3,8 +3,9 @@ var JSON = [
         subjectTitle: "Hierarchical",
         subjectContent: "",
         buttonText: "Read more",
-        image: "",
-        destination: "#hierarchical"
+        image: "img/hierarchical.png",
+        destination: "#hierarchical",
+        imageRef : "[71] - [Adapted] Taub, A. hierarchy-of-paying-for-things-in-the-startup. 2013 [cited 19:57 - 14/03/2016]. Available from: http://alexstechthoughts.com/post/38868297967/hierarchy-of-paying-for-things-in-the-startup"
     },
 
     {

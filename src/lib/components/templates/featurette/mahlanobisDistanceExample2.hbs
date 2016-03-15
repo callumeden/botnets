@@ -1,0 +1,73 @@
+<p>
+    To formally determine when a domain is probabilistically generated, we can use the value produced by using
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013">
+        [24]
+    </button>
+
+    the attribute vectors as inputs into the Mahalanobis distance function shown above. To decide upon a threshold we
+    take constants &lambda; and &Lambda; to be the 70th and 90th percentile, respectively, of the underlying
+    distribution; this is an estimate for a threshold for generated domains which depends largely upon the specific
+    domain generation algorithm
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013">
+        [24].
+    </button>
+
+
+    Shown in the adjacent image the plot of the cumulative distribution function of top 100,000 Alexa domains, where X
+    is is an attribute vector
+
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013">
+        [24].
+    </button>
+
+    As you can see in the image adjacent most domains have a value less than our threshold, of course this is expected
+    of legitimate domains.
+
+
+</p>
+
+
+<pre>
+    <p>mahalanobis'(X,Y) = &sum;i=1,^n (|xi - yi| / &sigma;yi + &alpha;)</p>
+</pre>
+
+
+<p>
+    An issue may arise where the computation of the inverse of the covariance matrix is expensive, in this case a
+    simplification has been formulated
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ke Wang, Salvatore J. Stolfo, “Anomalous payload-based network intrusion detection”, In Recent Advance in Intrusion Detection (RAID), Sep 2004.">
+        [6].
+    </button>
+
+    The simplified mahalanobis distance equivalent relies on the assumption
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3]
+    </button>
+
+    that the elements of &sigma; are independent.
+    The smoothing constant exists to account for when attributes happen to be constant across recorded data points
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3]
+    </button>
+
+</p>

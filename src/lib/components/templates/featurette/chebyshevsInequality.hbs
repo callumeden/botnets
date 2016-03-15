@@ -1,0 +1,62 @@
+
+<p>
+    Chebyshev&apos;s Inequality, where
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.">
+        [7]
+    </button>
+
+    X is a random variable k > 0 is a parameter, &sigma; is the standard deviation and E(X) is the mean (&mu;):
+
+</p>
+
+<pre>
+    <p>P(|X - E(X)| &ge; K&sigma;) &le; 1&frasl;K^2</p>
+</pre>
+
+<p>
+    Sometimes when looking to identify interactions as malicious it is hard to know enough with regards to the expected
+    distribution. In this case Chebyshev’s inequality is an ideal choice
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="DeGroot, M. H. (2001), “Probability and Statistics”, 3rd edition, Addison-Wesley.">
+        [7].
+    </button>
+
+    Although no assumptions about the distribution are required, we must make sure observations are independent. This
+    formula gives an upper bound for the number of data points further than k standard deviations away from the
+    population mean
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.">
+        [4],
+    </button>
+
+    thus Chebyshev’s Inequality states that not more than 1/k^2 of the distribution's values are further than k standard
+    deviations away from the mean. With this in mind we are taking data points that are more than k standard deviations
+    from the mean to be anomalous
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.">
+        [4].
+    </button>
+
+    This method is not bullet-proof as anomalies may crop up due to other factors than were expected, such as
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Amidan BG, TA Ferryman, SK Cooley, “Data Outlier Detection using the Chebyshev Theorem”. In 2005 IEEE Aerospace Conference, pp. 1-6. IEEE Conference Publications, Manhattan Beach, CA.">
+        [4]:
+    </button>
+
+    Human error, misinterpretation and biased sample data.
+</p>

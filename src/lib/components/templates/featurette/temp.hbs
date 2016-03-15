@@ -40,58 +40,63 @@
     </i>
 </p>
 
-<pre>
-    <p>mahalanobis(x,y)=(x-y) &sum; ^ -1 (x-y)^T</p>
-</pre>
-<p>
-    The underpinning principle
-
-    <button type="button"
-            class="btn btn-sm reference"
-            data-toggle="tooltip" data-placement="right"
-            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
-        [3]
-    </button>
 
 
-    is that the distance between two data objects, x and y, can provide a measure of their dissimilarity. These data
-    objects are n-dimensional (n &ge; 1) vectors of attributes
-
-    <button type="button"
-            class="btn btn-sm reference"
-            data-toggle="tooltip" data-placement="right"
-            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
-        [3].
-    </button>
 
 
-    Given a multivariate Gaussian distribution
-
-    <button type="button"
-            class="btn btn-sm reference"
-            data-toggle="tooltip" data-placement="right"
-            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
-        [3]
-    </button>
-
-    if a given point resides in a probabilistically unlikely region, with respect to the expected distribution of the
-    data, it is classified as anomalous
-
-    <button type="button"
-            class="btn btn-sm reference"
-            data-toggle="tooltip" data-placement="right"
-            title="Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”, International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.">
-        [5]
-    </button>
 
 
-    We are using the object&apos;s distance away from the centre of the distribution as this measure
 
-    <button type="button"
-            class="btn btn-sm reference"
-            data-toggle="tooltip" data-placement="right"
-            title="Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”, International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.">
-        [5].
-    </button>
+
+
+
+
+
+
+
+An unrecognised domain is classified as generated when
+
+<button type="button"
+        class="btn btn-sm reference"
+        data-toggle="tooltip" data-placement="right"
+        title="Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013">
+    [24].
+</button>
+
+
+the attribute vector is deemed anomalous by criteria of the Mahalanobis distance function shown above. We take a
+constants &lambda; and &Lambda; to be the 70th and 90th percentile, respectively, of the underlying distribution to estimate a
+threshold for generated domains
+
+<button type="button"
+        class="btn btn-sm reference"
+        data-toggle="tooltip" data-placement="right"
+        title="Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013">
+    [24].
+</button>
+
+The specific threshold depends largely on the domain generation algorithm
+
+<button type="button"
+        class="btn btn-sm reference"
+        data-toggle="tooltip" data-placement="right"
+        title="Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013">
+    [24].
+</button>
+
+Shown in the adjacent image is the plotted cumulative distribution function of top 100,000 Alexa domains, where X is is
+an attribute vector
+
+<button type="button"
+        class="btn btn-sm reference"
+        data-toggle="tooltip" data-placement="right"
+        title="Stefano Schiavoni Federico Maggi Lorenzo Cavallaro Stefano Zanero Politecnico di Milano Politecnico di Milano Royal Holloway University of London Politecnico di Milano, “Tracking and Detection Botnets Using Automatically Generated Domains”, arXiv:1311.5612v1 [cs.CR] 21 Nov 2013">
+    [24].
+</button>
+
 </p>
+
+<pre>
+    <p>mahalanobis'(x,y) = &sum; i=1 ^n (|xi-yi|&frasl;&sigma;yi + &alpha;)</p>
+</pre>
 

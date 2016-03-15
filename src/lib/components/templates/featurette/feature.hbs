@@ -1,6 +1,14 @@
 {{^isFirst}}
+
+
+{{^noBreak}}
     <hr class="featurette-divisor">
+{{/noBreak}}
+
 {{/isFirst}}
+
+
+
 
 <div id="{{id}}" class="row featurette {{#isFirst}}first{{/isFirst}}">
 
@@ -31,7 +39,7 @@
         <div class="col-md-5 {{#isPushed}} col-md-pull-7 {{/isPushed}}">
             <div class="featurette-image img-responsive center-block background-image hidden-xs"
 
-                 data-toggle = "tooltip"
+                 data-toggle="tooltip"
 
                 {{#isPushed}}
                  data-placement="right"
@@ -41,7 +49,7 @@
                  data-placement="left"
                 {{/isPushed}}
 
-                 title = "{{imageRef}}"
+                 title="{{imageRef}}"
 
                 {{#if image}}
                  style="background-image: url({{image}})"

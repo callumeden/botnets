@@ -1,0 +1,77 @@
+<p>
+    Mahalanobis Distance, where
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3]
+    </button>
+
+    &sigma; ^-1 is the inverse covariance matrix, X and Y are random vectors of observations of the same distribution
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="De Maesschalck, Roy; Jouan-Rimbaud, Delphine; and Massart, Désiré L. (2000); The Mahalanobis distance, Chemometrics and Intelligent Laboratory Systems 50:1–18">
+        [75]
+    </button>
+
+</p>
+
+
+<pre>
+<p>mahalanobis(X,Y)=(x-y) &sum; ^ -1 (X-Y)^T</p>
+<p>X = (x1, x2, ..., xn)^T , Y = (y1,y2, ..., yn)^T </p>
+</pre>
+<p>
+    The underpinning principle
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3]
+    </button>
+
+
+    is that the distance between two data objects, x and y, can provide a measure of their dissimilarity. These data
+    objects are n-dimensional (n &ge; 1) vectors of attributes
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3].
+    </button>
+
+
+    Given a multivariate Gaussian distribution
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Ricardo Villamarín-Salomón, José Carlos Brustoloni, “Identifying Botnets using anomaly detection techniques applied to DNS traffic”">
+        [3]
+    </button>
+
+    if a given point resides in a probabilistically unlikely region, with respect to the expected distribution of the
+    data, it is classified as anomalous
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”, International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.">
+        [5]
+    </button>
+
+
+    We are using the object&apos;s distance away from the centre of the distribution as this measure
+
+    <button type="button"
+            class="btn btn-sm reference"
+            data-toggle="tooltip" data-placement="right"
+            title="Haritha.S.Nair, Vinodh Ewards S.E, “Study on Botnet Detection Techniques”, International Journal of Scientific and Research Publications, Volume 2, Issue 4, April 2012.">
+        [5].
+    </button>
+</p>
