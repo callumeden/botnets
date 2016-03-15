@@ -12,15 +12,17 @@ var JSON = [
         subjectTitle: "Protocol State Machine",
         subjectContent: "",
         buttonText: "Read more",
-        image: "",
-        destination: "#protocolState"
+        image: "img/cartoonMachine.jpg",
+        destination: "#protocolState",
+        imageRef: "[84] : https://panglimaotomasi.wordpress.com/ accessed on 15-03-2016 at 10:32."
     },
     {
         subjectTitle: "Resulting Insights",
         subjectContent: "",
         buttonText: "Read more",
-        image: "",
-        destination: "#resultingInsights"
+        image: "img/resultingInsights.jpg",
+        destination: "#resultingInsights",
+        imageRef : "[83] : http://blogs.csc.com/category/big-data/page/2/ accessed on 15-03-2016 at 10:32. "
     }
 
 ];
